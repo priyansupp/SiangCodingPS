@@ -1,0 +1,2 @@
+this folder contains all the configurations of the webapp. configs related to database, auth, api calls, backend and stuff
+make files with name like authConfig.jsx, dbConfig.jsx

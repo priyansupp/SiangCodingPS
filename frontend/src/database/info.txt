@@ -1,0 +1,2 @@
+As clear from README.md file, the database folder will simulate the remote database server. create .json files for everything that we will eventually fetch from database server and simulate the api calls using this local database server only(the .json file)
+There's a book.json file to refer

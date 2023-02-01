@@ -1,0 +1,1 @@
+this folder is specifically for keeping track of all our created context hooks in our app. Any time you create a context hook, keep it in this folder only
