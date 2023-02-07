@@ -1,0 +1,42 @@
+.boxpp{
+    position: relative;
+    visibility: hidden;
+    height: 50vh;
+    width: 40vw;
+    box-shadow: 0 0 5px rgb(97, 95, 95);
+    margin-left: 30vw;
+}
+.cross_pop{
+    position: absolute;
+    right: 1vw;
+    top: 0;
+    cursor: pointer;
+    font-size: 6vh;
+    text-align: right;
+    padding-top: 2.5vh;
+}
+.login_pop{
+    margin-left: 7vw;
+}
+.shopkeeper_button, .student_button{
+    height: 8vh;
+    width: 25vw;
+    background: rgb(195, 245, 241);
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    border: none;
+    box-shadow: 0 0 5px rgb(97, 95, 95);
+}
+.student_button:hover{
+    background: rgb(150, 244, 236);
+}
+.shopkeeper_button:hover{
+    background: rgb(150, 244, 236);
+}
+.shopkeeper_button{
+    margin-top: 2vh;
+}
+.student_button{
+    margin-top: 15vh;
+}
