@@ -1,4 +1,5 @@
 import './navbar.css'
+import logo from '../../assets/footer/lenden.jpeg'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 function Navbar(){
@@ -13,7 +14,7 @@ function Navbar(){
     return(
         <div className='nav'>
             <div className='logo'>
-                Len-Den
+                <img src={logo} alt='logo' className='logo_img'></img>
             </div>
             <div className='search_home'>
                 <input type='text' className='search_item' placeholder='Search items or services'></input>
