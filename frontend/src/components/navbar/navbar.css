@@ -1,0 +1,67 @@
+.nav{
+    display: flex;
+    height: 18vh;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
+}
+
+button{
+    cursor: pointer;
+}
+.logo{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 4vh;
+    margin-left: 5vw;
+    margin-top: 6.5vh;
+}
+.search_home{ 
+    border-radius: 4px;
+    background: #FFFFFF;
+    margin-left: 5vw;
+    margin-top: 6vh;
+}
+.search_item{
+    background: url("../../assets/navbar/search.png");
+    background-position-y: 2vh;
+    background-position-x: 0.8vw;
+    background-repeat: no-repeat;
+    padding-left: 4vw;
+    height: 6vh;
+    width: 50vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: rgba(51, 51, 51, 0.5);
+    font-weight: 500;
+    font-size: 2.7vh;
+    border:none;
+    transition:0.2s ease all;
+    outline:1px solid rgb(189, 189, 189);
+    border-radius:5px;
+}
+
+.search_item:hover{
+    outline:1px solid black;
+}
+
+.login_button{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    height: 6vh;
+    width: 6vw;
+    margin-left: 4vw;
+    margin-top: 6vh;
+    font-size: 2.5vh;
+    background: rgb(195, 245, 241);
+    border: none;
+    box-shadow: 0 0 5px rgb(97, 95, 95);
+}
+.login_button:hover{
+    background: rgb(150, 244, 236);
+}
+.cart{
+    display: flex;
+    align-items: center;
+    font-size: 6vh;
+    margin-left: 3vw;
+    cursor: pointer;
+}
