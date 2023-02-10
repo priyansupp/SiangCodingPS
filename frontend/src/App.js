@@ -1,9 +1,17 @@
 import Homepage from "./pages/Homepage";
+import {Routes, Route} from "react-router-dom";
+import Itemspage from "./pages/Itemspage";
+import Errorpage from "./pages/error";
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/items" element={<Itemspage />} />
+        {/* <Route path="/items/:id" element={<Itempage />} /> */}
+        <Route path="*" element={<Errorpage />} />
+      </Routes>
     </div>
   );
 }
