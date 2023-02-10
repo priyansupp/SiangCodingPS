@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/items" element={<Itemspage />} />
+        {/* <Route path="/items/:id" element={<Itempage />} /> */}
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </div>
