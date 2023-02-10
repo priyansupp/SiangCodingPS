@@ -1,0 +1,2002 @@
+[
+    {
+        "item_id": 0,
+        "shop_id": 0,
+        "name": "Item 0",
+        "price": 604,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 0",
+        "quantity": 96
+    },
+    {
+        "item_id": 1,
+        "shop_id": 0,
+        "name": "Item 1",
+        "price": 353,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 0",
+        "quantity": 38
+    },
+    {
+        "item_id": 2,
+        "shop_id": 0,
+        "name": "Item 2",
+        "price": 452,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 0",
+        "quantity": 25
+    },
+    {
+        "item_id": 3,
+        "shop_id": 0,
+        "name": "Item 3",
+        "price": 942,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 0",
+        "quantity": 73
+    },
+    {
+        "item_id": 4,
+        "shop_id": 0,
+        "name": "Item 4",
+        "price": 407,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 0",
+        "quantity": 27
+    },
+    {
+        "item_id": 5,
+        "shop_id": 0,
+        "name": "Item 5",
+        "price": 223,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 0",
+        "quantity": 86
+    },
+    {
+        "item_id": 6,
+        "shop_id": 0,
+        "name": "Item 6",
+        "price": 924,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 0",
+        "quantity": 8
+    },
+    {
+        "item_id": 7,
+        "shop_id": 0,
+        "name": "Item 7",
+        "price": 310,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 0",
+        "quantity": 6
+    },
+    {
+        "item_id": 8,
+        "shop_id": 0,
+        "name": "Item 8",
+        "price": 281,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 0",
+        "quantity": 65
+    },
+    {
+        "item_id": 9,
+        "shop_id": 0,
+        "name": "Item 9",
+        "price": 926,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 0",
+        "quantity": 34
+    },
+    {
+        "item_id": 10,
+        "shop_id": 0,
+        "name": "Item 10",
+        "price": 154,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 0",
+        "quantity": 71
+    },
+    {
+        "item_id": 11,
+        "shop_id": 0,
+        "name": "Item 11",
+        "price": 711,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 0",
+        "quantity": 18
+    },
+    {
+        "item_id": 12,
+        "shop_id": 0,
+        "name": "Item 12",
+        "price": 66,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 0",
+        "quantity": 82
+    },
+    {
+        "item_id": 13,
+        "shop_id": 0,
+        "name": "Item 13",
+        "price": 218,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 0",
+        "quantity": 22
+    },
+    {
+        "item_id": 14,
+        "shop_id": 0,
+        "name": "Item 14",
+        "price": 891,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 0",
+        "quantity": 5
+    },
+    {
+        "item_id": 15,
+        "shop_id": 0,
+        "name": "Item 15",
+        "price": 615,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 0",
+        "quantity": 1
+    },
+    {
+        "item_id": 16,
+        "shop_id": 0,
+        "name": "Item 16",
+        "price": 339,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 0",
+        "quantity": 78
+    },
+    {
+        "item_id": 17,
+        "shop_id": 0,
+        "name": "Item 17",
+        "price": 305,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 0",
+        "quantity": 94
+    },
+    {
+        "item_id": 18,
+        "shop_id": 0,
+        "name": "Item 18",
+        "price": 476,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 0",
+        "quantity": 38
+    },
+    {
+        "item_id": 19,
+        "shop_id": 0,
+        "name": "Item 19",
+        "price": 682,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 0",
+        "quantity": 47
+    },
+    {
+        "item_id": 0,
+        "shop_id": 1,
+        "name": "Item 0",
+        "price": 351,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 1",
+        "quantity": 75
+    },
+    {
+        "item_id": 1,
+        "shop_id": 1,
+        "name": "Item 1",
+        "price": 261,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 1",
+        "quantity": 19
+    },
+    {
+        "item_id": 2,
+        "shop_id": 1,
+        "name": "Item 2",
+        "price": 815,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 1",
+        "quantity": 55
+    },
+    {
+        "item_id": 3,
+        "shop_id": 1,
+        "name": "Item 3",
+        "price": 80,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 1",
+        "quantity": 3
+    },
+    {
+        "item_id": 4,
+        "shop_id": 1,
+        "name": "Item 4",
+        "price": 890,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 1",
+        "quantity": 54
+    },
+    {
+        "item_id": 5,
+        "shop_id": 1,
+        "name": "Item 5",
+        "price": 955,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 1",
+        "quantity": 59
+    },
+    {
+        "item_id": 6,
+        "shop_id": 1,
+        "name": "Item 6",
+        "price": 432,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 1",
+        "quantity": 69
+    },
+    {
+        "item_id": 7,
+        "shop_id": 1,
+        "name": "Item 7",
+        "price": 918,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 1",
+        "quantity": 54
+    },
+    {
+        "item_id": 8,
+        "shop_id": 1,
+        "name": "Item 8",
+        "price": 420,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 1",
+        "quantity": 12
+    },
+    {
+        "item_id": 9,
+        "shop_id": 1,
+        "name": "Item 9",
+        "price": 560,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 1",
+        "quantity": 30
+    },
+    {
+        "item_id": 10,
+        "shop_id": 1,
+        "name": "Item 10",
+        "price": 855,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 1",
+        "quantity": 77
+    },
+    {
+        "item_id": 11,
+        "shop_id": 1,
+        "name": "Item 11",
+        "price": 72,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 1",
+        "quantity": 38
+    },
+    {
+        "item_id": 12,
+        "shop_id": 1,
+        "name": "Item 12",
+        "price": 115,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 1",
+        "quantity": 60
+    },
+    {
+        "item_id": 13,
+        "shop_id": 1,
+        "name": "Item 13",
+        "price": 91,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 1",
+        "quantity": 18
+    },
+    {
+        "item_id": 14,
+        "shop_id": 1,
+        "name": "Item 14",
+        "price": 785,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 1",
+        "quantity": 92
+    },
+    {
+        "item_id": 15,
+        "shop_id": 1,
+        "name": "Item 15",
+        "price": 972,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 1",
+        "quantity": 69
+    },
+    {
+        "item_id": 16,
+        "shop_id": 1,
+        "name": "Item 16",
+        "price": 455,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 1",
+        "quantity": 58
+    },
+    {
+        "item_id": 17,
+        "shop_id": 1,
+        "name": "Item 17",
+        "price": 284,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 1",
+        "quantity": 52
+    },
+    {
+        "item_id": 18,
+        "shop_id": 1,
+        "name": "Item 18",
+        "price": 206,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 1",
+        "quantity": 7
+    },
+    {
+        "item_id": 19,
+        "shop_id": 1,
+        "name": "Item 19",
+        "price": 44,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 1",
+        "quantity": 28
+    },
+    {
+        "item_id": 0,
+        "shop_id": 2,
+        "name": "Item 0",
+        "price": 972,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 2",
+        "quantity": 9
+    },
+    {
+        "item_id": 1,
+        "shop_id": 2,
+        "name": "Item 1",
+        "price": 556,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 2",
+        "quantity": 57
+    },
+    {
+        "item_id": 2,
+        "shop_id": 2,
+        "name": "Item 2",
+        "price": 327,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 2",
+        "quantity": 41
+    },
+    {
+        "item_id": 3,
+        "shop_id": 2,
+        "name": "Item 3",
+        "price": 396,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 2",
+        "quantity": 32
+    },
+    {
+        "item_id": 4,
+        "shop_id": 2,
+        "name": "Item 4",
+        "price": 902,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 2",
+        "quantity": 21
+    },
+    {
+        "item_id": 5,
+        "shop_id": 2,
+        "name": "Item 5",
+        "price": 592,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 2",
+        "quantity": 41
+    },
+    {
+        "item_id": 6,
+        "shop_id": 2,
+        "name": "Item 6",
+        "price": 268,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 2",
+        "quantity": 86
+    },
+    {
+        "item_id": 7,
+        "shop_id": 2,
+        "name": "Item 7",
+        "price": 408,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 2",
+        "quantity": 1
+    },
+    {
+        "item_id": 8,
+        "shop_id": 2,
+        "name": "Item 8",
+        "price": 450,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 2",
+        "quantity": 35
+    },
+    {
+        "item_id": 9,
+        "shop_id": 2,
+        "name": "Item 9",
+        "price": 509,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 2",
+        "quantity": 43
+    },
+    {
+        "item_id": 10,
+        "shop_id": 2,
+        "name": "Item 10",
+        "price": 950,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 2",
+        "quantity": 82
+    },
+    {
+        "item_id": 11,
+        "shop_id": 2,
+        "name": "Item 11",
+        "price": 202,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 2",
+        "quantity": 95
+    },
+    {
+        "item_id": 12,
+        "shop_id": 2,
+        "name": "Item 12",
+        "price": 868,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 2",
+        "quantity": 34
+    },
+    {
+        "item_id": 13,
+        "shop_id": 2,
+        "name": "Item 13",
+        "price": 787,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 2",
+        "quantity": 66
+    },
+    {
+        "item_id": 14,
+        "shop_id": 2,
+        "name": "Item 14",
+        "price": 33,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 2",
+        "quantity": 95
+    },
+    {
+        "item_id": 15,
+        "shop_id": 2,
+        "name": "Item 15",
+        "price": 101,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 2",
+        "quantity": 72
+    },
+    {
+        "item_id": 16,
+        "shop_id": 2,
+        "name": "Item 16",
+        "price": 694,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 2",
+        "quantity": 90
+    },
+    {
+        "item_id": 17,
+        "shop_id": 2,
+        "name": "Item 17",
+        "price": 986,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 2",
+        "quantity": 98
+    },
+    {
+        "item_id": 18,
+        "shop_id": 2,
+        "name": "Item 18",
+        "price": 929,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 2",
+        "quantity": 1
+    },
+    {
+        "item_id": 19,
+        "shop_id": 2,
+        "name": "Item 19",
+        "price": 352,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 2",
+        "quantity": 79
+    },
+    {
+        "item_id": 0,
+        "shop_id": 3,
+        "name": "Item 0",
+        "price": 557,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 3",
+        "quantity": 34
+    },
+    {
+        "item_id": 1,
+        "shop_id": 3,
+        "name": "Item 1",
+        "price": 301,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 3",
+        "quantity": 29
+    },
+    {
+        "item_id": 2,
+        "shop_id": 3,
+        "name": "Item 2",
+        "price": 994,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 3",
+        "quantity": 45
+    },
+    {
+        "item_id": 3,
+        "shop_id": 3,
+        "name": "Item 3",
+        "price": 539,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 3",
+        "quantity": 75
+    },
+    {
+        "item_id": 4,
+        "shop_id": 3,
+        "name": "Item 4",
+        "price": 587,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 3",
+        "quantity": 80
+    },
+    {
+        "item_id": 5,
+        "shop_id": 3,
+        "name": "Item 5",
+        "price": 641,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 3",
+        "quantity": 95
+    },
+    {
+        "item_id": 6,
+        "shop_id": 3,
+        "name": "Item 6",
+        "price": 866,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 3",
+        "quantity": 36
+    },
+    {
+        "item_id": 7,
+        "shop_id": 3,
+        "name": "Item 7",
+        "price": 893,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 3",
+        "quantity": 85
+    },
+    {
+        "item_id": 8,
+        "shop_id": 3,
+        "name": "Item 8",
+        "price": 737,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 3",
+        "quantity": 66
+    },
+    {
+        "item_id": 9,
+        "shop_id": 3,
+        "name": "Item 9",
+        "price": 546,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 3",
+        "quantity": 11
+    },
+    {
+        "item_id": 10,
+        "shop_id": 3,
+        "name": "Item 10",
+        "price": 998,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 3",
+        "quantity": 60
+    },
+    {
+        "item_id": 11,
+        "shop_id": 3,
+        "name": "Item 11",
+        "price": 582,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 3",
+        "quantity": 79
+    },
+    {
+        "item_id": 12,
+        "shop_id": 3,
+        "name": "Item 12",
+        "price": 158,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 3",
+        "quantity": 22
+    },
+    {
+        "item_id": 13,
+        "shop_id": 3,
+        "name": "Item 13",
+        "price": 636,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 3",
+        "quantity": 13
+    },
+    {
+        "item_id": 14,
+        "shop_id": 3,
+        "name": "Item 14",
+        "price": 732,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 3",
+        "quantity": 32
+    },
+    {
+        "item_id": 15,
+        "shop_id": 3,
+        "name": "Item 15",
+        "price": 369,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 3",
+        "quantity": 45
+    },
+    {
+        "item_id": 16,
+        "shop_id": 3,
+        "name": "Item 16",
+        "price": 271,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 3",
+        "quantity": 60
+    },
+    {
+        "item_id": 17,
+        "shop_id": 3,
+        "name": "Item 17",
+        "price": 155,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 3",
+        "quantity": 95
+    },
+    {
+        "item_id": 18,
+        "shop_id": 3,
+        "name": "Item 18",
+        "price": 659,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 3",
+        "quantity": 98
+    },
+    {
+        "item_id": 19,
+        "shop_id": 3,
+        "name": "Item 19",
+        "price": 79,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 3",
+        "quantity": 66
+    },
+    {
+        "item_id": 0,
+        "shop_id": 4,
+        "name": "Item 0",
+        "price": 207,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 4",
+        "quantity": 61
+    },
+    {
+        "item_id": 1,
+        "shop_id": 4,
+        "name": "Item 1",
+        "price": 425,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 4",
+        "quantity": 5
+    },
+    {
+        "item_id": 2,
+        "shop_id": 4,
+        "name": "Item 2",
+        "price": 362,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 4",
+        "quantity": 26
+    },
+    {
+        "item_id": 3,
+        "shop_id": 4,
+        "name": "Item 3",
+        "price": 298,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 4",
+        "quantity": 50
+    },
+    {
+        "item_id": 4,
+        "shop_id": 4,
+        "name": "Item 4",
+        "price": 194,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 4",
+        "quantity": 15
+    },
+    {
+        "item_id": 5,
+        "shop_id": 4,
+        "name": "Item 5",
+        "price": 830,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 4",
+        "quantity": 33
+    },
+    {
+        "item_id": 6,
+        "shop_id": 4,
+        "name": "Item 6",
+        "price": 68,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 4",
+        "quantity": 86
+    },
+    {
+        "item_id": 7,
+        "shop_id": 4,
+        "name": "Item 7",
+        "price": 942,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 4",
+        "quantity": 19
+    },
+    {
+        "item_id": 8,
+        "shop_id": 4,
+        "name": "Item 8",
+        "price": 963,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 4",
+        "quantity": 52
+    },
+    {
+        "item_id": 9,
+        "shop_id": 4,
+        "name": "Item 9",
+        "price": 141,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 4",
+        "quantity": 93
+    },
+    {
+        "item_id": 10,
+        "shop_id": 4,
+        "name": "Item 10",
+        "price": 221,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 4",
+        "quantity": 72
+    },
+    {
+        "item_id": 11,
+        "shop_id": 4,
+        "name": "Item 11",
+        "price": 273,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 4",
+        "quantity": 15
+    },
+    {
+        "item_id": 12,
+        "shop_id": 4,
+        "name": "Item 12",
+        "price": 22,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 4",
+        "quantity": 24
+    },
+    {
+        "item_id": 13,
+        "shop_id": 4,
+        "name": "Item 13",
+        "price": 162,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 4",
+        "quantity": 60
+    },
+    {
+        "item_id": 14,
+        "shop_id": 4,
+        "name": "Item 14",
+        "price": 695,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 4",
+        "quantity": 9
+    },
+    {
+        "item_id": 15,
+        "shop_id": 4,
+        "name": "Item 15",
+        "price": 761,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 4",
+        "quantity": 35
+    },
+    {
+        "item_id": 16,
+        "shop_id": 4,
+        "name": "Item 16",
+        "price": 493,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 4",
+        "quantity": 88
+    },
+    {
+        "item_id": 17,
+        "shop_id": 4,
+        "name": "Item 17",
+        "price": 407,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 4",
+        "quantity": 70
+    },
+    {
+        "item_id": 18,
+        "shop_id": 4,
+        "name": "Item 18",
+        "price": 43,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 4",
+        "quantity": 58
+    },
+    {
+        "item_id": 19,
+        "shop_id": 4,
+        "name": "Item 19",
+        "price": 238,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 4",
+        "quantity": 30
+    },
+    {
+        "item_id": 0,
+        "shop_id": 5,
+        "name": "Item 0",
+        "price": 39,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 5",
+        "quantity": 72
+    },
+    {
+        "item_id": 1,
+        "shop_id": 5,
+        "name": "Item 1",
+        "price": 646,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 5",
+        "quantity": 87
+    },
+    {
+        "item_id": 2,
+        "shop_id": 5,
+        "name": "Item 2",
+        "price": 965,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 5",
+        "quantity": 56
+    },
+    {
+        "item_id": 3,
+        "shop_id": 5,
+        "name": "Item 3",
+        "price": 121,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 5",
+        "quantity": 85
+    },
+    {
+        "item_id": 4,
+        "shop_id": 5,
+        "name": "Item 4",
+        "price": 829,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 5",
+        "quantity": 83
+    },
+    {
+        "item_id": 5,
+        "shop_id": 5,
+        "name": "Item 5",
+        "price": 82,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 5",
+        "quantity": 33
+    },
+    {
+        "item_id": 6,
+        "shop_id": 5,
+        "name": "Item 6",
+        "price": 42,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 5",
+        "quantity": 63
+    },
+    {
+        "item_id": 7,
+        "shop_id": 5,
+        "name": "Item 7",
+        "price": 999,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 5",
+        "quantity": 23
+    },
+    {
+        "item_id": 8,
+        "shop_id": 5,
+        "name": "Item 8",
+        "price": 267,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 5",
+        "quantity": 50
+    },
+    {
+        "item_id": 9,
+        "shop_id": 5,
+        "name": "Item 9",
+        "price": 30,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 5",
+        "quantity": 97
+    },
+    {
+        "item_id": 10,
+        "shop_id": 5,
+        "name": "Item 10",
+        "price": 19,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 5",
+        "quantity": 53
+    },
+    {
+        "item_id": 11,
+        "shop_id": 5,
+        "name": "Item 11",
+        "price": 898,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 5",
+        "quantity": 23
+    },
+    {
+        "item_id": 12,
+        "shop_id": 5,
+        "name": "Item 12",
+        "price": 450,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 5",
+        "quantity": 19
+    },
+    {
+        "item_id": 13,
+        "shop_id": 5,
+        "name": "Item 13",
+        "price": 51,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 5",
+        "quantity": 57
+    },
+    {
+        "item_id": 14,
+        "shop_id": 5,
+        "name": "Item 14",
+        "price": 463,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 5",
+        "quantity": 53
+    },
+    {
+        "item_id": 15,
+        "shop_id": 5,
+        "name": "Item 15",
+        "price": 982,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 5",
+        "quantity": 36
+    },
+    {
+        "item_id": 16,
+        "shop_id": 5,
+        "name": "Item 16",
+        "price": 188,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 5",
+        "quantity": 15
+    },
+    {
+        "item_id": 17,
+        "shop_id": 5,
+        "name": "Item 17",
+        "price": 652,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 5",
+        "quantity": 0
+    },
+    {
+        "item_id": 18,
+        "shop_id": 5,
+        "name": "Item 18",
+        "price": 132,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 5",
+        "quantity": 27
+    },
+    {
+        "item_id": 19,
+        "shop_id": 5,
+        "name": "Item 19",
+        "price": 269,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 5",
+        "quantity": 50
+    },
+    {
+        "item_id": 0,
+        "shop_id": 6,
+        "name": "Item 0",
+        "price": 650,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 6",
+        "quantity": 90
+    },
+    {
+        "item_id": 1,
+        "shop_id": 6,
+        "name": "Item 1",
+        "price": 187,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 6",
+        "quantity": 77
+    },
+    {
+        "item_id": 2,
+        "shop_id": 6,
+        "name": "Item 2",
+        "price": 876,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 6",
+        "quantity": 62
+    },
+    {
+        "item_id": 3,
+        "shop_id": 6,
+        "name": "Item 3",
+        "price": 317,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 6",
+        "quantity": 40
+    },
+    {
+        "item_id": 4,
+        "shop_id": 6,
+        "name": "Item 4",
+        "price": 215,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 6",
+        "quantity": 25
+    },
+    {
+        "item_id": 5,
+        "shop_id": 6,
+        "name": "Item 5",
+        "price": 540,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 6",
+        "quantity": 10
+    },
+    {
+        "item_id": 6,
+        "shop_id": 6,
+        "name": "Item 6",
+        "price": 355,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 6",
+        "quantity": 0
+    },
+    {
+        "item_id": 7,
+        "shop_id": 6,
+        "name": "Item 7",
+        "price": 736,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 6",
+        "quantity": 37
+    },
+    {
+        "item_id": 8,
+        "shop_id": 6,
+        "name": "Item 8",
+        "price": 896,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 6",
+        "quantity": 76
+    },
+    {
+        "item_id": 9,
+        "shop_id": 6,
+        "name": "Item 9",
+        "price": 241,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 6",
+        "quantity": 45
+    },
+    {
+        "item_id": 10,
+        "shop_id": 6,
+        "name": "Item 10",
+        "price": 890,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 6",
+        "quantity": 38
+    },
+    {
+        "item_id": 11,
+        "shop_id": 6,
+        "name": "Item 11",
+        "price": 354,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 6",
+        "quantity": 26
+    },
+    {
+        "item_id": 12,
+        "shop_id": 6,
+        "name": "Item 12",
+        "price": 505,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 6",
+        "quantity": 7
+    },
+    {
+        "item_id": 13,
+        "shop_id": 6,
+        "name": "Item 13",
+        "price": 590,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 6",
+        "quantity": 53
+    },
+    {
+        "item_id": 14,
+        "shop_id": 6,
+        "name": "Item 14",
+        "price": 694,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 6",
+        "quantity": 94
+    },
+    {
+        "item_id": 15,
+        "shop_id": 6,
+        "name": "Item 15",
+        "price": 421,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 6",
+        "quantity": 93
+    },
+    {
+        "item_id": 16,
+        "shop_id": 6,
+        "name": "Item 16",
+        "price": 849,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 6",
+        "quantity": 76
+    },
+    {
+        "item_id": 17,
+        "shop_id": 6,
+        "name": "Item 17",
+        "price": 153,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 6",
+        "quantity": 60
+    },
+    {
+        "item_id": 18,
+        "shop_id": 6,
+        "name": "Item 18",
+        "price": 872,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 6",
+        "quantity": 3
+    },
+    {
+        "item_id": 19,
+        "shop_id": 6,
+        "name": "Item 19",
+        "price": 255,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 6",
+        "quantity": 58
+    },
+    {
+        "item_id": 0,
+        "shop_id": 7,
+        "name": "Item 0",
+        "price": 813,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 7",
+        "quantity": 52
+    },
+    {
+        "item_id": 1,
+        "shop_id": 7,
+        "name": "Item 1",
+        "price": 932,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 7",
+        "quantity": 7
+    },
+    {
+        "item_id": 2,
+        "shop_id": 7,
+        "name": "Item 2",
+        "price": 891,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 7",
+        "quantity": 19
+    },
+    {
+        "item_id": 3,
+        "shop_id": 7,
+        "name": "Item 3",
+        "price": 305,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 7",
+        "quantity": 84
+    },
+    {
+        "item_id": 4,
+        "shop_id": 7,
+        "name": "Item 4",
+        "price": 699,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 7",
+        "quantity": 16
+    },
+    {
+        "item_id": 5,
+        "shop_id": 7,
+        "name": "Item 5",
+        "price": 250,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 7",
+        "quantity": 9
+    },
+    {
+        "item_id": 6,
+        "shop_id": 7,
+        "name": "Item 6",
+        "price": 768,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 7",
+        "quantity": 17
+    },
+    {
+        "item_id": 7,
+        "shop_id": 7,
+        "name": "Item 7",
+        "price": 907,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 7",
+        "quantity": 31
+    },
+    {
+        "item_id": 8,
+        "shop_id": 7,
+        "name": "Item 8",
+        "price": 371,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 7",
+        "quantity": 38
+    },
+    {
+        "item_id": 9,
+        "shop_id": 7,
+        "name": "Item 9",
+        "price": 352,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 7",
+        "quantity": 37
+    },
+    {
+        "item_id": 10,
+        "shop_id": 7,
+        "name": "Item 10",
+        "price": 163,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 7",
+        "quantity": 84
+    },
+    {
+        "item_id": 11,
+        "shop_id": 7,
+        "name": "Item 11",
+        "price": 634,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 7",
+        "quantity": 54
+    },
+    {
+        "item_id": 12,
+        "shop_id": 7,
+        "name": "Item 12",
+        "price": 455,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 7",
+        "quantity": 30
+    },
+    {
+        "item_id": 13,
+        "shop_id": 7,
+        "name": "Item 13",
+        "price": 855,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 7",
+        "quantity": 56
+    },
+    {
+        "item_id": 14,
+        "shop_id": 7,
+        "name": "Item 14",
+        "price": 774,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 7",
+        "quantity": 89
+    },
+    {
+        "item_id": 15,
+        "shop_id": 7,
+        "name": "Item 15",
+        "price": 546,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 7",
+        "quantity": 96
+    },
+    {
+        "item_id": 16,
+        "shop_id": 7,
+        "name": "Item 16",
+        "price": 463,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 7",
+        "quantity": 23
+    },
+    {
+        "item_id": 17,
+        "shop_id": 7,
+        "name": "Item 17",
+        "price": 396,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 7",
+        "quantity": 29
+    },
+    {
+        "item_id": 18,
+        "shop_id": 7,
+        "name": "Item 18",
+        "price": 679,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 7",
+        "quantity": 53
+    },
+    {
+        "item_id": 19,
+        "shop_id": 7,
+        "name": "Item 19",
+        "price": 861,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 7",
+        "quantity": 58
+    },
+    {
+        "item_id": 0,
+        "shop_id": 8,
+        "name": "Item 0",
+        "price": 25,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 8",
+        "quantity": 12
+    },
+    {
+        "item_id": 1,
+        "shop_id": 8,
+        "name": "Item 1",
+        "price": 708,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 8",
+        "quantity": 0
+    },
+    {
+        "item_id": 2,
+        "shop_id": 8,
+        "name": "Item 2",
+        "price": 865,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 8",
+        "quantity": 97
+    },
+    {
+        "item_id": 3,
+        "shop_id": 8,
+        "name": "Item 3",
+        "price": 172,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 8",
+        "quantity": 72
+    },
+    {
+        "item_id": 4,
+        "shop_id": 8,
+        "name": "Item 4",
+        "price": 980,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 8",
+        "quantity": 43
+    },
+    {
+        "item_id": 5,
+        "shop_id": 8,
+        "name": "Item 5",
+        "price": 165,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 8",
+        "quantity": 75
+    },
+    {
+        "item_id": 6,
+        "shop_id": 8,
+        "name": "Item 6",
+        "price": 948,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 8",
+        "quantity": 83
+    },
+    {
+        "item_id": 7,
+        "shop_id": 8,
+        "name": "Item 7",
+        "price": 710,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 8",
+        "quantity": 65
+    },
+    {
+        "item_id": 8,
+        "shop_id": 8,
+        "name": "Item 8",
+        "price": 364,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 8",
+        "quantity": 10
+    },
+    {
+        "item_id": 9,
+        "shop_id": 8,
+        "name": "Item 9",
+        "price": 300,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 8",
+        "quantity": 20
+    },
+    {
+        "item_id": 10,
+        "shop_id": 8,
+        "name": "Item 10",
+        "price": 388,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 8",
+        "quantity": 70
+    },
+    {
+        "item_id": 11,
+        "shop_id": 8,
+        "name": "Item 11",
+        "price": 309,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 8",
+        "quantity": 82
+    },
+    {
+        "item_id": 12,
+        "shop_id": 8,
+        "name": "Item 12",
+        "price": 468,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 8",
+        "quantity": 49
+    },
+    {
+        "item_id": 13,
+        "shop_id": 8,
+        "name": "Item 13",
+        "price": 953,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 8",
+        "quantity": 74
+    },
+    {
+        "item_id": 14,
+        "shop_id": 8,
+        "name": "Item 14",
+        "price": 153,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 8",
+        "quantity": 48
+    },
+    {
+        "item_id": 15,
+        "shop_id": 8,
+        "name": "Item 15",
+        "price": 440,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 8",
+        "quantity": 0
+    },
+    {
+        "item_id": 16,
+        "shop_id": 8,
+        "name": "Item 16",
+        "price": 233,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 8",
+        "quantity": 17
+    },
+    {
+        "item_id": 17,
+        "shop_id": 8,
+        "name": "Item 17",
+        "price": 362,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 8",
+        "quantity": 95
+    },
+    {
+        "item_id": 18,
+        "shop_id": 8,
+        "name": "Item 18",
+        "price": 320,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 8",
+        "quantity": 81
+    },
+    {
+        "item_id": 19,
+        "shop_id": 8,
+        "name": "Item 19",
+        "price": 792,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 8",
+        "quantity": 94
+    },
+    {
+        "item_id": 0,
+        "shop_id": 9,
+        "name": "Item 0",
+        "price": 197,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.0 of shop 9",
+        "quantity": 0
+    },
+    {
+        "item_id": 1,
+        "shop_id": 9,
+        "name": "Item 1",
+        "price": 889,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.1 of shop 9",
+        "quantity": 84
+    },
+    {
+        "item_id": 2,
+        "shop_id": 9,
+        "name": "Item 2",
+        "price": 857,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.2 of shop 9",
+        "quantity": 57
+    },
+    {
+        "item_id": 3,
+        "shop_id": 9,
+        "name": "Item 3",
+        "price": 755,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.3 of shop 9",
+        "quantity": 14
+    },
+    {
+        "item_id": 4,
+        "shop_id": 9,
+        "name": "Item 4",
+        "price": 742,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.4 of shop 9",
+        "quantity": 37
+    },
+    {
+        "item_id": 5,
+        "shop_id": 9,
+        "name": "Item 5",
+        "price": 362,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.5 of shop 9",
+        "quantity": 28
+    },
+    {
+        "item_id": 6,
+        "shop_id": 9,
+        "name": "Item 6",
+        "price": 861,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.6 of shop 9",
+        "quantity": 10
+    },
+    {
+        "item_id": 7,
+        "shop_id": 9,
+        "name": "Item 7",
+        "price": 402,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.7 of shop 9",
+        "quantity": 90
+    },
+    {
+        "item_id": 8,
+        "shop_id": 9,
+        "name": "Item 8",
+        "price": 573,
+        "category": "Others",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.8 of shop 9",
+        "quantity": 12
+    },
+    {
+        "item_id": 9,
+        "shop_id": 9,
+        "name": "Item 9",
+        "price": 363,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.9 of shop 9",
+        "quantity": 50
+    },
+    {
+        "item_id": 10,
+        "shop_id": 9,
+        "name": "Item 10",
+        "price": 239,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.10 of shop 9",
+        "quantity": 98
+    },
+    {
+        "item_id": 11,
+        "shop_id": 9,
+        "name": "Item 11",
+        "price": 81,
+        "category": "Edible",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.11 of shop 9",
+        "quantity": 26
+    },
+    {
+        "item_id": 12,
+        "shop_id": 9,
+        "name": "Item 12",
+        "price": 960,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.12 of shop 9",
+        "quantity": 66
+    },
+    {
+        "item_id": 13,
+        "shop_id": 9,
+        "name": "Item 13",
+        "price": 900,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.13 of shop 9",
+        "quantity": 60
+    },
+    {
+        "item_id": 14,
+        "shop_id": 9,
+        "name": "Item 14",
+        "price": 558,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.14 of shop 9",
+        "quantity": 75
+    },
+    {
+        "item_id": 15,
+        "shop_id": 9,
+        "name": "Item 15",
+        "price": 89,
+        "category": "Sports",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.15 of shop 9",
+        "quantity": 27
+    },
+    {
+        "item_id": 16,
+        "shop_id": 9,
+        "name": "Item 16",
+        "price": 896,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.16 of shop 9",
+        "quantity": 39
+    },
+    {
+        "item_id": 17,
+        "shop_id": 9,
+        "name": "Item 17",
+        "price": 510,
+        "category": "Stationary",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.17 of shop 9",
+        "quantity": 64
+    },
+    {
+        "item_id": 18,
+        "shop_id": 9,
+        "name": "Item 18",
+        "price": 944,
+        "category": "LifeStyle",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.18 of shop 9",
+        "quantity": 40
+    },
+    {
+        "item_id": 19,
+        "shop_id": 9,
+        "name": "Item 19",
+        "price": 592,
+        "category": "Electronics",
+        "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "description": "This is a sample description for the item.19 of shop 9",
+        "quantity": 89
+    }
+]

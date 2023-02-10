@@ -1,0 +1,140 @@
+.error{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff6c2;
+}
+
+.error__container{
+    height: 500px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebb216;
+    box-shadow : 0 5px 10px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left h1{
+    font-size: 70px;
+    font-weight: 700;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f2f2f;
+    background: #fecb3e;
+    border-radius: 50%;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.right h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #2f2f2f;
+}
+
+.right h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2f2f2f;
+}
+
+.right a{
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #fecb3e;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.right a:hover{
+    background: #fff6c2;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px){
+    .error__container{
+        width : 70%;
+    }
+
+    .left h1{
+        font-size: 50px;
+        width : 200px;
+        height: 200px;
+    }
+
+    .right h1{
+        font-size: 50px;
+    }
+
+    .right h2{
+        font-size: 20px;
+    }
+
+    .right a{
+        font-size: 15px;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+    .error__container{
+        width : 100%;
+        flex-direction: column;
+    }
+
+    .right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right h1{
+        font-size: 50px;
+    }
+
+    .right h2{
+        font-size: 20px;
+    }
+
+    .right a{
+        font-size: 15px;
+    }
+
+
+}
