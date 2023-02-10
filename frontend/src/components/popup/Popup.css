@@ -1,10 +1,14 @@
 .boxpp{
-    position: relative;
+    position: fixed;
+    z-index: 10000;
+    top: 20vh; 
     visibility: hidden;
     height: 50vh;
     width: 40vw;
     box-shadow: 0 0 5px rgb(97, 95, 95);
     margin-left: 30vw;
+    background-color: white;
+    border-radius: 5px;
 }
 .cross_pop{
     position: absolute;
@@ -39,4 +43,4 @@
 }
 .student_button{
     margin-top: 15vh;
-}
+} 

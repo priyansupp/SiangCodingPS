@@ -1,0 +1,13 @@
+.nav_bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.mid{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 0;
+}
+.footer_mp{
+    margin-top: 20vh;
+}

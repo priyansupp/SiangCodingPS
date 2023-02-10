@@ -1,0 +1,18 @@
+.head_listItem{
+    font-size: 5vh;
+}
+.item_list_sec{
+    display: flex;
+    margin-top: 5vh;
+}
+.about_item_list{
+    width: 25vw;
+}
+.item_img_list{
+    width: 4vw;
+    height: 6vh;
+}
+.item_name_list{
+    font-size: 4vh;
+    font-weight: 500;
+}

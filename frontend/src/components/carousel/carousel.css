@@ -1,0 +1,9 @@
+.card_scroll{
+    display: flex; 
+    overflow-x: auto;
+    margin-top: 10vh;
+    gap: 2vw;
+}
+.card_scroll::-webkit-scrollbar {
+    display: none;
+}

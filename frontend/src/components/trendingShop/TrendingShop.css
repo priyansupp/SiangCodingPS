@@ -1,0 +1,14 @@
+.Trending_main{
+    margin-top: 10vh;
+}
+.heading_shop{
+    font-size: 4vh;
+}
+.shop_scroll{
+    display: flex; 
+    overflow-x: auto;
+    gap: 2vw;
+}
+.shop_scroll::-webkit-scrollbar {
+    display: none;
+}
