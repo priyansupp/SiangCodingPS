@@ -38,7 +38,7 @@ function Footer() {
               <div className='HP_u_3abaa'>Call Us: </div> 123-456-7890
             </div>
             <div className='HP_u_3abb'>
-              <div className='HP_u_3abba'>Email us: </div>  SIANG@iitg.ac.in
+              <div className='HP_u_3abba'>Email us: </div>  <a href="mailto: siang@iitg.ac.in">siang@iitg.ac.in</a>
             </div>
           </div>
           <div className='HP_u_3c'>

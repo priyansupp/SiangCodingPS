@@ -19,5 +19,14 @@
         "new_price":"$200",
         "validity":"Wednesday, 28feb",
         "img_link":"https://www.iitg.ac.in/storage/gallery/1/1205088503.jpg"
-    }]
+    },
+    {
+        "product":"Pizza",
+        "offer_name":"50% OFF",
+        "new_price":"$200",
+        "validity":"Wednesday, 28feb",
+        "img_link":"https://www.iitg.ac.in/storage/gallery/1/1205088503.jpg"
+    }
+    
+    ]
 }

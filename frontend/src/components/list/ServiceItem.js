@@ -1,14 +1,12 @@
 import React from 'react';
 import data from '../../database/service_list.json'
 import './ServiceList.css'
+import {MdOutlineLibraryAdd} from 'react-icons/md'
 
 function ServiceItem() {
   return (
     <div>
       <div>
-        <div className='head_listService'>
-          Services
-        </div>
             {data.service.map((data)=>{
                 return(
                   <div className='service_list_sec'>
@@ -19,8 +17,10 @@ function ServiceItem() {
                       </div>
                       <div className='service_des_list'>
                           {data.sevice_des}
+                            <div className='cart_list'>
+                                <MdOutlineLibraryAdd/>
+                            </div>
                       </div>
-                      <hr></hr>
                   </div>
               </div>   
                 )
