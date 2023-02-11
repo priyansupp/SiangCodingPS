@@ -1,6 +1,6 @@
 import React from 'react';
 import ShopCard from './ShopCard';
-import shopImage from '../../assets/Shop/roasted_pot.png'
+import data from '../../database/trendingShops.json'
 import './TrendingShop.css'
 
 function TrendingShop() {
@@ -10,10 +10,11 @@ function TrendingShop() {
                 Trending Shop
             </div>
             <div className='shop_scroll'>
-                <ShopCard img_card={shopImage}/>
-                <ShopCard img_card={shopImage}/>
-                <ShopCard img_card={shopImage}/>
-                <ShopCard img_card={shopImage}/>         
+                {data.trendingShops.map((data)=>{
+                  return(
+                    <ShopCard img={data.shop_img_link} name={data.shopName} contact={data.shopContact}/>
+                  )
+                })}       
             </div>
     </div>
   );

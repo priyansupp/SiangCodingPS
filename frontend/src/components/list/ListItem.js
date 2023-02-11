@@ -1,14 +1,12 @@
 import React from 'react';
 import data from '../../database/Item_list.json'
 import './ListItem.css'
+import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 function ListItem() {
   return (
     <div>
         <div>
-            <div className='head_listItem'>
-                Items
-            </div>
             {data.item.map((data)=>{
                 return(
                     <div className='item_list_sec'>
@@ -19,8 +17,11 @@ function ListItem() {
                             </div>
                             <div className='item_des_list'>
                                 {data.img_des}
+                                <div className='cart_list'>
+                                    <AiOutlineShoppingCart/>
+                                </div>
                             </div>
-                            <hr></hr>
+                             
                         </div>
                     </div>   
                 )

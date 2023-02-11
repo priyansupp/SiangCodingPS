@@ -7,7 +7,18 @@
     position: relative;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
 }
-
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
 .HP_u {
     display: grid;
     grid-template-columns: 30% 0% 50% 20%;
@@ -31,8 +42,8 @@
     color: #000000;
     /* display: flex; */
     /* align-items: center; */
-    margin-left: 8vw;
-    margin-top: 3.5vh;
+    margin-left: 5vw;
+    margin-top: 2vh;
 }
 .HP_u_3{
     margin-left: 10vw;

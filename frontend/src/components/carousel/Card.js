@@ -4,6 +4,7 @@ import './card.css';
 function Card(props) {
   return (
     <div className='sale_card'>
+      
         <img src={props.img_card} alt='card' className='card_img'></img>
         <div className='offer_container'>
           <div className='prod_name'>
@@ -21,6 +22,7 @@ function Card(props) {
             Valid Till: {props.valid}
           </div>
         </div>
+    
     </div>
   );
 }
