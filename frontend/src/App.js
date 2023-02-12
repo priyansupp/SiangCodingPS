@@ -1,23 +1,20 @@
 import Homepage from "./pages/Homepage";
 import Productdescriptionpage from "./pages/Productdescriptionpage";
-import {Routes,Route, BrowserRouter} from "react-router-dom";
+import {Routes,Route} from "react-router-dom";
 import Servicedescriptionpage from "./pages/Servicedescriptionpage";
-
+import Itemspage from "./pages/Itemspage";
+import Errorpage from "./pages/error";
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
-          <Routes>
-            <Route exact path="/" element={<Homepage />}>
-               
-            </Route>
-            <Route exact path="/prodes" element={<Productdescriptionpage />}>
-              
-            </Route>
-            <Route exact path="/service" element={<Servicedescriptionpage/>}></Route>
-          </Routes>
-        </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/items" element={<Itemspage />} />
+        <Route path="/prodes" element={<Productdescriptionpage />}/>
+        <Route path="/service" element={<Servicedescriptionpage/>}/>
+        <Route path="*" element={<Errorpage />} />
+      </Routes>
     </div>
   );
 }

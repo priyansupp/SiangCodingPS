@@ -1,0 +1,34 @@
+.head_listItem{
+    font-size: 5vh;
+}
+.item_list_sec{
+    display: flex;
+    margin-top: 5vh;
+    border-bottom: 1px solid black;
+}
+.about_item_list{
+    width: 35vw;
+    margin-bottom: 3vh;
+}
+.item_img_list{
+    width: 8vw;
+    height: 10vh;
+    margin-right: 2vw;
+}
+.item_img_list:hover{
+    transform: scale(1.1);
+}
+.item_name_list{
+    font-size: 4vh;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+.item_des_list{
+    display: flex;
+    justify-content: space-between;
+}
+.cart_list{
+    margin-right: 2vw;
+    font-size: 3vh;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+img{
+    cursor: pointer;
+}
+.full_List{
+    margin-top: 10vh;
+}
+.head1{
+    text-align: center;
+    font-size: 7vh;
+    font-weight: 500;
+    /* font-family: 'Roboto', sans-serif; */
+    font-style: normal;
+}
+.switch_list{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    
+}
+.items_list_button, .services_list_button{
+    border: none;
+    background-color: #F6F7F7;
+    height: 8vh;
+    width: 10vw;
+    font-size: 2.5vh;
+    font-weight: 500;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
+}
+.items_list_button:hover{
+    background: #cad4d4;
+}
+.services_list_button:hover{
+    background: #cad4d4;
+}
+.items_list_button_after, .services_list_button_after{
+    background-color: white;
+    border: none;
+    height: 8vh;
+    width: 10vw;
+    border-bottom: 2px solid #333333;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+.full_List_flex{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}

@@ -1,0 +1,36 @@
+.sale_card{
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+    
+}
+.card_img{
+    width: 35vw;
+    height: auto;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.offer_container{
+    width: 35vw;
+    background: rgb(238, 246, 250);
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.prod_name{
+    font-size: 7vh;
+    font-weight: 700;
+    margin-top: 5vh;
+    letter-spacing: 1vw;
+}
+.offer_name{
+    font-size: 9vh;
+    font-weight: 700;
+    margin-top: 8vh;
+}
+.spec_price{
+    font-size: 3vh;
+    font-weight: 600;
+    margin-top: 12vh;
+}

@@ -1,22 +1,25 @@
 import './navbar.css'
+import logo from '../../assets/footer/lenden.jpeg'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 function Navbar(){
     const[pop, setpop] = useState(0);
+    const[Search, setSearch] = useState(''); 
     useEffect(()=>{
         if(pop){
             document.querySelector('.others').style.filter="blur(8px)"
             document.querySelector('.boxpp').style.visibility = "visible"
             setpop(0);
         }
-    }, [pop])
+        console.log(Search);
+    }, [pop, Search])
     return(
         <div className='nav'>
             <div className='logo'>
-                Len-Den
+                <img src={logo} alt='logo' className='logo_img'></img>
             </div>
             <div className='search_home'>
-                <input type='text' className='search_item' placeholder='Search items or services'></input>
+                <input type='text' className='search_item' placeholder='Search items or services' onChange={e=>setSearch(e.currentTarget.value)}></input>
             </div>
             <div className='login'>
                 <button className='login_button' onClick={()=>setpop(1)}>Login</button>

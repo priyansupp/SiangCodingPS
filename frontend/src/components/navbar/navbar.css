@@ -1,5 +1,8 @@
 .nav{
     display: flex;
+    width: 100%;
+    top: 0;
+    background: rgb(238, 246, 250);
     height: 18vh;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
 }
@@ -12,22 +15,22 @@ button{
     font-style: normal;
     font-size: 4vh;
     margin-left: 5vw;
-    margin-top: 6.5vh;
-}
-.search_home{ 
-    border-radius: 4px;
-    background: #FFFFFF;
-    margin-left: 5vw;
-    margin-top: 6vh;
+    margin-top: 4.5vh;
+    font-weight: 700;
 }
 .search_item{
     background: url("../../assets/navbar/search.png");
     background-position-y: 2vh;
     background-position-x: 0.8vw;
     background-repeat: no-repeat;
+    background: white;
+    opacity: 100%;
     padding-left: 4vw;
+    border-radius: 4px;
+    margin-left: 5vw;
+    margin-top: 6vh;
     height: 6vh;
-    width: 50vw;
+    width: 60vw;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: rgba(51, 51, 51, 0.5);

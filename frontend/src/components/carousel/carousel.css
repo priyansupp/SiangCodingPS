@@ -1,0 +1,41 @@
+.card_scroll{
+    height: 100%;
+    position: relative;
+    margin-top: 6vh;
+}
+/* .card_scroll::-webkit-scrollbar {
+    display: none;
+} */
+.slider_offers{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.leftArrow_slider{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 7.5vw;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 7vh;
+    font-weight: 500;
+    color: rgb(146, 215, 250);;
+}
+.rightArrow_slider{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 7.5vw;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 7vh;
+    font-weight: 500;
+    color: rgb(146, 215, 250);;
+}
+.leftArrow_slider:hover{
+    color: rgb(255, 200, 180);
+}
+.rightArrow_slider:hover{
+    color: rgb(255, 200, 180);
+}
