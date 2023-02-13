@@ -28,8 +28,8 @@ class User(models.Model):
     is_customer = models.BooleanField(default=True)
     image = models.ImageField(upload_to="images")
 
-    def __str__(self) -> str:
-        return "User model"
+    def __str__(self):
+        return self.name
 
 class Customer(models.Model):
     # default customer id provided by django
@@ -79,7 +79,7 @@ class Transaction(models.Model):
 class Shopkeeper(models.Model):
     # default shopkeeper id provided by django
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    shop_id = models.ForeignKey('Shop', on_delete=models.CASCADE) # a shopkeeper can be owner of only one shop.
+    
     name = models.CharField(max_length=200)
     contact = models.IntegerField()
     email_id = models.EmailField()

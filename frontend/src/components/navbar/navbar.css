@@ -1,4 +1,5 @@
 .nav{
+    position: relative;
     display: flex;
     width: 100%;
     top: 0;
@@ -11,12 +12,14 @@ button{
     cursor: pointer;
 }
 .logo{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 4vh;
-    margin-left: 5vw;
-    margin-top: 4.5vh;
-    font-weight: 700;
+    position: relative;
+    top: 5vh;
+    left: 3vw;
+    height: 8vh;
+}
+.logo_img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .search_item{
     background: url("../../assets/navbar/search.png");
@@ -67,4 +70,53 @@ button{
     font-size: 6vh;
     margin-left: 3vw;
     cursor: pointer;
+}
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .search_item{
+        width: 50vw;
+        font-size: 20px;
+        margin-right: 3vw;
+    }
+    .logo{
+        width: 30vw;
+        height: 5vh;
+        margin-top: 1.5vh;
+        margin-left: 3vw;
+    }
+    .login_button{
+        width: 10vw;
+        height: 5vh;
+        font-size: 20px;
+        margin-left: 0vw;
+        margin-top: 6.5vh;
+    }
+    .cart{
+        margin-right: 5vw;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .search_item{
+        width: 45vw;
+        font-size: 3.5vw;
+        margin-right: 3vw;
+        padding-left: 1vw;
+    }
+    .logo{
+        width: 20vw;
+        height: 5vh;
+        margin-top: 1.5vh;
+        margin-left: 3vw;
+    }
+    .login_button{
+        width: 10vw;
+        height: 5vh;
+        font-size: 3.5vw;
+        margin-left: 0vw;
+        margin-top: 6.5vh;
+    }
+    .cart{
+        margin-right: vw;
+        font-size: 35px;
+    }
 }
