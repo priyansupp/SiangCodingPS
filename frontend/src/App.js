@@ -1,5 +1,7 @@
 import Homepage from "./pages/Homepage";
-import {Routes, Route} from "react-router-dom";
+import Productdescriptionpage from "./pages/Productdescriptionpage";
+import {Routes,Route} from "react-router-dom";
+import Servicedescriptionpage from "./pages/Servicedescriptionpage";
 import Itemspage from "./pages/Itemspage";
 import Errorpage from "./pages/error";
 
@@ -9,7 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/items" element={<Itemspage />} />
-        {/* <Route path="/items/:id" element={<Itempage />} /> */}
+        <Route path="/prodes" element={<Productdescriptionpage />}/>
+        <Route path="/service" element={<Servicedescriptionpage/>}/>
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </div>
