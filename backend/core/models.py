@@ -13,12 +13,13 @@ class Item(models.Model):
         ('Li', 'Lifestyles')
     ]
     category = models.CharField(choices=CategoryChoices, default='Ed', max_length=2) 
+    name = models.CharField(default="Item name", max_length=100)
     shop_id = models.IntegerField()
     quantity = models.IntegerField()
     image = models.ImageField(upload_to="images")
 
     def __str__(self) -> str:
-        return "Item model"
+        return f'id={self.id} and name={self.name} and shop={self.shop_id}'
 
 
 class User(models.Model):
