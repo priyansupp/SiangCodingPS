@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { GrAdd, GrSubtract } from "react-icons/gr";
 import Startrating from "../starrating/Starrating";
 import {IoMdCall} from "react-icons/io";
+import Footer from "../footer/Footer";
+import Navbar from "../navbar/Navbar";
 
 function Wrapper() {
   const [count, setcount] = useState(1);
@@ -71,6 +73,7 @@ function Wrapper() {
   );
   return (
     <section className="background">
+      <Navbar/>
       <div className="details" key={product._id}>
         <div className="big-img">
           <img src={product.src} alt="" />
@@ -172,6 +175,7 @@ function Wrapper() {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 }

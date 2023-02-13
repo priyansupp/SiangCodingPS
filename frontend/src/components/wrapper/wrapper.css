@@ -9,7 +9,10 @@ div {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
- 
+  margin-top: 2vh;
+  padding: 4.5vh 0;
+
+
   margin: 3vh 3vh;
   /* border-radius: 3vh; */
 }
@@ -24,7 +27,7 @@ div {
 .big-img img {
   width: 100%;
   height: 100%;
-  max-height: 30vw;
+  max-height: 60vw;
   display: block;
   object-fit: cover;
 }
@@ -48,7 +51,7 @@ div {
   font-size: 3.5vh;
   font-weight: 700;
   color: #0c0b0c;
-  margin-top: 1vw ;
+  margin-top: 1vw;
   margin-bottom: 1vw;
   margin-right: 1vw;
 }
@@ -63,6 +66,10 @@ div {
 .box {
   max-width: 48vw;
   padding: 0 0;
+
+  margin: 0 0;
+  margin-bottom: 8vh;
+
 }
 
 .box p {
@@ -84,22 +91,22 @@ div {
   box-shadow: 0 0 5px rgb(97, 95, 95);
   border-radius: 10vw;
   align-self: center;
-color: aliceblue;
-margin-left: 0;
-margin-right:10vw
+  color: aliceblue;
+  margin-left: 0;
+  margin-right: 10vw
 }
+
 .cart1 {
   padding: 1vw 3vw;
   font-size: 3vh;
   border: none;
-  background:orange;
+  background: orange;
   box-shadow: 0 0 5px rgb(97, 95, 95);
   border-radius: 10vw;
   align-self: center;
-color: aliceblue;
-margin-left: 0;
-margin-right:10vw
-
+  color: aliceblue;
+  margin-left: 0;
+  margin-right: 10vw
 }
 
 
@@ -150,6 +157,7 @@ margin-right:10vw
   margin-bottom: 1vw;
 
 }
+
 .owener-imp-det {
   display: flex;
   align-content: flex-start;
@@ -159,11 +167,10 @@ margin-right:10vw
 
 .owner-img {
   display: inline-block;
- 
   max-width: 17vw;
   margin-right: 1.5vw;
-  margin-bottom:1.5vw;
-  
+  margin-bottom: 1.5vw;
+
 }
 
 .owner-name {
@@ -171,16 +178,16 @@ margin-right:10vw
   font-size: 5vh;
   align-self: center;
   font-weight: bold;
- 
+
 }
 
 .owner-img img {
   max-width: 15vw;
   min-width: 5vw;
   overflow: hidden;
-  
+
   clip-path: circle();
-  
+
 }
 
 .price-before-offer {
@@ -198,7 +205,7 @@ margin-right:10vw
   align-content: start;
   max-width: 28.77vw;
   font-size: 3vh;
-  
+
 }
 
 .buy-now {
@@ -211,11 +218,13 @@ margin-right:10vw
   color: #37ea40;
   margin-bottom: 1vw;
 }
+
 .shop-title {
   font-size: 5vh;
   font-weight: bold;
 }
-.area{
+
+.area {
   font-size: 5vh;
   font-weight: bold;
   margin-left: 15vw;

@@ -2,27 +2,12 @@ import React from "react";
 import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
 import "../wrapper/wrapper.css";
+import Footer from "../footer/Footer";
+import Navbar from "../navbar/Navbar";
 
-// import { useState } from "react";
-// function tConvert (time) {
-//   // Check correct time format and split into components
-//   time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
 
-//   if (time.length > 1) { // If time format correct
-//     time = time.slice (1);  // Remove full string match value
-//     time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
-//     time[0] = +time[0] % 12 || 12; // Adjust hours
-//   }
-//   return time.join (''); // return adjusted time or original string
-// }
 function ServiceWrapper() {
-  // const[time,settime]= useState(new Date());
-  // const today=new Date();
-  // console.log(tConvert(today.getHours()+':'+today.getMinutes()))
-  
-  // const minVal= new Date("02/11/2023 10:00 AM");
-  // const maxVal = new Date("02/11/2023 09:30 PM");
-  // console.log({time})
+ 
   const service = {
     _id: "1",
     title: "Hair Cut",
@@ -72,6 +57,7 @@ function ServiceWrapper() {
   );
   return (
     <section>
+      <Navbar/>
       <div className="details" key={service._id}>
         <div className="big-img">
           <img src={service.src} alt="" />
@@ -84,14 +70,7 @@ function ServiceWrapper() {
           <Startrating stars={service.rating} />
           <div className="remaining">{service.description}</div>
           {price}
-          {/* <div className="timepicker"><TimePickerComponent placeholder="Schedule your appointment " 
-            value={time}
-            min={minVal}
-            max={maxVal}
-            onChange={(ev)=>{
-              if(ev.value>=today){settime(ev.value);}
-            else{alert("choosen a wrong value");
-            }}}/></div> */}
+         
           <div className="buy-now">
             <button className="cart">Book Now</button>
           </div>
@@ -138,6 +117,7 @@ function ServiceWrapper() {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 }
