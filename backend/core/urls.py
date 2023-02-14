@@ -1,6 +1,11 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from . import views
+
+router = routers.DefaultRouter()
+router.register(r'customer', views.CustomerView)
+router.register(r'shopkeeper', views.ShopkeeperView)
 
 urlpatterns = [
-    # path('shopkeeper/', ),
-    # path('customer/', ),
+    path('', include(router.urls)),
 ]
