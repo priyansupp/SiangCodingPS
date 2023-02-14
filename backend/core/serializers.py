@@ -5,7 +5,7 @@ class CustomerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Customer
         fields = '__all__'
-        
+
         
 class ShopkeeperSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,9 +13,20 @@ class ShopkeeperSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class ShopSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Shop
+        fields = '__all__'
+
+
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
+        fields = '__all__'
+
+class ServiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Service
         fields = '__all__'
 
 
