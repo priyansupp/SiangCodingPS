@@ -1,5 +1,5 @@
 import './navbar.css'
-import logo from '../../assets/footer/lenden.jpeg'
+import logo from '../../assets/navbar/lenden_logo.png'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';

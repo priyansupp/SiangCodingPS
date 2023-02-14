@@ -1,7 +1,7 @@
 .nav{
     position: relative;
     display: flex;
-    width: 100%;
+    width:100%;
     top: 0;
     background: rgb(238, 246, 250);
     height: 18vh;
@@ -96,27 +96,31 @@ button{
     }
 }
 @media screen and (max-width: 650px) and (min-width: 0px){
+    .nav{
+        width: 100%;
+        margin: 0;
+    }
     .search_item{
-        width: 45vw;
+        width: 50vw;
         font-size: 3.5vw;
         margin-right: 3vw;
         padding-left: 1vw;
     }
     .logo{
-        width: 20vw;
+        width: 30vw;
         height: 5vh;
         margin-top: 1.5vh;
         margin-left: 3vw;
     }
     .login_button{
-        width: 10vw;
+        width: 13vw;
         height: 5vh;
         font-size: 3.5vw;
         margin-left: 0vw;
         margin-top: 6.5vh;
     }
     .cart{
-        margin-right: vw;
+        margin-right: 3vw;
         font-size: 35px;
     }
 }

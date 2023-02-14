@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import {RxCross1} from 'react-icons/rx'
 import './Popup.css'
 
 function Popup() {
@@ -16,7 +15,6 @@ function Popup() {
 
   return (
     <div className='boxpp'>
-      <RxCross1 className='cross_pop' onClick={()=>setpop(0)}/>
       <div className='login_pop'>
         <div className='student'>
           <button className='student_button'>Login as Student</button>
