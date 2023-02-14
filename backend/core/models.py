@@ -1,4 +1,7 @@
 from django.db import models
+from django.contrib.auth.base_user import AbstractBaseUser
+from django.contrib.auth.base_user import BaseUserManager
+from django.contrib.auth.models import PermissionsMixin
 
 # Create your models here.
 
@@ -22,15 +25,27 @@ class Item(models.Model):
         return f'id={self.id} and name={self.name} and shop={self.shop_id}'
 
 
+# class User(AbstractBaseUser, PermissionsMixin):
+#     email = models.EmailField(unique=True)
+#     name = models.CharField(max_length=200)
+#     password = models.CharField(max_length=200, help_text="Enter your password")
+#     is_shopkeeper = models.BooleanField(default=False)
+#     is_customer = models.BooleanField(default=True)
+#     image = models.ImageField(upload_to="images")
+
+#     def __str__(self):
+#         return str(self.id)
+
 class User(models.Model):
+    email = models.EmailField(unique=True, default="abc@gmail.com")
     name = models.CharField(max_length=200)
     password = models.CharField(max_length=200, help_text="Enter your password")
     is_shopkeeper = models.BooleanField(default=False)
     is_customer = models.BooleanField(default=True)
     image = models.ImageField(upload_to="images")
 
-    def __str__(self) -> str:
-        return "User model"
+    def __str__(self):
+        return str(self.id)
 
 class Customer(models.Model):
     # default customer id provided by django
@@ -40,7 +55,7 @@ class Customer(models.Model):
     email_id = models.EmailField()
 
     def __str__(self) -> str:
-        return "Customer model"
+        return str(self.id)
 
 class Cart(models.Model):
     # default cart id provided by django
@@ -49,10 +64,7 @@ class Cart(models.Model):
     amount = models.IntegerField()
 
     def __str__(self) -> str:
-        return "Cart model"
-
-
-
+        return str(self.id)
 
 class Transaction(models.Model):
     # default item id provided by django
@@ -69,7 +81,7 @@ class Transaction(models.Model):
     amount = models.IntegerField()
 
     def __str__(self) -> str:
-        return "Transaction model"
+        return str(self.id)
 
 
 
@@ -80,13 +92,13 @@ class Transaction(models.Model):
 class Shopkeeper(models.Model):
     # default shopkeeper id provided by django
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    shop_id = models.ForeignKey('Shop', on_delete=models.CASCADE) # a shopkeeper can be owner of only one shop.
+    # shop_id = models.ForeignKey('Shop', on_delete=models.CASCADE) # a shopkeeper can be owner of only one shop.?/?7
     name = models.CharField(max_length=200)
     contact = models.IntegerField()
     email_id = models.EmailField()
 
-    def __str__(self) -> str:
-        return "Shopkeeper model"
+    def __str__(self):
+        return str(self.id)
 
 
 class Area(models.Model):
@@ -95,7 +107,7 @@ class Area(models.Model):
     address = models.CharField(max_length=300)
 
     def __str__(self) -> str:
-        return "Area model"
+        return str(self.id)
         
 
 class Shop(models.Model):
@@ -107,7 +119,7 @@ class Shop(models.Model):
     image = models.ImageField(upload_to="images")
 
     def __str__(self) -> str:
-        return "Shop model"
+        return str(self.id)
 
         
 

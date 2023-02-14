@@ -1,0 +1,231 @@
+/* @import url("https://cdn.syncfusion.com/ej2/material.css"); */
+div {
+  font-family: sans-serif;
+  font-size: 3vh;
+}
+
+.details {
+  font: 1em sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  padding: 4.5vh 0;
+
+
+  margin: 3vh 3vh;
+  /* border-radius: 3vh; */
+}
+
+.big-img {
+  max-width: 500px;
+  min-width: 290px;
+  overflow: hidden;
+
+}
+
+.big-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 60vw;
+  display: block;
+  object-fit: cover;
+}
+
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  margin: 0;
+}
+
+.price {
+  display: inline-block;
+  font: 1em sans-serif;
+  font-size: 3.5vh;
+  font-weight: 700;
+  color: #0c0b0c;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-right: 1vw;
+}
+
+.buttonsection {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 3.5vh;
+}
+
+
+.box {
+  max-width: 48vw;
+  padding: 0 0;
+
+  margin: 0 0;
+  margin-bottom: 8vh;
+
+}
+
+.box p {
+  line-height: 1.5;
+  margin: 2vw 0;
+  padding-left: 0;
+}
+
+.remaining {
+  margin-top: 3vh;
+  font-size: 3vh;
+}
+
+.box .cart {
+  padding: 1vw 3vw;
+  font-size: 3vh;
+  border: none;
+  background: green;
+  box-shadow: 0 0 5px rgb(97, 95, 95);
+  border-radius: 10vw;
+  align-self: center;
+  color: aliceblue;
+  margin-left: 0;
+  margin-right: 10vw
+}
+
+.cart1 {
+  padding: 1vw 3vw;
+  font-size: 3vh;
+  border: none;
+  background: orange;
+  box-shadow: 0 0 5px rgb(97, 95, 95);
+  border-radius: 10vw;
+  align-self: center;
+  color: aliceblue;
+  margin-left: 0;
+  margin-right: 10vw
+}
+
+
+.quantity {
+  width: 10vw;
+  height: 3vh;
+}
+
+.increament {
+  font-size: 2vh;
+  margin-left: 0.5vw;
+
+}
+
+.count div {
+  display: inline;
+  align-self: center;
+  padding-top: 1vw;
+  padding-bottom: 0;
+  font-size: 4vh;
+}
+
+.count {
+  align-self: center;
+  margin-bottom: 2vh;
+}
+
+.decreement {
+  font-size: 2vh;
+  margin-left: 1vw;
+  margin-right: 0.5vw;
+}
+
+.shop-detail {
+  font: 1em sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1vw 0;
+  margin: 5vh 3vh;
+}
+
+
+
+.shop-description {
+  margin-top: 1.2vh;
+  font-size: 3vh;
+  margin-bottom: 1vw;
+
+}
+
+.owener-imp-det {
+  display: flex;
+  align-content: flex-start;
+  align-self: start;
+
+}
+
+.owner-img {
+  display: inline-block;
+  max-width: 17vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1.5vw;
+
+}
+
+.owner-name {
+  display: inline-block;
+  font-size: 5vh;
+  align-self: center;
+  font-weight: bold;
+
+}
+
+.owner-img img {
+  max-width: 15vw;
+  min-width: 5vw;
+  overflow: hidden;
+
+  clip-path: circle();
+
+}
+
+.price-before-offer {
+  margin-top: 3vh;
+  margin-bottom: 0.4vh;
+}
+
+.owner-info {
+  width: 48vw;
+  align-content: center;
+}
+
+.owner-contact {
+  display: inline-block;
+  align-content: start;
+  max-width: 28.77vw;
+  font-size: 3vh;
+
+}
+
+.buy-now {
+  display: flex;
+  margin-top: 1vh;
+  justify-content: flex-start;
+}
+
+.discount {
+  color: #37ea40;
+  margin-bottom: 1vw;
+}
+
+.shop-title {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.area {
+  font-size: 5vh;
+  font-weight: bold;
+  margin-left: 15vw;
+}
