@@ -17,10 +17,10 @@ function Popup() {
     <div className='boxpp'>
       <div className='login_pop'>
         <div className='student'>
-          <button className='student_button'>Login as Student</button>
+          <button className='student_button'>Login as Customer</button>
         </div>
         <div className='shopkeeper'>
-          <button className='shopkeeper_button'>Login as shopkeeper</button>
+          <button className='shopkeeper_button'>Login as Shopkeeper</button>
         </div>
       </div>
     </div>

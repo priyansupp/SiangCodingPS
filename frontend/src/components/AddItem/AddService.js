@@ -20,7 +20,7 @@ function AddService() {
             </div>
             <div className='Pricepp'>
                 <div className='PriceHead'>Price: </div>
-                <input className='PriceInput' placeholder="enter service's price" type="number" required></input>
+                <input className='PriceInput' placeholder="enter service's price(in ₹)" type="number" required></input>
             </div>
             <div className='Descriptionpp'>
                 <div className='DescriptionHead'>Description: </div>

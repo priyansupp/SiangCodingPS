@@ -7,6 +7,8 @@ import Errorpage from "./pages/error";
 import ShopkeeperItems from "./pages/ShopkeeperItems";
 import RegisterItem from "./pages/RegisterItem";
 import RegisterService from "./pages/RegisterService";
+import SKrequest from "./pages/SKrequest";
+import SKapprovedRequests from "./pages/SKapprovedRequests";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/AddService" element={<RegisterService/>}/>
         <Route path="/prodes" element={<Productdescriptionpage />}/>
         <Route path="/service" element={<Servicedescriptionpage/>}/>
+        <Route path="/ShopkeeperRequests" element={<SKrequest/>}/>
+        <Route path="/ShopkeeperRequestsApproved" element={<SKapprovedRequests/>}/>
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </div>
