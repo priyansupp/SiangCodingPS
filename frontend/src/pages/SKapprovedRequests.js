@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../components/footer/Footer';
-import Navbar from '../components/navbar/Navbar';
+import NavbarSK from '../components/navbar/NavbarSK';
 import ShopkeeperApproved from '../components/sellerApproved/ShopkeeperApproved';
 
 function SKapprovedRequests() {
   return (
     <div>
-        <Navbar/>
+        <NavbarSK/>
         <ShopkeeperApproved/>
         <Footer/>
     </div>

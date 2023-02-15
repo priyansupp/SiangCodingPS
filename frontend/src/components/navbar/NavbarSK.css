@@ -1,0 +1,162 @@
+.nav_SK{
+    position: relative;
+    display: flex;
+    width:100%;
+    top: 0;
+    background: rgb(238, 246, 250);
+    height: 18vh;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
+}
+
+button{
+    cursor: pointer;
+}
+.logo_SK{
+    position: relative;
+    top: 5vh;
+    left: 3vw;
+    height: 8vh;
+}
+.logo_img_SK{
+    max-width: 100%;
+    max-height: 100%;
+}
+.search_item_SK{
+    background: url("../../assets/navbar/search.png");
+    background-position-y: 2vh;
+    background-position-x: 0.8vw;
+    background-repeat: no-repeat;
+    background: white;
+    opacity: 100%;
+    padding-left: 4vw;
+    border-radius: 4px;
+    margin-left: 5vw;
+    margin-top: 6vh;
+    height: 6vh;
+    width: 65vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: rgba(51, 51, 51, 0.5);
+    font-weight: 500;
+    font-size: 2.7vh;
+    border:none;
+    transition:0.2s ease all;
+    outline:1px solid rgb(189, 189, 189);
+    border-radius:5px;
+}
+
+.search_item_SK:hover{
+    outline:1px solid black;
+}
+
+.profile_SK{
+    /* height: 200px;
+    width: 200px; */
+    margin-left: 5vw;
+    margin-top: 5vh;
+    
+}
+.profile_img_SK{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+}
+.nav-hamburg,
+.nav-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-hamburg2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 7rem;
+  right: 2.5rem;
+  padding: 15px 8px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background: rgb(238, 246, 250);
+  z-index: 10;
+}
+.nav-hamburg2::before {
+  /* content: ""; */
+  position: absolute;
+  top: -0.7rem;
+  right: 0.6rem;
+  width: 20px;
+  height: 20px;
+  /* transform: rotate(45deg); */
+  background-color: #e9e7e7;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.nav-hamburg2 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4px;
+  /* gap: 8px; */
+}
+.nav-hamburg2 ul a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px 8px;
+}
+.nav-hamburg2 ul a:hover {
+  font-weight: 600;
+}
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .search_item{
+        width: 50vw;
+        font-size: 20px;
+        margin-right: 3vw;
+    }
+    .logo{
+        width: 30vw;
+        height: 5vh;
+        margin-top: 1.5vh;
+        margin-left: 3vw;
+    }
+    .login_button{
+        width: 10vw;
+        height: 5vh;
+        font-size: 20px;
+        margin-left: 0vw;
+        margin-top: 6.5vh;
+    }
+    .cart{
+        margin-right: 5vw;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .nav{
+        width: 100%;
+        margin: 0;
+    }
+    .search_item{
+        width: 50vw;
+        font-size: 3.5vw;
+        margin-right: 3vw;
+        padding-left: 1vw;
+    }
+    .logo{
+        width: 30vw;
+        height: 5vh;
+        margin-top: 1.5vh;
+        margin-left: 3vw;
+    }
+    .login_button{
+        width: 13vw;
+        height: 5vh;
+        font-size: 3.5vw;
+        margin-left: 0vw;
+        margin-top: 6.5vh;
+    }
+    .cart{
+        margin-right: 3vw;
+        font-size: 35px;
+    }
+}

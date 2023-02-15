@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../components/footer/Footer';
-import Navbar from '../components/navbar/Navbar';
+import NavbarSK from '../components/navbar/NavbarSK';
 import ShopkeeperFullList from '../components/shopkeeperitemlist/ShopkeeperFullList';
 
 function ShopkeeperItems() {
   return (
     <div>
-        <Navbar/>
+        <NavbarSK/>
         <ShopkeeperFullList/>
         <Footer/>
     </div>
