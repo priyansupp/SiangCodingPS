@@ -18,7 +18,6 @@ def authenticate_user(email, password):
     
 def generate_token(user):
     refresh = RefreshToken.for_user(user)
-    print(refresh)
     return {
         'refresh': str(refresh),
         'access': str(refresh.access_token),
@@ -74,3 +73,38 @@ class UserProfileView(APIView):
             return Response(data={'data': serializer.data, 'success': True}, status=status.HTTP_201_CREATED)
         return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
         
+class UserPasswordChangeView(APIView):
+    """
+    API endpoint for changing password of a user
+    """
+    permission_classes = [IsAuthenticated]
+    
+    def post(self, request):
+        serializer = UserChangePasswordSerializer(data=request.data, context={'user': request.user})
+        if serializer.is_valid():
+            print("serializer: ", serializer.data)
+            print("request.user: ", request.user)
+            print("request.data", request.data)
+            return Response(data={'success': True}, status=status.HTTP_200_OK)
+        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+    
+
+class UserPasswordResetView(APIView):
+    """
+    API endpoint for resetting password of a user
+    """
+    def post(self, request):
+        serializer = UserPasswordResetSerializer(data=request.data)
+        if serializer.is_valid():
+            return Response(data={'success': True}, status=status.HTTP_200_OK)
+        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+
+class UserPasswordResetConfirmView(APIView):
+    """
+    API endpoint for confirming password reset of a user
+    """
+    def post(self, request, uid, token):
+        serializer = UserPasswordResetConfirmSerializer(data=request.data, context={'uid': uid, 'token': token})
+        if serializer.is_valid():
+            return Response(data={'success': True}, status=status.HTTP_200_OK)
+        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)

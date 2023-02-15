@@ -30,7 +30,7 @@ urlpatterns = [
     path('shopkeeper/shop/<int:shop_id>', shopkeeper_views.shopDetail, name='search_shop'),
     path('shopkeeper/listtransactions/<str:transactionstatus>/<int:shopkeeper_id>', shopkeeper_views.transactionList, name='transactions'),    # list all orders of a particular type from a particular shopkeeper
     path('shopkeeper/transaction/<int:shopkeeper_id>/<int:transaction_id>', shopkeeper_views.transaction, name='search_transaction'),           # get, put, delete transaction
-    
+     
 
     # Authentication
     
@@ -47,5 +47,16 @@ urlpatterns = [
     
     # Profile
     path('auth/profile/', UserProfileView.as_view(), name='profile'),
-       
+    
+    # Change Password
+    path('auth/password/change/', UserPasswordChangeView.as_view(), name='change_password'),
+    
+    # Reset Password
+    path('auth/password/reset/', UserPasswordResetView.as_view(), name='reset_password'),
+    
+    # Confirm Password Reset
+    path('auth/password/reset/confirm/<str:uid>/<str:token>/', UserPasswordResetConfirmView.as_view(), name='reset_password_confirm'),
+    
+    # Logout
+    path('auth/logout/', UserLogoutView.as_view(), name='logout'),      
 ]
