@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../database/Item_list.json'
 import './ListItem.css'
-import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {AiOutlineShoppingCart} from 'react-icons/ai';
 
 function ListItem() {
   return (

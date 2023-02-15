@@ -1,12 +1,12 @@
 import React from 'react';
 import AddItem from '../components/AddItem/AddItem';
-import Navbar from '../components/navbar/Navbar';
+import NavbarSK from '../components/navbar/NavbarSK';
 import Footer from '../components/footer/Footer';
 
 function RegisterItem() {
   return (
     <div>
-        <Navbar/>
+        <NavbarSK/>
         <AddItem/>
         <Footer/>
     </div>

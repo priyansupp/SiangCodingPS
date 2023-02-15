@@ -9,6 +9,8 @@ import RegisterItem from "./pages/RegisterItem";
 import RegisterService from "./pages/RegisterService";
 import SKrequest from "./pages/SKrequest";
 import SKapprovedRequests from "./pages/SKapprovedRequests";
+import LoginS from "./pages/LoginS";
+import Register from './components/register/Register'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/items" element={<Itemspage />} />
+        <Route path="/LoginS" element={<LoginS />} />
+        <Route path="/Register" element={<Register />} />
         <Route path="/SKItems" element={<ShopkeeperItems/>}/>
         <Route path="/AddItem" element={<RegisterItem/>}/>
         <Route path="/AddService" element={<RegisterService/>}/>

@@ -1,0 +1,23 @@
+.register_all{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top:30vh;
+}
+.register_box{
+    margin:auto;
+    background: rgb(221, 220, 220);
+}
+.type_box{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.head_register{
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 1vh;
+}
+.decision_register{
+    display: flex;
+    justify-content: left;
+}
