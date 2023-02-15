@@ -5,7 +5,7 @@ from .serializers import *
 from django.contrib.auth import authenticate
 from .models import User
 from django.contrib.auth.hashers import check_password
-from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.tokens import RefreshToken, TokenError
 from rest_framework.permissions import IsAuthenticated
 
 def authenticate_user(email, password):
@@ -53,7 +53,13 @@ class UserLogoutView(APIView):
     API endpoint for logging out a user
     """
     def post(self, request):
-        pass
+        try:
+            refresh_token = request.data['refresh']
+            token = RefreshToken(refresh_token)
+            token.blacklist()   # blacklisting the token
+            return Response(data={'success': True}, status=status.HTTP_205_RESET_CONTENT)
+        except Exception as e:
+            return Response(data={'success': False, 'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
     
 class UserProfileView(APIView):
     """
@@ -108,3 +114,5 @@ class UserPasswordResetConfirmView(APIView):
         if serializer.is_valid():
             return Response(data={'success': True}, status=status.HTTP_200_OK)
         return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+
+    

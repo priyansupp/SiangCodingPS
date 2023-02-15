@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import *
-from django.contrib.auth.hashers import make_password
+from django.contrib.auth.hashers import make_password, check_password
 from django.utils.encoding import smart_str, force_bytes, DjangoUnicodeDecodeError
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
@@ -143,3 +143,10 @@ class UserPasswordResetConfirmSerializer(serializers.ModelSerializer):
         user.save()
         print("New password: ", user.password)
         return data
+      
+class TokenRefreshSerializer(serializers.Serializer):
+    refresh = serializers.CharField()
+
+    def validate(self, attrs):
+        return attrs
+    

@@ -2,12 +2,16 @@ from django.urls import path
 from . import customer_views
 from . import shopkeeper_views
 from .auth_views import *
-from rest_framework_simplejwt import views as auth_views
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+    TokenVerifyView,
+)
 
 urlpatterns = [
-
     # customer views
     path('customer/', customer_views.customerList, name='customers'),                       # for getting list of all customer or for posting a customer
+    
     path('customer/itemdetail/<int:item_id>', customer_views.itemDetail, name='search_item'),   # for fetching a particular item
     path('customer/items', customer_views.itemList, name='items'),                          # for getting list of all item or for posting an item
     path('customer/itemfilter/<str:keyword>', customer_views.filterItems, name='filter_items'), # filter items by category(ex: El, Li, etc. its letter must match those in database) or name(casesensitive keyword)
@@ -34,10 +38,14 @@ urlpatterns = [
 
     # Authentication
     
-    # 1. Token get, refresh,and verify
-    path('token/', auth_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('token/refresh/', auth_views.TokenRefreshView.as_view(), name='token_refresh'),
-    path('token/verify/', auth_views.TokenVerifyView.as_view(), name='token_verify'),
+    # Get Token
+    path('auth/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    
+    # Refresh Token
+    path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    
+    # Verify Token
+    path('auth/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     
     # Register
     path('auth/register/', UserRegistrationView.as_view(), name='register'),
