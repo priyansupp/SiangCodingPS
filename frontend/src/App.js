@@ -16,13 +16,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/items" element={<Itemspage />} />
-        <Route path="/ShopkeeperItems" element={<ShopkeeperItems/>}/>
+        <Route path="/SKItems" element={<ShopkeeperItems/>}/>
         <Route path="/AddItem" element={<RegisterItem/>}/>
         <Route path="/AddService" element={<RegisterService/>}/>
         <Route path="/prodes" element={<Productdescriptionpage />}/>
         <Route path="/service" element={<Servicedescriptionpage/>}/>
-        <Route path="/ShopkeeperRequests" element={<SKrequest/>}/>
-        <Route path="/ShopkeeperRequestsApproved" element={<SKapprovedRequests/>}/>
+        <Route path="/SKRequests" element={<SKrequest/>}/>
+        <Route path="/SKApproved" element={<SKapprovedRequests/>}/>
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </div>
