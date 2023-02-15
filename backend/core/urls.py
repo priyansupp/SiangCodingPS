@@ -1,10 +1,13 @@
 from django.urls import path
 from . import customer_views
 from . import shopkeeper_views
+from .auth_views import *
+from rest_framework_simplejwt import views as auth_views
 
 urlpatterns = [
 
     # customer views
+    path('customer/', customer_views.customerList, name='customers'),                       # for getting list of all customer or for posting a customer
     path('customer/itemdetail/<int:item_id>', customer_views.itemDetail, name='search_item'),   # for fetching a particular item
     path('customer/items', customer_views.itemList, name='items'),                          # for getting list of all item or for posting an item
     path('customer/itemfilter/<str:keyword>', customer_views.filterItems, name='filter_items'), # filter items by category(ex: El, Li, etc. its letter must match those in database) or name(casesensitive keyword)
@@ -26,8 +29,23 @@ urlpatterns = [
     path('shopkeeper/profile/<int:shopkeeper_id>', shopkeeper_views.shopkeeperDetail, name='search_shopkeeper'),
     path('shopkeeper/shop/<int:shop_id>', shopkeeper_views.shopDetail, name='search_shop'),
     path('shopkeeper/listtransactions/<str:transactionstatus>/<int:shopkeeper_id>', shopkeeper_views.transactionList, name='transactions'),    # list all orders of a particular type from a particular shopkeeper
-    path('shopkeeper/transaction/<int:shopkeeper_id>/<int:transaction_id>', shopkeeper_views.transaction, name='search_transaction')           # get, put, delete transaction
+    path('shopkeeper/transaction/<int:shopkeeper_id>/<int:transaction_id>', shopkeeper_views.transaction, name='search_transaction'),           # get, put, delete transaction
     
 
-
+    # Authentication
+    
+    # 1. Token get, refresh,and verify
+    path('token/', auth_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', auth_views.TokenRefreshView.as_view(), name='token_refresh'),
+    path('token/verify/', auth_views.TokenVerifyView.as_view(), name='token_verify'),
+    
+    # Register
+    path('auth/register/', UserRegistrationView.as_view(), name='register'),
+    
+    # Login
+    path('auth/login/', UserLoginView.as_view(), name='login'),
+    
+    # Profile
+    path('auth/profile/', UserProfileView.as_view(), name='profile'),
+       
 ]

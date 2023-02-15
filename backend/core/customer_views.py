@@ -183,8 +183,20 @@ def shopDetail(request, shop_id):
     return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 
+@api_view(["GET"])
+def customerList(request):
+    """
+    API endpoint for getting customer list
+    """
+    customers = Customer.objects.all()
+    # Exclude admin from customer list
+    for customer in customers:
+        if customer.user.is_admin:
+            customers = customers.exclude(user=customer.user)
+    serializer = CustomerSerializer(customers, context={'request': request}, many=True)
+    return Response(data=serializer.data, status=status.HTTP_200_OK)
+    
 
-
-
+    
 
 
