@@ -5,7 +5,7 @@ import './Footer.css'
 import {AiFillInstagram} from 'react-icons/ai'
 import {BsFacebook} from 'react-icons/bs'
 import {AiFillTwitterCircle} from 'react-icons/ai'
-import logo from '../../assets/footer/lenden.jpeg'
+import logo from '../../assets/navbar/lenden_logo.png'
 
 
 function Footer() {

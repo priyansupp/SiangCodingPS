@@ -1,0 +1,40 @@
+import React from 'react';
+import data from '../../database/shopkeeperItems.json';
+import './ShopkeeperItemsList.css';
+import {FaTrash} from 'react-icons/fa'
+
+function ShopkeeperItemsList() {
+  return (
+    <div>
+        <div>
+            {data.item.map((data)=>{
+                return(
+                    <div className='item_list_sec_S'>
+                        <img src={data.item_img} alt='pi' className='item_img_list_S'></img>
+                        <div className='about_item_list_S'>
+                            <div className='item_name_list_S'>
+                                {data.item_name}
+                            </div>
+                            <div className='item_des_list_S'>
+                                <div className='item_des_on_S'>
+                                    {data.item_des}
+                                </div>
+                                <div className='item_price_list_S'>
+                                    ₹{data.item_price}
+                                </div>
+                                <div className='delete_S'>
+                                    <FaTrash className='trash_bin_S'/>
+                                    <span class="tooltiptext_S">Remove Item</span>
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>   
+                )
+            })}
+        </div>
+    </div>
+  );
+}
+
+export default ShopkeeperItemsList;

@@ -32,3 +32,27 @@
     font-size: 3vh;
     cursor: pointer;
 }
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .about_service_list{
+        width: 50vw;
+    }
+    .service_img_list{
+        width: 10vw;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .about_service_list{
+        width: 60vw;
+    }
+    .service_img_list{
+        width: 20vw;
+        height: 8vh;
+    }
+    .service_name_list{
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+    .service_list_sec{
+        margin-top: 5vh;
+    }
+}

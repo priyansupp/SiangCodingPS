@@ -20,28 +20,30 @@ function Homepage() {
     }, [pop])
   return (
     <div className='home_page'>
+      <div className='popup'>
+        <Popup/>
+      </div>
       <div className='others'>
         <div className='nav_home'>
           <Navbar className='nav_bar'/>
         </div>
-        <div className='mid' onClick={()=>setpop(0)}>
-          <div>
-            <Carousel/>
+        <div className='home_bottom' onClick={()=>setpop(0)}>
+          <div className='mid'>
+            <div>
+              <Carousel/>
+            </div>
+            <div>
+              <FullList/>
+            </div>
+            <div>
+              <TrendingShop/>
+            </div>
           </div>
-          <div>
-            <FullList/>
-          </div>
-          <div>
-            <TrendingShop/>
+          <div className='footer_mp'>
+              <Footer/>
           </div>
         </div>
       </div>
-      <div className='popup'>
-        <Popup/>
-      </div>
-      <div className='footer_mp'>
-            <Footer/>
-        </div>
     </div>
   );
 }

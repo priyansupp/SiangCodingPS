@@ -1,0 +1,79 @@
+.head_listItem_s{
+    font-size: 5vh;
+}
+.service_list_sec_s{
+    display: flex;
+    margin-top: 5vh;
+    border-bottom: 1px solid black;
+}
+.about_service_list_s{
+    width: 70vw;
+    margin-bottom: 3vh;
+}
+.service_img_list_s{
+    width: 9vw;
+    height: 14vh;
+    margin-right: 2vw;
+}
+.service_img_list_s:hover{
+    transform: scale(1.1);
+}
+.service_name_list_s{
+    font-size: 4vh;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+.service_des_list_s{
+    display: flex;
+}
+.service_des_on_s{
+    padding-right: 10vw;
+}
+.service_price_list_s{
+    display: inline;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+.delete_s{
+    padding-left: 5vw;
+    cursor: pointer;
+}
+.delete_s .tooltiptext_s {
+    visibility: hidden;
+    width: 120px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
+    background-color: rgba(241, 241, 241, 0.834);
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}  
+.delete_s:hover .tooltiptext_s {
+  visibility: visible;
+}
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .about_service_list_s{
+        width: 50vw;
+    }
+    .service_img_list_s{
+        width: 10vw;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .about_service_list_s{
+        width: 60vw;
+    }
+    .service_img_list_s{
+        width: 20vw;
+        height: 8vh;
+    }
+    .service_name_list_s{
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+    .service_list_sec_s{
+        margin-top: 5vh;
+    }
+}

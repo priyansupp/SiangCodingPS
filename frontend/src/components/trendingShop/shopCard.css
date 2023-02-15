@@ -18,12 +18,24 @@
     font-weight: 500;
 }
 .shop_card_contact{
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 2vh;
-    text-align: right;
-    margin-right: 1vw;
+    justify-content: right;
+    padding-right: 1vw;
+    gap: 0.8vw;
 }
 .contact_icon{
-    margin-left: 0.5vw;
+    font-size: 3.5vh;
+}
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .card_img_shop{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .card_img_shop{
+        width: 85vw;
+    }
 }
