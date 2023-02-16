@@ -6,8 +6,8 @@ import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
-import product_data from '../../database/products.json';
-import shop_data from '../../database/shop.json'
+import product_data from "../../database/products.json";
+import shop_data from "../../database/shop.json";
 
 function Wrapper() {
   const [count, setcount] = useState(1);
@@ -15,10 +15,6 @@ function Wrapper() {
   useEffect(() => {
     console.log({ count });
   }, [count, cartclicked]);
-
-  
-  
-  
 
   const addOrGoCart = !cartclicked ? (
     <button className="cart1" onClick={() => setclick(true)}>
@@ -55,7 +51,9 @@ function Wrapper() {
             <h2>{product_data.products[0].title}</h2>
           </div>
           <Startrating stars={product_data.products[0].rating} />
-          <div className="remaining">{product_data.products[0].description}</div>
+          <div className="remaining">
+            {product_data.products[0].description}
+          </div>
 
           {price}
           <div className="buttonsection">
@@ -100,15 +98,15 @@ function Wrapper() {
             <div className="big-img">
               <img src={shop_data.shop[1].shopImg} alt="" />
             </div>
+            <div className="shop-info">
+              <div className="shop-title">{shop_data.shop[1].shopName}</div>
+              <Startrating stars={shop_data.shop[1].rating} />
+            </div>
           </div>
           <div className="owner-info">
             <div className="owner-imp-det">
               <div className="owner-img">
                 <img src={shop_data.shop[1].owner.img} alt=""></img>
-                <div className="shop-info">
-                  <div className="shop-title">{shop_data.shop[1].shopName}</div>
-                  <Startrating stars={shop_data.shop[1].rating} />
-                </div>
               </div>
               <div className="owner-contact">
                 <div className="owner-name">{shop_data.shop[1].owner.name}</div>
@@ -122,10 +120,11 @@ function Wrapper() {
                 <div>
                   <span>{shop_data.shop[1].owner.emailAddrees}</span>
                 </div>
-                <div className="shop-description"> {shop_data.shop[1].description}</div>
               </div>
-              <div className="shop-description-1"> {shop_data.shop[1].description}</div>
-
+              <div className="shop-description-1">
+                {" "}
+                {shop_data.shop[1].description}
+              </div>
 
               <div>
                 <span>Address : </span>

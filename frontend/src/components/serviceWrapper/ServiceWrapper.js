@@ -2,8 +2,8 @@ import React from "react";
 import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
 import "../wrapper/wrapper.css";
-import Footer from "../footer/Footer";
-import Navbar from "../navbar/Navbar";
+ import Footer from "../footer/Footer";
+ import Navbar from "../navbar/Navbar";
 import shop_data from '../../database/shop.json';
 import service_data from '../../database/services.json';
 
@@ -54,15 +54,16 @@ function ServiceWrapper() {
             <div className="big-img">
               <img src={shop_data.shop[0].shopImg} alt="" />
             </div>
+            <div className="shop-info">
+                  <div className="shop-title">{shop_data.shop[0].shopName}</div>
+                  <Startrating stars={shop_data.shop[0].rating} />
+                </div>
           </div>
           <div className="owner-info">
             <div className="owner-imp-det">
               <div className="owner-img">
                 <img src={shop_data.shop[0].owner.img} alt=""></img>
-                <div className="shop-info">
-                  <div className="shop-title">{shop_data.shop[0].shopName}</div>
-                  <Startrating stars={shop_data.shop[0].rating} />
-                </div>
+                
               </div>
               <div className="owner-contact">
                 <div className="owner-name">{shop_data.shop[0].owner.name}</div>
@@ -76,7 +77,6 @@ function ServiceWrapper() {
                 <div>
                   <span>{shop_data.shop[0].owner.emailAddrees}</span>
                 </div>
-                <div className="shop-description"> {shop_data.shop[0].description}</div>
               </div>
               <div className="shop-description-1"> {shop_data.shop[0].description}</div>
               <div>
