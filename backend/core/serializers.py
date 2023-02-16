@@ -144,9 +144,4 @@ class UserPasswordResetConfirmSerializer(serializers.ModelSerializer):
         print("New password: ", user.password)
         return data
       
-class TokenRefreshSerializer(serializers.Serializer):
-    refresh = serializers.CharField()
-
-    def validate(self, attrs):
-        return attrs
     
