@@ -126,7 +126,7 @@ function Wrapper() {
                 {shop_data.shop[1].description}
               </div>
 
-              <div>
+              <div className="shop-Address">
                 <span>Address : </span>
                 <span>{shop_data.shop[1].shopAddress}</span>
               </div>

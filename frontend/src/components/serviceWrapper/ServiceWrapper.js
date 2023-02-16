@@ -2,16 +2,12 @@ import React from "react";
 import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
 import "../wrapper/wrapper.css";
- import Footer from "../footer/Footer";
- import Navbar from "../navbar/Navbar";
-import shop_data from '../../database/shop.json';
-import service_data from '../../database/services.json';
-
+import Footer from "../footer/Footer";
+import Navbar from "../navbar/Navbar";
+import shop_data from "../../database/shop.json";
+import service_data from "../../database/services.json";
 
 function ServiceWrapper() {
- 
- 
- 
   const price = !service_data.service[0].offer ? (
     <div className="price">
       <span> ₹{service_data.service[0].price}</span>
@@ -29,7 +25,7 @@ function ServiceWrapper() {
   );
   return (
     <section>
-      <Navbar/>
+      <Navbar />
       <div className="details" key={service_data.service._id}>
         <div className="big-img">
           <img src={service_data.service[0].src} alt="" />
@@ -42,7 +38,7 @@ function ServiceWrapper() {
           <Startrating stars={service_data.service[0].rating} />
           <div className="remaining">{service_data.service[0].description}</div>
           {price}
-         
+
           <div className="buy-now">
             <button className="cart">Book Now</button>
           </div>
@@ -55,15 +51,14 @@ function ServiceWrapper() {
               <img src={shop_data.shop[0].shopImg} alt="" />
             </div>
             <div className="shop-info">
-                  <div className="shop-title">{shop_data.shop[0].shopName}</div>
-                  <Startrating stars={shop_data.shop[0].rating} />
-                </div>
+              <div className="shop-title">{shop_data.shop[0].shopName}</div>
+              <Startrating stars={shop_data.shop[0].rating} />
+            </div>
           </div>
           <div className="owner-info">
             <div className="owner-imp-det">
               <div className="owner-img">
                 <img src={shop_data.shop[0].owner.img} alt=""></img>
-                
               </div>
               <div className="owner-contact">
                 <div className="owner-name">{shop_data.shop[0].owner.name}</div>
@@ -78,8 +73,11 @@ function ServiceWrapper() {
                   <span>{shop_data.shop[0].owner.emailAddrees}</span>
                 </div>
               </div>
-              <div className="shop-description-1"> {shop_data.shop[0].description}</div>
-              <div>
+              <div className="shop-description-1">
+                {" "}
+                {shop_data.shop[0].description}
+              </div>
+              <div className="shop-Address">
                 <span>Address : </span>
                 <span>{shop_data.shop[0].shopAddress}</span>
               </div>
@@ -90,7 +88,7 @@ function ServiceWrapper() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 }
