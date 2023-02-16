@@ -32,10 +32,10 @@ function ShopkeeperFullList() {
         <button ref={u1} id='gen_id' onClick={() => { if (dis !== 0) setdis(0) }}>ITEMS</button>
         <button ref={u2} id='lor_id' onClick={() => { if (dis !== 1) setdis(1) }}>SERVICES</button>
         <div className='add_buttons_S'>
-          <Link to="/AddItem">
+          <Link to="/SK/AddItem">
           <button className='add_items_button_S'>ADD ITEM <GrChapterAdd/></button>
           </Link>
-          <Link to="/AddService">
+          <Link to="/SK/AddService">
           <button className='add_service_button_S'>ADD SERVICE <GrChapterAdd/></button>
           </Link>
         </div>

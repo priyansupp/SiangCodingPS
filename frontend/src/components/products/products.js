@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import data from "../../database/Items.json";
-import Itemcard from '../itemcard/itemcard';
+import Productcard from '../productcard/productcard';
 // import { Link } from 'react-router-dom';
-import './items.css';
+import './products.css';
 
-function Items(){
+function Products(props){
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
 
     // const getItems = async () => {
     //     setLoading(true);
-    //     const response = await fetch('http://localhost:8000/api/items/');
+    //     const response = await fetch('/api/customer/items/');
     //     try{
     //         const data = await response.json();
     //         setItems(data);
@@ -37,31 +37,33 @@ function Items(){
             setLoading(false);
         }
 
+        // console.log(props.cat_name);
+
     }
         
 
     useEffect(() => {
         // getItems();
-        getItemsFromJson(   )
+        getItemsFromJson();
     }, []);
 
     if(loading){
-        return <div className='items'>Loading...</div>
+        return <div className='products'>Loading...</div>
     }
 
     if(error){
-        return <div className='items'>Error...</div>
+        return <div className='products'>Error...</div>
     }
 
     return (
-        <div className='items'>
+        <div className='products'>
             {
                 items.map((item) => {
-                    return <Itemcard key={item.id} id={item.id} image={item.image} name={item.name} price={item.price} description={item.description} category={item.category} />
+                    return <Productcard key={item.item_id} id={item.item_id} image={item.image} name={item.name} price={item.price} description={item.description} category={item.category} />
                 })
             }
         </div>
     );
 }
 
-export default Items;
+export default Products;

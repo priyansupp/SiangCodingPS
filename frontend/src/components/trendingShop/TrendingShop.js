@@ -10,9 +10,12 @@ function TrendingShop() {
                 Trending Shop
             </div>
             <div className='shop_scroll'>
-                {data.trendingShops.map((data)=>{
+                {data.trendingShops.map((shop)=>{
+                  const url = "shpp"
                   return(
-                    <ShopCard img={data.shop_img_link} name={data.shopName} contact={data.shopContact}/>
+                    // <Link to={} key={shop.id}>
+                      <ShopCard key={shop.id} img={shop.shop_img_link} name={shop.shopName} contact={shop.shopContact}/>
+                    // </Link>
                   )
                 })}       
             </div>
