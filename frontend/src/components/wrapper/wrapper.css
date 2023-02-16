@@ -111,7 +111,7 @@ div {
 
 
 .quantity {
-  width: 10vw;
+  width: 25vw;
   height: 3vh;
 }
 
@@ -157,11 +157,17 @@ div {
   margin-bottom: 1vw;
 
 }
+.shop-description-1 {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
 .owener-imp-det {
   display: flex;
-  align-content: flex-start;
-  align-self: start;
+  align-content: space-around;
+  align-self: center;
+  margin-left: 5vw;
 
 }
 
@@ -196,7 +202,7 @@ div {
 }
 
 .owner-info {
-  width: 48vw;
+  max-width: 48vw;
   align-content: center;
 }
 
@@ -228,4 +234,66 @@ div {
   font-size: 5vh;
   font-weight: bold;
   margin-left: 15vw;
+}
+
+@media  screen  and (max-width:1000px  ) {
+  .box {
+    max-width: 140vw;
+
+  }
+  .big-img {
+    max-width: 230vw;
+    max-height: 75vh;
+  }
+  .big-img img {
+    max-width: 230vw;
+  }
+  .owner-contact {
+    max-width: 65vw;
+    margin-top:4vh ;
+    
+  }
+  .owner-info {
+    max-width: 150vw;
+  }
+  .owner-img img {
+    max-width: 22vw;
+
+    
+  }
+  .owner-img {
+    padding-top:3vw;
+    max-width: 25vw;
+  }
+}
+@media screen and (max-width: 567px) {
+  .owner-contact{
+    max-width: 65vw;
+    margin-left: 3vw;
+    
+  }
+  
+  .shop-description{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+  .shop-description-1 {
+    visibility: visible;
+    width: 100vw;
+    height: 30vh;
+    font-size: 3vh;
+  }
+  .owner-img {
+    padding-top: 5vh;
+    max-width: 45vw;
+  }
+  
+}
+@media  screen and (max-width:301) {
+.shop-description-1{
+  height: 40vh;
+}
+  
 }

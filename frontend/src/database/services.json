@@ -1,0 +1,13 @@
+{
+"service" :[ {
+    "id": "1",
+    "title": "Hair Cut",
+    "src": "https://tse3.mm.bing.net/th?id=OIP.bi2q7SEbVosrBt1C5rY8BAHaHa&pid=Api&P=0",
+    "rating": 3.8,
+    "shopId": 37,
+    "offer": false,
+    "description":
+      "   service dicription service product service service dicription service product product product dicription product product product product dicription product product product product dicription product product product",
+    "price": 70
+  }]
+}
