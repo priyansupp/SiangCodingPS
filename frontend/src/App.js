@@ -10,6 +10,7 @@ import SKrequest from "./pages/SKrequest";
 import SKapprovedRequests from "./pages/SKapprovedRequests";
 import Login from "./pages/auth/login.js";
 import Register from "./pages/auth/register.js";
+import Servicedescriptionpage from "./pages/Servicedescriptionpage";
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         <Route path="/items/:cat_name" element={<Productspage/>}/>
         <Route path="/item/:item_id" element={<Productdescriptionpage/>}/>
         <Route path="/services/:cat_name" element={<Productspage/>}/>
-        <Route path="/service/:service_id" element={<Productdescriptionpage/>}/>
+        <Route path="/service/:service_id" element={<Servicedescriptionpage/>}/>
         <Route path="/SK/Requests" element={<SKrequest/>}/>
         <Route path="/SK/Approved" element={<SKapprovedRequests/>}/>
         <Route path="/login" element={<Login/>}/>
