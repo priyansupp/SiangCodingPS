@@ -11,8 +11,8 @@ function ShopCard(props) {
             {props.name}
           </div>
           <div className='shop_card_contact'>
-            {props.contact}
             <IoMdCall className='contact_icon'/>
+            {props.contact}
           </div>
         </div>
     </div> 

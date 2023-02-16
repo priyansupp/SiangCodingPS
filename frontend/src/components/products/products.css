@@ -1,0 +1,15 @@
+.products {
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap:20px;
+  background: #fff6c2;
+}
+
+
+
+
+

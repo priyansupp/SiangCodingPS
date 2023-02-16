@@ -1,30 +1,36 @@
 {
     "trendingShops":[{
+        "id": 1,
         "shopName":"Roasted Pot",
         "shopContact":"0123456789",
         "shop_img_link":"https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg"
     },
     {
+        "id": 2,
         "shopName":"Roasted Pot",
         "shopContact":"0123456789",
         "shop_img_link":"https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg"
     },
     {
+        "id": 3,
         "shopName":"Roasted Pot",
         "shopContact":"0123456789",
         "shop_img_link":"https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg"
     },
     {
+        "id": 4,
         "shopName":"Roasted Pot",
         "shopContact":"0123456789",
         "shop_img_link":"https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg"
     },
     {
+        "id": 5,
         "shopName":"Roasted Pot",
         "shopContact":"0123456789",
         "shop_img_link":"https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg"
     },
     {
+        "id": 6,
         "shopName":"Roasted Pot",
         "shopContact":"0123456789",
         "shop_img_link":"https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg"

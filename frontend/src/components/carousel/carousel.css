@@ -39,3 +39,13 @@
 .rightArrow_slider:hover{
     color: rgb(255, 200, 180);
 }
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .leftArrow_slider, .rightArrow_slider{
+        font-size: 6vh;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .leftArrow_slider, .rightArrow_slider{
+        font-size: 5vh;
+    }
+}
