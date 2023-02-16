@@ -1,40 +1,89 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import './register.css'
 
  function Register() { 
+	const[email, setemail] = useState("");
+	const[name, setname] = useState("");
+	const[contact, setcontact] = useState("");
+	const[password, setpassword] = useState("");
+	const[cnfpassword, setcnfpassword] = useState("");
+	const[is_shopkeeper, setis_shopkeeper] = useState(false);
+	const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+	
+    const registerUser = async ()=>{
+        await axios.post("http://127.0.0.1:8000/api/auth/register/", {
+            email:email,
+            password:password,
+            cnfpassword:cnfpassword,
+            name:name,
+			contact: contact,
+			is_shopkeeper: is_shopkeeper,
+			is_customer: !is_shopkeeper
+        })
+    }
+
+    const getItems = async () => {
+        setLoading(true);
+        try{
+            const response = await axios.get("http://127.0.0.1:8000/api/customer/");
+            
+            console.log(response.data)
+            // data = {success: True, data:{ actual items}}
+            setItems(response.data.data);
+            setLoading(false);
+        }
+        catch(error){
+            console.log('Error: ', error);
+            setError(true);
+            setLoading(false);
+        }
+    }
+	useEffect(() => {
+	  getItems();
+	}, []);
   return ( 
-    <div> 
-      <div>
-			<form action=""> 
-            <input type="radio" id="html" value="customer" />
-                    <label for="html">customer</label><br />
-                  <input type="radio" id="css"  value="shopkeeper" />
-                  <label for="css">shopkeeper</label><br />
-                Image: 
-                <input type="file"></input>
-				<div> 
-					<label htmlFor="Name">Name</label>
-					<input type="text" name="Name" id="email"/> 
-				</div> 
-				<div> 
-					<label htmlFor="Contact">Contact</label>
-					<input type="text" name="Contact" id="email"/> 
-				</div> 
-				<div> 
-					<label htmlFor="email">Email</label>
-					<input type="text" name="email" id="email"/> 
-				</div> 
-				<div> 
-					<label htmlFor="passw">Password</label>
-					<input type="text" name="passw" id="passw"/> 
-				</div>  
-				<div> 
-					<label htmlFor="passw">Confirm Password</label>
-					<input type="text" name="passw" id="passw"/> 
-				</div>  
-				<button type="submit">Register</button>
-			</form>
-		</div>
-    </div> 
+    <div className="register_new_r">
+      <div className="card_register_new_r">
+        <div className="left_register_new_r">
+          <h1 className='head_register_new_r'>Lama Social.</h1>
+          <p className='para_register_new_r'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
+            alias totam numquam ipsa exercitationem dignissimos, error nam,
+            consequatur.
+          </p>
+          <span className='mess_register_new_r'>Do you have an account?</span>
+          <Link to="/login">
+          <button className='login_but_register_new_r'>Login</button>
+          </Link>
+        </div>
+        <div className="right_register_new_r">
+          <h1 className='head_register_new_r'>Register</h1>
+          <form className='register_form_new_r'>
+			<div className='identity_register'>
+				<div>
+					<input type="radio" name='pos' value='customer'/> 
+					<label>Customer</label>
+				</div>
+				<div>
+					<input type="radio" name='pos' value='shopkeeper'  onClick={()=>setis_shopkeeper(true)}/> 
+					<label>Shopkeeper</label>
+				</div>
+			</div>
+            <input type="text" placeholder="Username" className='name_register_new_r' onChange={e=>setname(e.target.value)}/>
+            <input type="number" placeholder="Contact Number" className='contact_register_new_r' onChange={e=>setcontact(e.target.value)}/>
+            <input type="email" placeholder="Email" className='email_register_new_r' onChange={e=>setemail(e.target.value)}/>
+            <input type="password" placeholder="Password" className='password_register_new_r' onChange={e=>setpassword(e.target.value)}/>
+            <input type="password" placeholder="Confirm Password" className='cnfpassword_register_new_r' onChange={e=>setcnfpassword(e.target.value)}/>
+            <button className='register_button_new_r' onClick={registerUser}>Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
   ); 
 }
 

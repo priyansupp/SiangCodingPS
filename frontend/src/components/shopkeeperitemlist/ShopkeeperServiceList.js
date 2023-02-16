@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../database/shopkeeperService.json';
 import './ShopkeeperServiceList.css'
-import {FaTrash} from 'react-icons/fa'
+import {FaTrash, FaEdit} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 function ShopkeeperServiceList() {
