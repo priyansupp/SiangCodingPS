@@ -3,7 +3,7 @@ import Footer from '../components/footer/Footer';
 import NavbarSK from '../components/navbar/NavbarSK';
 import ShopkeeperFullList from '../components/shopkeeperitemlist/ShopkeeperFullList';
 
-function ShopkeeperItems() {
+function ShopkeeperProducts() {
   return (
     <div>
         <NavbarSK/>
@@ -13,4 +13,4 @@ function ShopkeeperItems() {
   );
 }
 
-export default ShopkeeperItems;
+export default ShopkeeperProducts;
