@@ -1,7 +1,8 @@
 import './navbar.css'
-import logo from '../../assets/footer/lenden.jpeg'
+import logo from '../../assets/navbar/lenden_logo.png'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 function Navbar(){
     const[pop, setpop] = useState(0);
     const[Search, setSearch] = useState(''); 
@@ -16,10 +17,14 @@ function Navbar(){
     return(
         <div className='nav'>
             <div className='logo'>
+                <Link to="/">
                 <img src={logo} alt='logo' className='logo_img'></img>
+                </Link>
             </div>
             <div className='search_home'>
+                <Link to="/items">
                 <input type='text' className='search_item' placeholder='Search items or services' onChange={e=>setSearch(e.currentTarget.value)}></input>
+                </Link>
             </div>
             <div className='login'>
                 <button className='login_button' onClick={()=>setpop(1)}>Login</button>

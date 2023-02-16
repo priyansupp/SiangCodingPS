@@ -1,0 +1,58 @@
+.head_listItem{
+    font-size: 5vh;
+}
+.service_list_sec{
+    display: flex;
+    margin-top: 5vh;
+    border-bottom: 1px solid black;
+}
+.about_service_list{
+    width: 35vw;
+    margin-bottom: 3vh;
+}
+.service_img_list{
+    width: 8vw;
+    height: 10vh;
+    margin-right: 2vw;
+}
+.service_img_list:hover{
+    transform: scale(1.1);
+}
+.service_name_list{
+    font-size: 4vh;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+.service_des_list{
+    display: flex;
+    justify-content: space-between;
+}
+.cart_list{
+    margin-right: 2vw;
+    font-size: 3vh;
+    cursor: pointer;
+}
+@media screen and (max-width: 970px) and (min-width: 650px){
+    .about_service_list{
+        width: 50vw;
+    }
+    .service_img_list{
+        width: 10vw;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 0px){
+    .about_service_list{
+        width: 60vw;
+    }
+    .service_img_list{
+        width: 20vw;
+        height: 8vh;
+    }
+    .service_name_list{
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+    .service_list_sec{
+        margin-top: 5vh;
+    }
+}

@@ -8,11 +8,4 @@ function Productdescriptionpage() {
   );
 }
 
-
-
-
-
-
-
-
 export default Productdescriptionpage;
