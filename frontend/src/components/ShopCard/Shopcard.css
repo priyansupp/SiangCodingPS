@@ -1,0 +1,74 @@
+.Main{
+    display: flex;
+    flex-direction: row;
+    
+    
+    background: rgb(238, 246, 250);
+    
+}
+.main{
+    margin-right: 8vh;
+    margin-left: 8vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    width: 40%;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 5vh;
+    box-shadow: 1vh black;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+
+}
+.name img{
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    text-align: center;
+    margin-top: 10px;
+}
+.Name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vh;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5vh;
+}
+.timings{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.timings span{
+    margin-top: 2.5vh;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
+.loc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5vh;
+    
+}
+.loc span{
+    margin-right: 20px;
+}
+.buttons button{
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.galleery{
+    width: 50%;
+}

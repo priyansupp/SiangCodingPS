@@ -4,7 +4,7 @@ import {Routes,Route} from "react-router-dom";
 import Servicedescriptionpage from "./pages/Servicedescriptionpage";
 import Itemspage from "./pages/Itemspage";
 import Errorpage from "./pages/error";
-
+import Shoppage from "./pages/Shoppage";
 function App() {
   return (
     <div className="App">
@@ -14,6 +14,7 @@ function App() {
         <Route path="/prodes" element={<Productdescriptionpage />}/>
         <Route path="/service" element={<Servicedescriptionpage/>}/>
         <Route path="*" element={<Errorpage />} />
+        <Route path="/shop" element={<Shoppage/>}/>
       </Routes>
     </div>
   );
