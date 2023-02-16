@@ -183,8 +183,16 @@ def shopDetail(request, shop_id):
     return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 
-
-
-
+@api_view(["GET"])
+def customerList(request):
+    """
+    API endpoint for getting customer list
+    """
+    customers = Customer.objects.all()
+    serializer = CustomerSerializer(customers, context={'request': request}, many=True)
+    for serializer in serializer.data:
+        if serializer['user'].is_admin:
+            serializer['user'].pop('is_admin')
+    return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 
