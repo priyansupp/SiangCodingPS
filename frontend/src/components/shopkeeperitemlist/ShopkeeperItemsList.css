@@ -34,11 +34,11 @@
     font-size: 2.5vh;
     font-weight: 500;
 }
-.delete_S{
+.delete_S, .edit_S{
     padding-left: 5vw;
     cursor: pointer;
 }
-.delete_S .tooltiptext_S {
+.delete_S .tooltiptext_S, .edit_S .tooltiptext_S {
     visibility: hidden;
     width: 120px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
@@ -50,7 +50,7 @@
     position: absolute;
     z-index: 1;
 }  
-.delete_S:hover .tooltiptext_S {
+.delete_S:hover .tooltiptext_S, .edit_S:hover .tooltiptext_S {
   visibility: visible;
 }
 @media screen and (max-width: 970px) and (min-width: 650px){

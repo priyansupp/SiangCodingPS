@@ -1,6 +1,6 @@
 import React from 'react';
 import ListItem from './ListItem';
-import ServiceItem from './ServiceItem';
+import ListService from './ListService';
 import { useState, useRef, useEffect } from 'react';
 import './fullList.css'
 
@@ -9,7 +9,7 @@ function Full_list() {
   const [dis, setdis] = useState(0);
     switch (dis) {
         case 0: temp = <ListItem />; break;
-        case 1: temp = <ServiceItem />; break;
+        case 1: temp = <ListService />; break;
         default: break;
     }
     const u1 = useRef()

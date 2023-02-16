@@ -22,7 +22,7 @@
 .login_pop{
     margin-left: 7vw;
 }
-.shopkeeper_button, .customer_button{
+.shopkeeper_button, .customer_button, .register_button{
     height: 8vh;
     width: 25vw;
     background: rgb(195, 245, 241);
@@ -32,7 +32,7 @@
     border: none;
     box-shadow: 0 0 5px rgb(97, 95, 95);
 }
-.customer_button:hover{
+.customer_button:hover, .register_button{
     background: rgb(150, 244, 236);
 }
 .shopkeeper_button:hover{
@@ -44,3 +44,7 @@
 .customer_button{
     margin-top: 15vh;
 } 
+
+.register_button{
+    margin-top: 2vh;
+}

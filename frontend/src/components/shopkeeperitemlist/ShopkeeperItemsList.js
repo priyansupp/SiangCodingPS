@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../database/shopkeeperItems.json';
 import './ShopkeeperItemsList.css';
-import {FaTrash} from 'react-icons/fa';
+import {FaTrash} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 function ShopkeeperItemsList() {
@@ -23,6 +23,10 @@ function ShopkeeperItemsList() {
                                 </div>
                                 <div className='item_price_list_S'>
                                     ₹{data.item_price}
+                                </div>
+                                <div className='edit_S'>
+                                    <FaEdit className='edit_bin_S'/>
+                                    <span class="tooltiptext_S">Edit Item</span>
                                 </div>
                                 <div className='delete_S'>
                                     <FaTrash className='trash_bin_S'/>
