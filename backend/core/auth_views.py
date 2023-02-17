@@ -7,6 +7,7 @@ from .models import User
 from django.contrib.auth.hashers import check_password
 from rest_framework_simplejwt.tokens import RefreshToken, TokenError
 from rest_framework.permissions import IsAuthenticated
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 def authenticate_user(email, password):
     try:
@@ -65,6 +66,7 @@ class UserProfileView(APIView):
     """
     API endpoint for getting profile of a user and updating it
     """
+    authentication_classes = [ JWTAuthentication ]
     permission_classes = [IsAuthenticated]
     
     def get(self, request):

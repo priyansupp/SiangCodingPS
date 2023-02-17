@@ -225,3 +225,10 @@ a:link {
     font-size: 4vh;
     line-height: 8vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .HP_u{
+        width: 100%;
+        
+    }
+  }
