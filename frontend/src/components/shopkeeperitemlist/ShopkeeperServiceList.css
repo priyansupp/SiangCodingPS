@@ -25,9 +25,15 @@
 }
 .service_des_list_s{
     display: flex;
+    flex-wrap: wrap;
+}
+.service_p_e_del{
+    display: flex;
+    
 }
 .service_des_on_s{
-    padding-right: 10vw;
+    padding-right: 1vw;
+    max-width: 53vw;
 }
 .service_price_list_s{
     display: inline;
@@ -53,9 +59,17 @@
 .delete_s:hover .tooltiptext_s {
   visibility: visible;
 }
+@media screen and (max-width:1018px) {
+    .item_des_on_S{
+        max-width: 75vw;
+    }
+}
 @media screen and (max-width: 970px) and (min-width: 650px){
-    .about_service_list_s{
+    /* .about_service_list_s{
         width: 50vw;
+    } */
+    .item_des_on_S{
+        max-width: 50vw;
     }
     .service_img_list_s{
         width: 10vw;

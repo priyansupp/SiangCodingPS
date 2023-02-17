@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { GrAdd, GrSubtract } from "react-icons/gr";
 import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
-import Footer from "../footer/Footer";
-import Navbar from "../navbar/Navbar";
 import product_data from "../../database/products.json";
 import shop_data from "../../database/shop.json";
 
@@ -40,7 +38,7 @@ function Wrapper() {
   );
   return (
     <section className="background">
-      <Navbar />
+     
       <div className="details" key={product_data.products[0]._id}>
         <div className="big-img">
           <img src={product_data.products[0].src} alt="" />
@@ -137,7 +135,7 @@ function Wrapper() {
           </div>
         </div>
       </div>
-      <Footer />
+     
     </section>
   );
 }

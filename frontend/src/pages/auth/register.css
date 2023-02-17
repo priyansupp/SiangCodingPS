@@ -1,18 +1,20 @@
 .register_new_r{
-    height: 100vh;
-    display: flex;
+    min-height: 100vh;
+    display: block;
     align-items: center;
     justify-content: center;
     background: #fff6c2;
+    padding: 5vw 15vw;
 }
 
 .card_register_new_r{
-    width: 50%;
+    
     display: flex;
-    background-color: white;
+    background-color: #fff6c2;
     border-radius: 10px;
     min-height: 30vh;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .left_register_new_r{
@@ -27,8 +29,8 @@
 }
 
 .head_register_new_r{
-    font-size: 10vh;
-    line-height: 10vh;
+    font-size: 6vw;
+    line-height: 6vw;
 }
 
 .mess_register_new_r{
@@ -54,6 +56,7 @@
     flex-direction: column;
     gap: 5vw;
     justify-content: center;
+    background-color: white;
 }
 
 .head_register_new_r{
@@ -78,7 +81,6 @@
 
 .register_button_new_r{
     margin-top: 3vh;
-    width: 50%;
     padding: 10px;
     border: none;
     background-color: #fecb3e;
@@ -93,4 +95,37 @@
 
 .login_but_register_new_r:hover {
     background: #fff6c2;
+}
+@media screen and (max-width:903px) {
+    .register_new_r {
+        padding: 10vw 12vw;
+    }
+    .left_register_new_r {
+        max-width:32vw;
+        
+    }
+    .right_register_new_r {
+        max-width: 40vw;
+    }
+}
+@media screen and (max-width:828px) {
+    .register_new_r {
+        padding: 10vw 12vw;
+        
+    }
+    
+}
+
+@media screen and (max-width: 668px ) {
+    .left_register_new_r{
+        max-width: 69vw;
+    }
+    .right_register_new_r{
+        max-width: 69vw;
+        gap:0
+    }
+    .mess_register_new_r{
+        margin-top: 1vh;
+    }
+    
 }

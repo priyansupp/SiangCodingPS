@@ -7,6 +7,9 @@
   padding: 4.5vh 0;
   margin: 5vh 5vh;
 }
+.background {
+  min-height: 190vh;
+}
 
 .big-img {
   max-width: 500px;
@@ -27,7 +30,6 @@
 
 .title {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 0;
 }
 
@@ -201,6 +203,7 @@
 .discount {
   color: #37ea40;
   margin-bottom: 1vw;
+  font-size: 3vh;
 }
 
 .shop-title {

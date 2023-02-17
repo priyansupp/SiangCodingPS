@@ -2,8 +2,7 @@ import React from "react";
 import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
 import "../wrapper/wrapper.css";
-import Footer from "../footer/Footer";
-import Navbar from "../navbar/Navbar";
+
 import shop_data from "../../database/shop.json";
 import service_data from "../../database/services.json";
 
@@ -24,8 +23,8 @@ function ServiceWrapper() {
     </div>
   );
   return (
-    <section>
-      <Navbar />
+    <section className="background">
+      
       <div className="details" key={service_data.service._id}>
         <div className="big-img">
           <img src={service_data.service[0].src} alt="" />
@@ -88,7 +87,6 @@ function ServiceWrapper() {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

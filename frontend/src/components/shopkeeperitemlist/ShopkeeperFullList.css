@@ -16,7 +16,7 @@ img{
 }
 .switch_list_S{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
 }
@@ -48,14 +48,17 @@ img{
 }
 .add_buttons_S{
     display: flex;
-    margin-left: 40vw
+    /* margin-left: 40vw */
+}
+.add_button_k{
+    display: flex;
 }
 .add_items_button_S, .add_service_button_S{
     border: none;
     background-color: #F6F7F7;
     height: 8vh;
-    width: 13vw;
-    font-size: 2.5vh;
+    width: 14vw;
+    font-size: 1.7vw;
     font-weight: 500;
     padding: 1vh;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
@@ -74,7 +77,7 @@ img{
 @media screen and (max-width: 970px) and (min-width: 650px){
     .items_list_button_S, .services_list_button_S{
         width: 12vw;
-        font-size: 1.8vh;
+        font-size: 2.4vw;
         padding: 0.5vh;
     }
     .items_list_button_after_S, .services_list_button_after_S{
