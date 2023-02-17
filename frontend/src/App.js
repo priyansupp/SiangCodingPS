@@ -10,7 +10,7 @@ import SKrequest from "./pages/SKrequest";
 import SKapprovedRequests from "./pages/SKapprovedRequests";
 import Login from "./pages/auth/login.js";
 import Register from "./pages/auth/register.js";
-
+import Shoppage from "./pages/Shoppage";
 function App() {
 
 
@@ -18,6 +18,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/shop" element = {<Shoppage/>} />
         <Route path="/SK/Products" element={<ShopkeeperProducts/>}/>
         <Route path="/SK/AddItem" element={<RegisterItem/>}/>
         <Route path="/SK/AddService" element={<RegisterService/>}/>

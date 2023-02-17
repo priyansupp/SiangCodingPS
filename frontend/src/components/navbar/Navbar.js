@@ -22,9 +22,9 @@ function Navbar(){
                 </Link>
             </div>
             <div className='search_home'>
-                <Link to="/items">
+                
                 <input type='text' className='search_item' placeholder='Search items or services' onChange={e=>setSearch(e.currentTarget.value)}></input>
-                </Link>
+                
             </div>
             <div className='login'>
                 <button className='login_button' onClick={()=>setpop(1)}>Login</button>
