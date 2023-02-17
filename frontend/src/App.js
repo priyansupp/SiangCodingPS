@@ -33,18 +33,7 @@ function App() {
         <Route path="/SK/AddItem" element={<RegisterItem />} />
         <Route path="/SK/AddService" element={<RegisterService />} />
         {/* <Route path="/prodes" element={<Productdescriptionpage />} /> */}
-        <Route path="/items/:cat_name" element={<Productspage />} />
-        <Route path="/item/:item_id" element={<Productdescriptionpage />} />
-        <Route path="/services/:cat_name" element={<Productspage />} />
-        <Route
-          path="/service/:service_id"
-          element={<Productdescriptionpage />}
-        />
-        <Route path="/ShopkeeperProfile" element={<ShopkeeperProfilePage />} />
-        <Route path="/SK/Requests" element={<SKrequest />} />
-        <Route path="/SK/Approved" element={<SKapprovedRequests />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/SK/Profile" element={<ShopkeeperProfilePage />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </div>

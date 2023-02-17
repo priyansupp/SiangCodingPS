@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-
 function ListItem() {
   // console.log(data.item_catgs);
   const [items, setItems] = useState([]);
@@ -43,6 +42,7 @@ function ListItem() {
             </div>
           </div>
         ))}
+
     </div>
   );
 }
