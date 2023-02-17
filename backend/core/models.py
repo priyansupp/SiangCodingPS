@@ -46,7 +46,7 @@ class Service(models.Model):
 
 class UserManager(BaseUserManager):
     use_in_migrations = True    
-    def create_user(self, email, name, password=None, **extra_fields):
+    def create_user(self,email, name, password=None, **extra_fields):
         # handle exceptions 
         if not email:
             raise ValueError("Email is required")
@@ -96,7 +96,7 @@ class User(AbstractBaseUser):
         verbose_name='Last Login',
         auto_now=True
     )
-    contact = models.IntegerField(default=0)
+    contact = models.IntegerField(default=0, unique=True)
     is_shopkeeper = models.BooleanField(default=False)
     is_customer = models.BooleanField(default=True)
     image = models.ImageField(upload_to="images", default="images/default.png")
@@ -107,7 +107,7 @@ class User(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['name']
+    REQUIRED_FIELDS = ['name', 'password']
     
     objects = UserManager()
     

@@ -1,55 +1,96 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './register.css'
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
+import { BiMessageSquareError } from 'react-icons/bi';
 
- function Register() { 
+function Register() {
+  const navigate = useNavigate();
 	const[email, setemail] = useState("");
 	const[name, setname] = useState("");
 	const[contact, setcontact] = useState("");
 	const[password, setpassword] = useState("");
 	const[cnfpassword, setcnfpassword] = useState("");
 	const[is_shopkeeper, setis_shopkeeper] = useState(false);
-	const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState("");
 
-    const registerUser = async ()=>{
-      if(password===cnfpassword){
-        await axios.post("http://127.0.0.1:8000/api/auth/register/", {
-            email:email,
-            password:password,
-            cnfpassword:cnfpassword,
-            name:name,
-            contact: contact,
-            is_shopkeeper: is_shopkeeper,
-            is_customer: !is_shopkeeper
-        })
+
+  const resetError = ()=>{
+    setTimeout(() => {
+      setError("");
+    }, 3000);
+  }
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    if(password !== cnfpassword){
+      setError("Password and Confirm Password must be same")
+      resetError();
+      setLoading(false);
+      return;
+    }
+    // Regex for phone number
+    const phoneRegex = /^[6-9]\d{9}$/;
+    if(!phoneRegex.test(contact)){
+      setError("Invalid Phone Number");
+      resetError();
+      setLoading(false);
+      return;
+    }
+
+    try{
+      const res = await axios.post("http://127.0.0.1:8000/api/auth/register/", {
+        email, name, contact, password, cnfpassword, is_shopkeeper
+      })
+      // setting the tokens in local storage
+      localStorage.setItem('access_token', res.data.access);
+      const time = new Date();
+      localStorage.setItem('access_token_time', time.getTime());
+      localStorage.setItem('refresh_token', res.data.refresh);
+      setLoading(false);
+      navigate('/');
+    }
+    catch(err){
+      const errors = err.response.data.errors;
+      console.log(errors)
+      if(errors?.length > 0){
+        if(errors[0].detail.includes("UNIQUE constraint failed:")){
+          setError("Email already exists");
+          resetError();
+        }
+        else{
+          setError("Something went wrong");
+          resetError();
+        }
       }
-      else 
-        console.log("wrong password")
+      setLoading(false);
     }
+  }
+  
+  if(loading){
+    return(
+      <div className='loading_container'>
+        <div className="loading">
+          <AiOutlineLoading3Quarters className='icon'/>
+        </div>
+      </div>
+    )
+  }
 
-    const getItems = async () => {
-        setLoading(true);
-        try{
-            const response = await axios.get("http://127.0.0.1:8000/api/customer/");
-            
-            console.log(response.data)
-            // data = {success: True, data:{ actual items}}
-            setItems(response.data.data);
-            setLoading(false);
-        }
-        catch(error){
-            console.log('Error: ', error);
-            setError(true);
-            setLoading(false);
-        }
-    }
-	useEffect(() => {
-	  getItems();
-	}, []);
+  if(error){
+    return (
+      <div className='error_container'>
+        <div className="error">
+          <BiMessageSquareError className='icon'/>
+          <span>{error}</span>
+        </div>
+      </div>
+    )
+  }
+
   return ( 
     <div className="register_new_r">
       <div className="card_register_new_r">
@@ -67,7 +108,7 @@ import './register.css'
         </div>
         <div className="right_register_new_r">
           <h1 className='head_register_new_r'>Register</h1>
-          <form className='register_form_new_r'>
+          <form className='register_form_new_r' onSubmit={handleRegister}>
             <div className='identity_register'>
               <div>
                 <input type="radio" name='pos' value='customer' required/> 
@@ -78,12 +119,12 @@ import './register.css'
                 <label>Shopkeeper</label>
               </div>
             </div>
-            <input type="text" placeholder="Username" className='name_register_new_r' onChange={e=>setname(e.target.value)} required/>
+            <input type="text" placeholder="Name" className='name_register_new_r' onChange={e=>setname(e.target.value)} required/>
             <input type="text"  placeholder="Contact Number" className='contact_register_new_r' onChange={e=>setcontact(e.target.value)} required/>
             <input type="email" placeholder="Email" className='email_register_new_r' onChange={e=>setemail(e.target.value)} required/>
             <input type="password" placeholder="Password" className='password_register_new_r' onChange={e=>setpassword(e.target.value)} required/>
             <input type="password" placeholder="Confirm Password" className='cnfpassword_register_new_r' onChange={e=>setcnfpassword(e.target.value)} required/>
-            <button className='register_button_new_r' onClick={registerUser}>Register</button>
+            <button type="submit" className='register_button_new_r'>Register</button>
           </form>
         </div>
       </div>
