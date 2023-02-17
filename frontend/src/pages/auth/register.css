@@ -1,0 +1,96 @@
+.register_new_r{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff6c2;
+}
+
+.card_register_new_r{
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 30vh;
+    overflow: hidden;
+}
+
+.left_register_new_r{
+    flex: 1;
+    background: #ebb216;
+    background-size: cover;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    color: white;
+}
+
+.head_register_new_r{
+    font-size: 10vh;
+    line-height: 10vh;
+}
+
+.mess_register_new_r{
+    font-size: 2vh;
+    margin-top: 22vh;
+}
+
+.login_but_register_new_r{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fecb3e;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.right_register_new_r{
+    flex: 1;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.head_register_new_r{
+    color: #555;
+}
+
+.register_form_new_r{
+    display: flex;
+    flex-direction: column;
+}
+.identity_register{
+    display: flex;
+    color: #555;
+    font-size: 2vh;
+    gap: 3vw;
+}
+.email_register_new_r, .contact_register_new_r, .name_register_new_r, .password_register_new_r, .cnfpassword_register_new_r{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+}
+
+.register_button_new_r{
+    margin-top: 3vh;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #fecb3e;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register_button_new_r:hover {
+    background: #fff6c2;
+}
+
+.login_but_register_new_r:hover {
+    background: #fff6c2;
+}

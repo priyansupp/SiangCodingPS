@@ -1,7 +1,8 @@
 import React from 'react';
 import data from '../../database/shopkeeperItems.json';
 import './ShopkeeperItemsList.css';
-import {FaTrash, FaEdit} from 'react-icons/fa';
+import {FaTrash, FaEdit} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 function ShopkeeperItemsList() {
   return (
@@ -9,6 +10,7 @@ function ShopkeeperItemsList() {
         <div>
             {data.item.map((data)=>{
                 return(
+                    <Link to="/prodes" style={{color: 'inherit', textDecoration: 'none' }}>
                     <div className='item_list_sec_S'>
                         <img src={data.item_img} alt='pi' className='item_img_list_S'></img>
                         <div className='about_item_list_S'>
@@ -34,6 +36,7 @@ function ShopkeeperItemsList() {
                              
                         </div>
                     </div>   
+                    </Link>
                 )
             })}
         </div>

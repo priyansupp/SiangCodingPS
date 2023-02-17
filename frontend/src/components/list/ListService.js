@@ -11,7 +11,7 @@ function ListService() {
             {data.service_catgs.map((service_catg)=>{
               const url = "/services/" + service_catg.cat_name;
                 return(
-                  <Link to={url} key={service_catg.id}>
+                  <Link to={url} key={service_catg.id} style={{color:'black', textDecoration: 'none' }}>
                   <div className='service_list_sec'>
                   <img src={service_catg.cat_img} alt='pi' className='service_img_list'></img>
                   <div className='about_service_list'>
