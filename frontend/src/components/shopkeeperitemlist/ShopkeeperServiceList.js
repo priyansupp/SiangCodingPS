@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../../database/shopkeeperService.json';
 import './ShopkeeperServiceList.css'
 import {FaTrash, FaEdit} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 function ShopkeeperServiceList() {
   return (
@@ -9,6 +10,7 @@ function ShopkeeperServiceList() {
         <div>
             {data.service.map((data)=>{
                 return(
+                <Link to="/service" style={{color: 'inherit', textDecoration: 'none' }}>
                   <div className='service_list_sec_s'>
                   <img src={data.service_img} alt='pi' className='service_img_list_s'></img>
                   <div className='about_service_list_s'>
@@ -33,6 +35,7 @@ function ShopkeeperServiceList() {
                           </div>
                       </div>
                   </div> 
+                  </Link>
                 )
             })}
         </div>

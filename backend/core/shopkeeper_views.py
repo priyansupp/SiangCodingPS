@@ -4,7 +4,6 @@ from .models import *
 from rest_framework import status
 from .serializers import *
 
-
 @api_view(["GET", "POST"])
 def itemList(request, shopkeeper_id):
     if request.method == "GET":

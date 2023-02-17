@@ -12,8 +12,6 @@ import Login from "./pages/auth/login.js";
 import Register from "./pages/auth/register.js";
 import Shoppage from "./pages/Shoppage";
 function App() {
-
-
   return (
     <div className="App">
       <Routes>

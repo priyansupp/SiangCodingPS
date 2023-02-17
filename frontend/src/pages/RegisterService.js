@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from '../components/navbar/Navbar';
+import NavbarSK from '../components/navbar/NavbarSK';
 import Footer from '../components/footer/Footer';
 import AddService from '../components/AddItem/AddService';
 
 function RegisterService() {
   return (
     <div>
-      <Navbar/>
+      <NavbarSK/>
       <AddService/>
       <Footer/>
     </div>
