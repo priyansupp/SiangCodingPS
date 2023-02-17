@@ -1,6 +1,42 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios'
 
  function Register() { 
+	const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+	
+    const registerUser = async ()=>{
+        await axios.post("http://127.0.0.1:8000/api/auth/register/", {
+            email:"mokshith@gmail.com",
+            password:"12345",
+            name:'posa'
+        })
+    }
+    const getItems = async () => {
+        setLoading(true);
+        try{
+            const response = await axios.get("http://127.0.0.1:8000/api/customer/");
+            
+            console.log(response.data)
+            // data = {success: True, data:{ actual items}}
+            setItems(response.data.data);
+            setLoading(false);
+        }
+        catch(error){
+            console.log('Error: ', error);
+            setError(true);
+            setLoading(false);
+        }
+    }
+
+	useEffect(() => {
+        getItems();
+        // getItemsFromJson()
+    }, []);
+
+
   return ( 
     <div> 
       <div>
@@ -31,7 +67,7 @@ import React from 'react';
 					<label htmlFor="passw">Confirm Password</label>
 					<input type="text" name="passw" id="passw"/> 
 				</div>  
-				<button type="submit">Register</button>
+				<button onClick = {registerUser} type="submit">Register</button>
 			</form>
 		</div>
     </div> 

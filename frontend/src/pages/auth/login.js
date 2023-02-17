@@ -7,13 +7,13 @@ const Login=()=>{
 	const [password, setPassword] = useState("");
 
 	const handleLogin = async (e) => {
-		// console.log(email + password);
+		console.log(email + password);
 		e.preventDefault();
 		const data = {
 			"email": email,
 			"password": password
 		}
-		await axios.post("/api/auth/login", data).then((response) => {
+		await axios.post("http://127.0.0.1:8000/api/auth/login/", data).then((response) => {
 			const { token } = response.data;			// token has refresh and access token components
 			localStorage.setItem('token', token);		// sets the token in localstorage
 		})
