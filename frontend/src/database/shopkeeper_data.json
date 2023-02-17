@@ -1,0 +1,13 @@
+{
+  "shopkeeper": [
+    {
+      "profilePhoto": "https://tse1.mm.bing.net/th?id=OIP.9R2PQGwEikRhDznHxuzACgHaEK&pid=Api&P=0",
+      "name": "Batman",
+      "shopName": "BatCave",
+      "contact": "6942069420",
+      "email": "bat@gmail.com",
+      "aboutShop": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ratione sunt praesentium veritatis at itaque fugiat asperiores iste perferendis cumque, possimus autem quisquam fuga ut magnam? Reprehenderit ullam exercitationem veniam?",
+      "shopPhoto": "https://tse1.mm.bing.net/th?id=OIP.W2Adg611R_Azl9kxBiKbcQHaDt&pid=Api&P=0"
+    }
+  ]
+}
