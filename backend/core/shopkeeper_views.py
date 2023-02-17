@@ -45,12 +45,12 @@ def serviceList(request, shopkeeper_id):
 
 
 @api_view(["GET", "PUT", "DELETE"])
-def item(request, item_id, shopkeeper_id):
+def item(request, item_id):
     """
     API endpoint for searching, editing and deleting a particular item from database. 
     """
     try:
-        item = Item.objects.get(pk=item_id, shopkeeper_id=shopkeeper_id)
+        item = Item.objects.get(pk=item_id)
     except Item.DoesNotExist:
         return Response(error="Item not found", status=status.HTTP_404_NOT_FOUND)
 

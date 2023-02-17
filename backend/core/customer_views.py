@@ -189,10 +189,11 @@ def customerList(request):
     API endpoint for getting customer list
     """
     customers = Customer.objects.all()
+    # Exclude admin from customer list
+    for customer in customers:
+        if customer.user.is_admin:
+            customers = customers.exclude(user=customer.user)
     serializer = CustomerSerializer(customers, context={'request': request}, many=True)
-    for serializer in serializer.data:
-        if serializer['user'].is_admin:
-            serializer['user'].pop('is_admin')
-    return Response(data=serializer.data, status=status.HTTP_200_OK)
+    return Response(data={'data':serializer.data, 'success': True}, status=status.HTTP_200_OK)
 
 
