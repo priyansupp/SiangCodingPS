@@ -79,6 +79,27 @@ const Login = () => {
     }
   })
 
+  if(loading){
+    return(
+      <div className='loading_container'>
+        <div className="loading">
+          <AiOutlineLoading3Quarters className='icon'/>
+        </div>
+      </div>
+    )
+  }
+
+  if(error){
+    return (
+      <div className='error_container'>
+        <div className="error">
+          <BiMessageSquareError className='icon'/>
+          <span>{error}</span>
+        </div>
+      </div>
+    )
+  }
+
 
   return (
     <div className="login_new">

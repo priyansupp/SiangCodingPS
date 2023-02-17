@@ -1,37 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import data from '../../database/Item_list.json';
 import './ListItem.css'
-import {AiOutlineShoppingCart} from 'react-icons/ai';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 
 
 function ListItem() {
   // console.log(data.item_catgs);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try{
+        const request = await axios.get('http://127.0.0.1/:8000/api/item/');
+        setItems(request.data);
+      }
+      catch(err){
+        console.log(err);
+      }
+    }
+    fetchData();
+  }, []);
+
+
   return (
-    <div>
-      {data.item_catgs.map((item_catg) => {
-        const url = "/items/" + item_catg.cat_name;
-            return (
-                <Link to={url} key={item_catg.id} style={{color:'black', textDecoration: 'none' }}>
-                    <div className='item_list_sec'>
-                        <img src={item_catg.cat_img} alt='pi' className='item_img_list'></img>
-                        <div className='about_item_list'>
-                            <div className='item_name_list'>
-                                {item_catg.cat_name}
-                            </div>
-                            <div className='item_des_list'>
-                                {item_catg.img_des}
-                                <div className='cart_list'>
-                                    <AiOutlineShoppingCart/>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>   
-                </Link>
-            );
-        }
-        )}
+      <div className="list-item">
+        {items.map((item) => (
+          <div className="list-item-card">
+            <div className="list-item-card-img">
+              <img src={item.image} alt={item.id} />
+            </div>
+            <div className="list-item-card-name">
+              {item.name}
+            </div>
+            <div className="list-item-card-price">
+              {item.price}
+            </div>
+            <div className="list-item-card-button">
+              <Link to={`/item/${item.id}`}><button className="list-item-card-button-button"><AiOutlineShoppingCart /></button></Link>
+            </div>
+          </div>
+        ))}
     </div>
   );
 }

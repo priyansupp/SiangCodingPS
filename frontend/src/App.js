@@ -21,7 +21,6 @@ function App() {
         <Route path="/SK/Products" element={<ShopkeeperProducts/>}/>
         <Route path="/SK/AddItem" element={<RegisterItem/>}/>
         <Route path="/SK/AddService" element={<RegisterService/>}/>
-        {/* <Route path="/prodes" element={<Productdescriptionpage />}/> */}
         <Route path="/items/:cat_name" element={<Productspage/>}/>
         <Route path="/item/:item_id" element={<Productdescriptionpage/>}/>
         <Route path="/services/:cat_name" element={<Productspage/>}/>

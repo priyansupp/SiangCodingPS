@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'core',
-    'drf_standardized_errors',
     'rest_framework_simplejwt',
+    'drf_standardized_errors',
 ]
 
 MIDDLEWARE = [
@@ -134,15 +134,20 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DRF_STANDARDIZED_ERRORS = {"ENABLE_IN_DEBUG_FOR_UNHANDLED_EXCEPTIONS": True}
+
 
 REST_FRAMEWORK = {
-    "EXCEPTION_HANDLER": "drf_standardized_errors.handler.exception_handler"
+    "EXCEPTION_HANDLER": "drf_standardized_errors.handler.exception_handler",
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
 }
-
-DRF_STANDARDIZED_ERRORS = {"ENABLE_IN_DEBUG_FOR_UNHANDLED_EXCEPTIONS": True}
 
 # JWT Settings
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1)
 }
+
+AUTH_USER_MODEL = 'core.User'
