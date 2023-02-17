@@ -1,0 +1,43 @@
+.shopkeeper{
+  text-align: center;
+}
+
+.shopkeeper ul {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 2.5vw;
+  
+  }
+  .shopkeeper li {
+    list-style-type: none;
+    font-size: 1.8vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    text-align: start;
+    width: 30vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+  }
+  .shopPhoto {
+    vertical-align: middle;
+    display: inline-block;
+    width: 50vw;
+    padding: 2.5vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+
+  @media screen and (max-width: 650px) and (min-width: 0px){
+   
+    .shopkeeper ul{
+      display: block;
+      padding-left: 10vw;
+    }
+    .shopkeeper li{
+      font-size: 2.8vw;
+      
+    }
+    .shopPhoto{width: 75vw;}
+  }
+
+ 
