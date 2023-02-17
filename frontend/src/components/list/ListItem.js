@@ -12,7 +12,7 @@ function ListItem() {
             const url = "/items/" + item_catg.cat_name;
 
             return (
-                <Link to={url} key={item_catg.id}>
+                <Link to={url} key={item_catg.id} style={{color:'black', textDecoration: 'none' }}>
                     <div className='item_list_sec'>
                         <img src={item_catg.cat_img} alt='pi' className='item_img_list'></img>
                         <div className='about_item_list'>

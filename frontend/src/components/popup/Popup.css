@@ -3,7 +3,7 @@
     z-index: 10000;
     top: 20vh; 
     visibility: hidden;
-    height: 50vh;
+    height: 55vh;
     width: 40vw;
     box-shadow: 0 0 5px rgb(97, 95, 95);
     margin-left: 30vw;
@@ -32,7 +32,7 @@
     border: none;
     box-shadow: 0 0 5px rgb(97, 95, 95);
 }
-.customer_button:hover, .register_button{
+.customer_button:hover, .register_button:hover{
     background: rgb(150, 244, 236);
 }
 .shopkeeper_button:hover{

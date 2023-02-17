@@ -12,19 +12,23 @@ import './register.css'
 	const[cnfpassword, setcnfpassword] = useState("");
 	const[is_shopkeeper, setis_shopkeeper] = useState(false);
 	const [items, setItems] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
-	
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
     const registerUser = async ()=>{
+      if(password===cnfpassword){
         await axios.post("http://127.0.0.1:8000/api/auth/register/", {
             email:email,
             password:password,
             cnfpassword:cnfpassword,
             name:name,
-			contact: contact,
-			is_shopkeeper: is_shopkeeper,
-			is_customer: !is_shopkeeper
+            contact: contact,
+            is_shopkeeper: is_shopkeeper,
+            is_customer: !is_shopkeeper
         })
+      }
+      else 
+        console.log("wrong password")
     }
 
     const getItems = async () => {
@@ -64,21 +68,21 @@ import './register.css'
         <div className="right_register_new_r">
           <h1 className='head_register_new_r'>Register</h1>
           <form className='register_form_new_r'>
-			<div className='identity_register'>
-				<div>
-					<input type="radio" name='pos' value='customer'/> 
-					<label>Customer</label>
-				</div>
-				<div>
-					<input type="radio" name='pos' value='shopkeeper'  onClick={()=>setis_shopkeeper(true)}/> 
-					<label>Shopkeeper</label>
-				</div>
-			</div>
-            <input type="text" placeholder="Username" className='name_register_new_r' onChange={e=>setname(e.target.value)}/>
-            <input type="number" placeholder="Contact Number" className='contact_register_new_r' onChange={e=>setcontact(e.target.value)}/>
-            <input type="email" placeholder="Email" className='email_register_new_r' onChange={e=>setemail(e.target.value)}/>
-            <input type="password" placeholder="Password" className='password_register_new_r' onChange={e=>setpassword(e.target.value)}/>
-            <input type="password" placeholder="Confirm Password" className='cnfpassword_register_new_r' onChange={e=>setcnfpassword(e.target.value)}/>
+            <div className='identity_register'>
+              <div>
+                <input type="radio" name='pos' value='customer' required/> 
+                <label>Customer</label>
+              </div>
+              <div>
+                <input type="radio" name='pos' value='shopkeeper'  onClick={()=>setis_shopkeeper(true)} required/> 
+                <label>Shopkeeper</label>
+              </div>
+            </div>
+            <input type="text" placeholder="Username" className='name_register_new_r' onChange={e=>setname(e.target.value)} required/>
+            <input type="text"  placeholder="Contact Number" className='contact_register_new_r' onChange={e=>setcontact(e.target.value)} required/>
+            <input type="email" placeholder="Email" className='email_register_new_r' onChange={e=>setemail(e.target.value)} required/>
+            <input type="password" placeholder="Password" className='password_register_new_r' onChange={e=>setpassword(e.target.value)} required/>
+            <input type="password" placeholder="Confirm Password" className='cnfpassword_register_new_r' onChange={e=>setcnfpassword(e.target.value)} required/>
             <button className='register_button_new_r' onClick={registerUser}>Register</button>
           </form>
         </div>

@@ -83,10 +83,6 @@
     cursor: pointer;
 }
 
-.log_button_login_new:hover {
-    background: #fff6c2;
-}
-
-.register_but_login_new:hover {
+.log_button_login_new:hover, .register_but_login_new:hover {
     background: #fff6c2;
 }
