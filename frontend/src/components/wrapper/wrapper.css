@@ -1,11 +1,11 @@
 .details {
   font: 1em sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 2vh;
   padding: 4.5vh 0;
-  margin: 3vh 3vh;
+  margin: 5vh 5vh;
 }
 
 .big-img {
@@ -21,6 +21,7 @@
   max-height: 60vw;
   display: block;
   object-fit: cover;
+
 }
 
 
@@ -102,7 +103,7 @@
 
 
 .quantity {
-  width: 10vw;
+  width: 25vw;
   height: 3vh;
 }
 
@@ -134,26 +135,23 @@
 .shop-detail {
   font: 1em sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 1vw 0;
   margin: 5vh 3vh;
 }
 
-
-
-.shop-description {
+.shop-description-1 {
   margin-top: 1.2vh;
   font-size: 3vh;
   margin-bottom: 1vw;
-
 }
 
 .owener-imp-det {
   display: flex;
-  align-content: flex-start;
-  align-self: start;
-
+  align-content: space-around;
+  align-self: center;
+  margin-left: 15vw;
 }
 
 .owner-img {
@@ -161,7 +159,6 @@
   max-width: 17vw;
   margin-right: 1.5vw;
   margin-bottom: 1.5vw;
-
 }
 
 .owner-name {
@@ -169,16 +166,13 @@
   font-size: 5vh;
   align-self: center;
   font-weight: bold;
-
 }
 
 .owner-img img {
-  max-width: 15vw;
+  max-width: 22vh;
   min-width: 5vw;
   overflow: hidden;
-
   clip-path: circle();
-
 }
 
 .price-before-offer {
@@ -187,7 +181,7 @@
 }
 
 .owner-info {
-  width: 48vw;
+  max-width: 48vw;
   align-content: center;
 }
 
@@ -196,7 +190,6 @@
   align-content: start;
   max-width: 28.77vw;
   font-size: 3vh;
-
 }
 
 .buy-now {
@@ -214,9 +207,67 @@
   font-size: 5vh;
   font-weight: bold;
 }
-
+.shop-Address {
+  font-size: 3vh;
+}
 .area {
   font-size: 5vh;
   font-weight: bold;
   margin-left: 15vw;
 }
+
+@media  screen  and (max-width:1000px  ) {
+  .box {
+    max-width: 140vw;
+
+  }
+  .big-img {
+    max-width: 230vw;
+    max-height: 75vh;
+  }
+  .big-img img {
+    max-width: 230vw;
+  }
+  .owner-contact {
+    max-width: 65vw;
+    margin-top:4vh ;
+    
+  }
+  .owner-info {
+    max-width: 150vw;
+  }
+  
+  .owner-img {
+    padding-top:3vw;
+    max-width: 25vw;
+  }
+}
+@media screen and (max-width: 646){
+  .box{
+    max-width: 180vw;
+  }
+  
+}
+@media screen and (max-width: 567px) {
+  .owner-contact{
+    max-width: 65vw;
+    margin-left: 3vw;
+  }
+  .box{
+    max-width: 190vw;
+  }
+  
+  .owner-img {
+    padding-top: 5vh;
+    max-width: 45vw;
+  }
+  
+  
+}
+@media screen and (max-width:412px){
+  .owner-img img {
+    max-width: 15vh;
+  }
+  
+}
+

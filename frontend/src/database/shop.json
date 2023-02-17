@@ -1,0 +1,60 @@
+{
+    "shop":[{
+        "shopId": "37",
+        "shopName": "barber Shop",
+        "shopImg": "https://tse2.mm.bing.net/th?id=OIP.dLOSpNxV2jKGaY5EALzpkwHaE8&pid=Api&P=0",
+        "ownerId": 459,
+        "rating": 4.2,
+        "shopAddress": "khokha market near  iit guwahati",
+        "description": "shop description shop description shop description shop description shop description shop description shop description shop description shop description shop description shop description ",
+        "openingTime": "10:00 Am",
+        "closingTime": "10:00 pm",
+        "Area": "Khokha",
+        "owner" : {
+            "ownerId": 456,
+            "name": "abc",
+            "img": "https://tse1.mm.bing.net/th?id=OIP.uaW6jfd_5PaCnztaMbfZBQHaE8&pid=Api&P=0",
+            "phoneNo": 1234567890,
+            "emailAddrees": "abc@gmail.com"
+          }
+    },
+    {
+        "shopId": 45,
+        "shopName": "Market complex",
+        "shopImg":
+          "https://tse3.mm.bing.net/th?id=OIP.e3TH6ANVwxhsBNa3IemsXwHaE8&pid=Api&P=0",
+        "ownerId": 456,
+        "rating": 4.2,
+        "shopAddress": "market complex iit guwahati",
+        "description":
+          "shop description shop description shop description shop description shop description shop description shop description shop description shop description shop description shop description ",
+      
+        "Area": "Khokha",
+        "owner" : {
+            "ownerId": 456,
+            "name": "abc",
+            "img": "https://tse1.mm.bing.net/th?id=OIP.uaW6jfd_5PaCnztaMbfZBQHaE8&pid=Api&P=0",
+            "phoneNo": 1234567890,
+            "emailAddrees": "abc@gmail.com"
+          }
+    },
+    {
+        "shopId": "37",
+        "shopName": "barber Shop",
+        "shopImg": "https://tse2.mm.bing.net/th?id=OIP.dLOSpNxV2jKGaY5EALzpkwHaE8&pid=Api&P=0",
+        "ownerId": 459,
+        "rating": 4.2,
+        "shopAddress": "khokha market near  iit guwahati",
+        "description": "shop description shop description shop description shop description shop description shop description shop description shop description shop description shop description shop description ",
+        "openingTime": "10:00 Am",
+        "closingTime": "10:00 pm",
+        "Area": "Khokha",
+        "owner" : {
+            "ownerId": 456,
+            "name": "abc",
+            "img": "https://tse1.mm.bing.net/th?id=OIP.uaW6jfd_5PaCnztaMbfZBQHaE8&pid=Api&P=0",
+            "phoneNo": 1234567890,
+            "emailAddrees": "abc@gmail.com"
+          }
+    }]
+}
