@@ -1,0 +1,21 @@
+.avatar {
+    margin-top: 5vh;
+    width: 9vh;
+    height: 9vh;
+    border: 1px solid black;
+    object-fit: fill;
+    border-radius: 50%;
+  }
+  .nav2 {
+    display: flex;
+    width: 100%;
+    top: 0;
+    background: rgb(238, 246, 250);
+    height: 18vh;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
+  }
+  .logo {
+    width: 80%;
+  }
+  
+  
