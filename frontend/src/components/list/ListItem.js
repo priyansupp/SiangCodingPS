@@ -13,7 +13,7 @@ function ListItem() {
   useEffect(() => {
     async function fetchData() {
       try{
-        const request = await axios.get('http://127.0.0.1/:8000/api/item/');
+        const request = await axios.get('/api/item/');
         setItems(request.data);
       }
       catch(err){
