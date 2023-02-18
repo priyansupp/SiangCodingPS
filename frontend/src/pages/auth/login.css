@@ -6,6 +6,71 @@
     justify-content: center;
     background: #fff6c2;
 }
+.loading{
+    font-size: 10vh;
+    width: 50px;
+    height: 50px;
+}
+
+.loading .icon{
+    font-size: 15vh;
+    color: #ebb216;
+    margin: 0 auto;
+    display: block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error{
+    font-size: 1.5vh;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: #f0a0a7;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    margin: 0 auto;
+    width: 220px;
+    height: 150px;
+    display: flex;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.321);
+}
+.error .icon{
+    font-size: 6vh;
+    color: #721c24;
+    margin: 0 auto;
+    display: block;
+    animation: error_animation 1s linear infinite;
+
+}
+.error span{
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    color: #721c24;
+}
+
+@keyframes error_animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 .card_login_new {
     width: 50%;

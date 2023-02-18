@@ -1,18 +1,88 @@
-.register_new_r{
-    height: 100vh;
+.register_new_r, .loading_container, .error_container {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background: #fff6c2;
 }
 
+.loading{
+    font-size: 10vh;
+    width: 50px;
+    height: 50px;
+}
+
+.loading .icon{
+    font-size: 15vh;
+    color: #ebb216;
+    margin: 0 auto;
+    display: block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error{
+    font-size: 1.5vh;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: #f0a0a7;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    margin: 0 auto;
+    width: 220px;
+    height: 150px;
+    display: flex;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.321);
+}
+.error .icon{
+    font-size: 6vh;
+    color: #721c24;
+    margin: 0 auto;
+    display: block;
+    animation: error_animation 1s linear infinite;
+
+}
+.error span{
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    color: #721c24;
+}
+
+@keyframes error_animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 .card_register_new_r{
-    width: 50%;
+    width: 60%;
     display: flex;
     background-color: white;
     border-radius: 10px;
     min-height: 30vh;
     overflow: hidden;
+    box-shadow : 0 10px 20px 0 rgba(0, 0, 0, 0.321);
 }
 
 .left_register_new_r{
@@ -27,7 +97,7 @@
 }
 
 .head_register_new_r{
-    font-size: 10vh;
+    font-size: 7vh;
     line-height: 10vh;
 }
 
@@ -73,7 +143,7 @@
 .email_register_new_r, .contact_register_new_r, .name_register_new_r, .password_register_new_r, .cnfpassword_register_new_r{
     border: none;
     border-bottom: 1px solid lightgray;
-    padding: 20px 10px;
+    padding: 15px 10px;
 }
 
 .register_button_new_r{
@@ -93,4 +163,26 @@
 
 .login_but_register_new_r:hover {
     background: #fff6c2;
+}
+.register_new_r input{
+    transition:all 0.3s ease;
+    margin: 5px 0;
+}
+
+.register_new_r input:hover{
+    border-bottom: 1px solid #555;
+}
+.register_new_r input:focus{
+    outline: none;
+}
+
+.register_new_r button{
+    transition:all 0.3s ease;
+    border-radius: 5px;
+    padding: 20px 10px !important;
+}
+
+.register_new_r button:hover{
+    background:rgb(39, 37, 35) !important;
+    color: white;
 }
