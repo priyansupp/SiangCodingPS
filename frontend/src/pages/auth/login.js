@@ -3,12 +3,14 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
 import { TokenContext } from '../../context/tokenContext';
+import { UserContext } from '../../context/userContext';
 
 const Login = () => {
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
   const { token, setToken } = useContext(TokenContext);
+  const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
 
 	const handleLogin = async (e) => {
@@ -36,9 +38,10 @@ const Login = () => {
     });
     console.log(access_token);
     await axios.get("/api/auth/profile/", {
-      headers: {"Authorization" : `Bearer ${token['access_token']}`}
+      headers: {"Authorization" : `Bearer ${access_token}`}
     }).then(res => {
-      console.log(res);
+      console.log(res.data);
+      setUser(res.data);
       navigate("/");
     }).catch(e => {
       console.log(`error2 is ${e}`);
@@ -89,31 +92,31 @@ const Login = () => {
   // })
   
 
-  if(loading){
-    return(
-      <div className='loading_container'>
-        <div className="loading">
-          <AiOutlineLoading3Quarters className='icon'/>
-        </div>
-      </div>
-    )
-  }
+  // if(loading){
+  //   return(
+  //     <div className='loading_container'>
+  //       <div className="loading">
+  //         <AiOutlineLoading3Quarters className='icon'/>
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
-  if(error){
-    return (
-      <div className='error_container'>
-        <div className="error">
-          <BiMessageSquareError className='icon'/>
-          <span>{error}</span>
-        </div>
-      </div>
-    )
-  }
+  // if(error){
+  //   return (
+  //     <div className='error_container'>
+  //       <div className="error">
+  //         <BiMessageSquareError className='icon'/>
+  //         <span>{error}</span>
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
 
   return (
     <div className="login_new">
-      {error && <div className="error">{error}</div>}
+      {/* {error && <div className="error">{error}</div>} */}
       <div className="card_login_new">
         <div className="left_login_new">
           <h1 className='head_login_new'>Hello World.</h1>

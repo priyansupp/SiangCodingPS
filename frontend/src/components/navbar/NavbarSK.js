@@ -1,12 +1,28 @@
 import React from 'react';
 import logo from '../../assets/navbar/lenden_logo.png'
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import Profile from '../../assets/card/pizza.jpg';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import './NavbarSK.css';
+import { TokenContext } from '../../context/tokenContext';
+import { UserContext } from '../../context/userContext';
+import axios from 'axios';
 
 function NavbarSK() {
+    const navigate = useNavigate();
     const [userClick, setUserClick] = useState(false);
+    const { token, setToken } = useContext(TokenContext);
+    const handlLogout = async (e) => {
+        e.preventDefault();
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('refresh_token');
+        await axios.post("/api/auth/logout/", {
+            headers: {"Authorization" : `Bearer ${token}`}
+          }).catch(e => {
+            console.log(`error2 is ${e}`);
+          });
+        setToken(null);
+    }
 
   return (
     <div className='nav_SK'>
@@ -34,10 +50,10 @@ function NavbarSK() {
                 <div className="nav-hamburg2">
                     <ul>
                         <li><Link to="/">My Profile</Link></li>
-                        <li><Link to="/SK/Products">My Products</Link></li>
-                        <li><Link to="/SK/Requests">Pending Requests</Link></li>
-                        <li><Link to="/SK/Approved">Approved Requests</Link></li>
-                        <li><Link to="/">Log Out</Link></li>
+                        <li><Link to="/Products">My Products</Link></li>
+                        <li><Link to="/Requests">Pending Requests</Link></li>
+                        <li><Link to="/Approved">Approved Requests</Link></li>
+                        <li onClick={handlLogout}>Log Out</li>
                     </ul>
                 </div>
                 }
