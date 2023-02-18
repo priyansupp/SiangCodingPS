@@ -1,8 +1,8 @@
 # SiangCodingPS
 Django-React-Delievery Platform
+# LenDen
 
-
-This is a "Food Delievery Platform" which gives all general features a delievery app should have.
+This is a interactive platform for customer and shopkeeper to help both get their hands on items and services.
 
 The backend is completely build on Django using Django Rest Framework, while the frontend is completed using ReactJS.
 
