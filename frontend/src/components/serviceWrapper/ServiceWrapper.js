@@ -24,7 +24,6 @@ function ServiceWrapper() {
   );
   return (
     <section className="background">
-      
       <div className="details" key={service_data.service._id}>
         <div className="big-img">
           <img src={service_data.service[0].src} alt="" />
@@ -45,7 +44,7 @@ function ServiceWrapper() {
       </div>
       <div>
         <div className="shop-detail" key={shop_data.shop[0].shopId}>
-          <div>
+          <div className="shop-only">
             <div className="big-img">
               <img src={shop_data.shop[0].shopImg} alt="" />
             </div>
@@ -56,20 +55,24 @@ function ServiceWrapper() {
           </div>
           <div className="owner-info">
             <div className="owner-imp-det">
-              <div className="owner-img">
-                <img src={shop_data.shop[0].owner.img} alt=""></img>
-              </div>
-              <div className="owner-contact">
-                <div className="owner-name">{shop_data.shop[0].owner.name}</div>
-
-                <div>
-                  <span>
-                    <IoMdCall />{" "}
-                  </span>
-                  <span>{shop_data.shop[0].owner.phoneNo}</span>
+              <div className="owner-only">
+                <div className="owner-img">
+                  <img src={shop_data.shop[0].owner.img} alt=""></img>
                 </div>
-                <div>
-                  <span>{shop_data.shop[0].owner.emailAddrees}</span>
+                <div className="owner-contact">
+                  <div className="owner-name">
+                    {shop_data.shop[0].owner.name}
+                  </div>
+
+                  <div>
+                    <span>
+                      <IoMdCall />{" "}
+                    </span>
+                    <span>{shop_data.shop[0].owner.phoneNo}</span>
+                  </div>
+                  <div>
+                    <span>{shop_data.shop[0].owner.emailAddrees}</span>
+                  </div>
                 </div>
               </div>
               <div className="shop-description-1">

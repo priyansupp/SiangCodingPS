@@ -1,26 +1,31 @@
-img{
+img {
     cursor: pointer;
 }
-.full_List_S{
+
+.full_List_S {
     margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 5vh;
 }
-.head1_S{
+
+.head1_S {
     text-align: center;
     font-size: 7vh;
     font-weight: 500;
     /* font-family: 'Roboto', sans-serif; */
     font-style: normal;
 }
-.switch_list_S{
+
+.switch_list_S {
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
 }
-.items_list_button_S, .services_list_button_S{
+
+.items_list_button_S,
+.services_list_button_S {
     border: none;
     background-color: #F6F7F7;
     height: 8vh;
@@ -30,13 +35,17 @@ img{
     padding: 1vh;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
 }
-.items_list_button_S:hover{
+
+.items_list_button_S:hover {
     background: #cad4d4;
 }
-.services_list_button_S:hover{
+
+.services_list_button_S:hover {
     background: #cad4d4;
 }
-.items_list_button_after_S, .services_list_button_after_S{
+
+.items_list_button_after_S,
+.services_list_button_after_S {
     background-color: white;
     border: none;
     height: 8vh;
@@ -46,14 +55,18 @@ img{
     padding: 1vh;
     font-weight: 500;
 }
-.add_buttons_S{
+
+.add_buttons_S {
     display: flex;
     /* margin-left: 40vw */
 }
-.add_button_k{
+
+.add_button_k {
     display: flex;
 }
-.add_items_button_S, .add_service_button_S{
+
+.add_items_button_S,
+.add_service_button_S {
     border: none;
     background-color: #F6F7F7;
     height: 8vh;
@@ -63,44 +76,59 @@ img{
     padding: 1vh;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.108);
 }
-.add_items_button_S:hover{
+
+.add_items_button_S:hover {
     background: #cad4d4;
 }
-.add_service_button_S:hover{
+
+.add_service_button_S:hover {
     background: #cad4d4;
 }
-.full_List_flex_S{
+
+.full_List_flex_S {
     display: flex;
     justify-content: center;
     gap: 10vw;
 }
-@media screen and (max-width: 970px) and (min-width: 650px){
-    .items_list_button_S, .services_list_button_S{
+
+@media screen and (max-width: 970px) and (min-width: 650px) {
+
+    .items_list_button_S,
+    .services_list_button_S {
         width: 12vw;
         font-size: 2.4vw;
         padding: 0.5vh;
     }
-    .items_list_button_after_S, .services_list_button_after_S{
+
+    .items_list_button_after_S,
+    .services_list_button_after_S {
         width: 12vw;
         font-size: 1.8vh;
         padding: 0.5vh;
     }
-    .head1_S{
+
+    .head1_S {
         font-size: 4vh;
     }
 }
-@media screen and (max-width: 650px) and (min-width: 0px){
-    .items_list_button_S, .services_list_button_S{
+
+@media screen and (max-width: 650px) and (min-width: 0px) {
+
+    .items_list_button_S,
+    .services_list_button_S {
         width: 20vw;
         font-size: 1.8vh;
         padding: 0.5vh;
     }
-    .items_list_button_after_S, .services_list_button_after_S{
+
+    .items_list_button_after_S,
+    .services_list_button_after_S {
         width: 20vw;
         font-size: 1.8vh;
         padding: 0.5vh;
     }
-    .head1_S{
+
+    .head1_S {
         font-size: 3vh;
     }
 }
