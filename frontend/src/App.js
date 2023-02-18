@@ -12,32 +12,49 @@ import Login from "./pages/auth/login.js";
 import Register from "./pages/auth/register.js";
 import Servicedescriptionpage from "./pages/Servicedescriptionpage";
 import ShopkeeperProfilePage from "./pages/ShopkeeperProfilePage";
+import { TokenContext } from './context/tokenContext';
+import { UserContext } from './context/userContext';
+import {useContext} from 'react';
 
 function App() {
-  return (
-    <div className="App">
+  const { token, setToken } = useContext(TokenContext);
+  const { user, setUser } = useContext(UserContext);
+  // console.log(token);
+  if(!token || (token && user['is_customer'] == true)) {
+    return (
+      <div className="App">
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/SK/Products" element={<ShopkeeperProducts/>}/>
-        <Route path="/SK/AddItem" element={<RegisterItem/>}/>
-        <Route path="/SK/AddService" element={<RegisterService/>}/>
+        <Route path="/" element={ <Homepage/> }/>
         <Route path="/items/:cat_name" element={<Productspage/>}/>
         <Route path="/item/:item_id" element={<Productdescriptionpage/>}/>
         <Route path="/services/:cat_name" element={<Productspage/>}/>
         <Route path="/service/:service_id" element={<Servicedescriptionpage/>}/>
-        <Route path="/SK/Requests" element={<SKrequest/>}/>
-        <Route path="/SK/Approved" element={<SKapprovedRequests/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="/SK/Products" element={<ShopkeeperProducts />} />
-        <Route path="/SK/AddItem" element={<RegisterItem />} />
-        <Route path="/SK/AddService" element={<RegisterService />} />
         {/* <Route path="/prodes" element={<Productdescriptionpage />} /> */}
-        <Route path="/SK/Profile" element={<ShopkeeperProfilePage />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </div>
-  );
+    )
+  } else if((token && user['is_customer'] == false)) {
+    return (
+      <div className="App">
+        <Routes>
+          <Route path="/AddItem" element={<RegisterItem/>}/>
+          <Route path="/AddService" element={<RegisterService/>}/>
+          <Route path="/Requests" element={<SKrequest/>}/>
+          <Route path="/Approved" element={<SKapprovedRequests/>}/>
+          <Route path="/" element={<ShopkeeperProducts />} />
+          <Route path="/AddItem" element={<RegisterItem />} />
+          <Route path="/AddService" element={<RegisterService />} />
+          {/* <Route path="/prodes" element={<Productdescriptionpage />} /> */}
+          <Route path="/profile" element={<ShopkeeperProfilePage />} />
+          <Route path="*" element={<Errorpage />} />
+        </Routes>
+      </div>
+    );
+  }
+  
 }
 
 export default App;

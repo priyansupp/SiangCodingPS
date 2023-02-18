@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './register.css';
 import { TokenContext } from '../../context/tokenContext';
+import { UserContext } from '../../context/userContext';
 
 function Register() {
   const navigate = useNavigate();
@@ -17,8 +18,9 @@ function Register() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const { setToken } = useContext(TokenContext);
+  const { user, setUser } = useContext(UserContext);
 
-    const registerUser = async (e)=>{
+  const registerUser = async (e)=>{
       e.preventDefault();
       if(password===cnfpassword){
         const res = await axios.post("http://127.0.0.1:8000/api/auth/register/", {
@@ -32,9 +34,9 @@ function Register() {
           console.log(typeof(res.error.data));
         }
         if(res.data) {
-          const refresh_token = res.data.data['refresh'];
-          const access_token = res.data.data['access'];
-          // console.log(res.data.data['refresh']);
+          console.log(res.data);
+          const refresh_token = res.data['refresh'];
+          const access_token = res.data['access'];
           // console.log(typeof(res.data));
 
           localStorage.setItem('access_token', access_token);
@@ -43,7 +45,15 @@ function Register() {
           // create context that can be used overall in the app.
           setToken({'access_token': access_token, 'refresh_token': refresh_token});
 
-          navigate('http://127.0.0.1:3000/');
+          await axios.get("/api/auth/profile/", {
+            headers: {"Authorization" : `Bearer ${access_token}`}
+          }).then(res => {
+            console.log(res.data);
+            setUser(res.data);
+            navigate("/");
+          }).catch(e => {
+            console.log(`error2 is ${e}`);
+          });
 
           
         }
@@ -52,48 +62,48 @@ function Register() {
         console.log("wrong password")
       }
     }
-  }
+
   
-  if(loading){
-    return(
-      <div className='loading_container'>
-        <div className="loading">
-          <AiOutlineLoading3Quarters className='icon'/>
-        </div>
-      </div>
-    )
-  }
+  // if(loading){
+  //   return(
+  //     <div className='loading_container'>
+  //       <div className="loading">
+  //         <AiOutlineLoading3Quarters className='icon'/>
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
-  if(error){
-    return (
-      <div className='error_container'>
-        <div className="error">
-          <BiMessageSquareError className='icon'/>
-          <span>{error}</span>
-        </div>
-      </div>
-    )
-  }
+  // if(error){
+  //   return (
+  //     <div className='error_container'>
+  //       <div className="error">
+  //         <BiMessageSquareError className='icon'/>
+  //         <span>{error}</span>
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
-    const getItems = async () => {
-        setLoading(true);
-        try{
-            const response = await axios.get("http://127.0.0.1:8000/api/customer/");
+    // const getItems = async () => {
+    //     setLoading(true);
+    //     try{
+    //         const response = await axios.get("http://127.0.0.1:8000/api/customer/");
             
-            // console.log(response.data)
-            // data = {success: True, data:{ actual items}}
-            setItems(response.data.data);
-            setLoading(false);
-        }
-        catch(error){
-            console.log('Error: ', error);
-            setError(true);
-            setLoading(false);
-        }
-    }
-	useEffect(() => {
-	  getItems();
-	}, []);
+    //         // console.log(response.data)
+    //         // data = {success: True, data:{ actual items}}
+    //         setItems(response.data.data);
+    //         setLoading(false);
+    //     }
+    //     catch(error){
+    //         console.log('Error: ', error);
+    //         setError(true);
+    //         setLoading(false);
+    //     }
+    // }
+	// useEffect(() => {
+	//   getItems();
+	// }, []);
   return ( 
     <div className="register_new_r">
       <div className="card_register_new_r">
@@ -111,14 +121,14 @@ function Register() {
         </div>
         <div className="right_register_new_r">
           <h1 className='head_register_new_r'>Register</h1>
-          <form className='register_form_new_r' onSubmit={handleRegister}>
+          <form className='register_form_new_r' onSubmit={registerUser}>
             <div className='identity_register'>
               <div>
                 <input type="radio" name='pos' value='customer' onClick={()=>setis_customer(true)} required/> 
                 <label>Customer</label>
               </div>
               <div>
-                <input type="radio" name='pos' value='shopkeeper' required/> 
+                <input type="radio" name='pos' value='shopkeeper' onClick={()=>setis_customer(false)} required/> 
                 <label>Shopkeeper</label>
               </div>
             </div>
