@@ -27,7 +27,7 @@ urlpatterns = [
 
 
     # shopkeeper view
-    path('shopkeeper/items/<int:shopkeeper_id>', shopkeeper_views.itemList, name='items'),      # api for listing all items of a particular shopkeeper and for posting an item by a shopkeeper
+    path('shopkeeper/items/<int:user_id>', shopkeeper_views.itemList, name='items'),      # api for listing all items of a particular shopkeeper and for posting an item by a shopkeeper
     path('shopkeeper/services/<int:shopkeeper_id>', shopkeeper_views.serviceList, name='services'),         # api for listing all services of a particular shopkeeper and for posting a service by a shopkeeper
     path('shopkeeper/item/<int:shopkeeper_id>/<int:item_id>', shopkeeper_views.item, name='search_item'),           # get, put and delete items
     path('shopkeeper/item/<int:shopkeeper_id>/<int:service_id>', shopkeeper_views.service, name='search_item'),           # get, put and delete services
