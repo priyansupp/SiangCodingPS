@@ -2,6 +2,7 @@ from django.urls import path
 from . import customer_views
 from . import shopkeeper_views
 from .auth_views import *
+from .item_views import *
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
@@ -66,5 +67,17 @@ urlpatterns = [
     path('auth/password/reset/confirm/<str:uid>/<str:token>/', UserPasswordResetConfirmView.as_view(), name='reset_password_confirm'),
     
     # Logout
-    path('auth/logout/', UserLogoutView.as_view(), name='logout'),      
+    path('auth/logout/', UserLogoutView.as_view(), name='logout'),
+    
+   
+    # Items API
+    
+    # All Items
+    path('item/', ItemsView.as_view(), name='items'),   
+    
+    # Items by Category
+    path('item/<str:category>/', ItemCategoryView.as_view(), name='items_by_category'),
+    
+    # Particular Item
+    path('item/<int:pk>/', ItemDetailView.as_view(), name='item_detail'),
 ]
