@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './register.css'
+import './register.css';
+import { TokenContext } from '../../context/tokenContext';
 
  function Register() { 
 	const[email, setemail] = useState("");
@@ -10,25 +11,46 @@ import './register.css'
 	const[contact, setcontact] = useState("");
 	const[password, setpassword] = useState("");
 	const[cnfpassword, setcnfpassword] = useState("");
-	const[is_shopkeeper, setis_shopkeeper] = useState(false);
+	const[is_customer, setis_customer] = useState(false);
 	const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
+  const { setToken } = useContext(TokenContext);
 
-    const registerUser = async ()=>{
+    const registerUser = async (e)=>{
+      e.preventDefault();
       if(password===cnfpassword){
-        await axios.post("http://127.0.0.1:8000/api/auth/register/", {
+        const res = await axios.post("http://127.0.0.1:8000/api/auth/register/", {
             email:email,
             password:password,
-            cnfpassword:cnfpassword,
             name:name,
             contact: contact,
-            is_shopkeeper: is_shopkeeper,
-            is_customer: !is_shopkeeper
-        })
+            is_customer: is_customer
+        });
+        if(res.error) {
+          console.log(typeof(res.error.data));
+        }
+        if(res.data) {
+          const refresh_token = res.data.data['refresh'];
+          const access_token = res.data.data['access'];
+          // console.log(res.data.data['refresh']);
+          // console.log(typeof(res.data));
+
+          localStorage.setItem('access_token', access_token);
+          localStorage.setItem('refresh_token', refresh_token);
+
+          // create context that can be used overall in the app.
+          setToken({'access_token': access_token, 'refresh_token': refresh_token});
+
+          navigate('http://127.0.0.1:3000/');
+
+          
+        }
       }
-      else 
+      else {
         console.log("wrong password")
+      }
     }
 
     const getItems = async () => {
@@ -36,7 +58,7 @@ import './register.css'
         try{
             const response = await axios.get("http://127.0.0.1:8000/api/customer/");
             
-            console.log(response.data)
+            // console.log(response.data)
             // data = {success: True, data:{ actual items}}
             setItems(response.data.data);
             setLoading(false);
@@ -70,15 +92,15 @@ import './register.css'
           <form className='register_form_new_r'>
             <div className='identity_register'>
               <div>
-                <input type="radio" name='pos' value='customer' required/> 
+                <input type="radio" name='pos' value='customer' onClick={()=>setis_customer(true)} required/> 
                 <label>Customer</label>
               </div>
               <div>
-                <input type="radio" name='pos' value='shopkeeper'  onClick={()=>setis_shopkeeper(true)} required/> 
+                <input type="radio" name='pos' value='shopkeeper' required/> 
                 <label>Shopkeeper</label>
               </div>
             </div>
-            <input type="text" placeholder="Username" className='name_register_new_r' onChange={e=>setname(e.target.value)} required/>
+            <input type="text" placeholder="Name" className='name_register_new_r' onChange={e=>setname(e.target.value)} required/>
             <input type="text"  placeholder="Contact Number" className='contact_register_new_r' onChange={e=>setcontact(e.target.value)} required/>
             <input type="email" placeholder="Email" className='email_register_new_r' onChange={e=>setemail(e.target.value)} required/>
             <input type="password" placeholder="Password" className='password_register_new_r' onChange={e=>setpassword(e.target.value)} required/>

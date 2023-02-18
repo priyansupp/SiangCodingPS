@@ -6,25 +6,6 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from .utils import Util
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('id', 'email', 'name', 'contact', 'is_shopkeeper', 'is_customer', 'image', 'created_at', 'updated_at', 'password')
-        
-class CustomerSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
-    class Meta:
-        model = Customer
-        fields = '__all__'
-        depth = 1   # to get all the fields of customer
-
-        
-class ShopkeeperSerializer(serializers.ModelSerializer):
-    usery = UserSerializer()
-    class Meta:
-        model = Shopkeeper
-        fields = '__all__'
-        depth = 1   # to get all the fields of shopkeeper
 
 
 class ShopSerializer(serializers.ModelSerializer):
@@ -59,11 +40,30 @@ class TransactionSerializer(serializers.ModelSerializer):
         fields = '__all__'
         depth = 1   # to get all the fields of transaction
 
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'email', 'name', 'contact', 'is_customer', 'image', 'created_at', 'updated_at', 'password')
+        
+class CustomerSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+    class Meta:
+        model = Customer
+        fields = '__all__'
+        depth = 1   # to get all the fields of customer
+
+        
+class ShopkeeperSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+    class Meta:
+        model = Shopkeeper
+        fields = '__all__'
+        depth = 1   # to get all the fields of shopkeeper
 class UserRegistrationSerializer(serializers.ModelSerializer):
     email = serializers.EmailField()
     class Meta:
         model = User
-        fields = ('email', 'password', 'name', 'contact', 'is_shopkeeper', 'is_customer', 'image')
+        fields = ('email', 'password', 'name', 'contact', 'is_customer', 'image')
         extra_kwargs = {'password': {'write_only': True}}
         
     def create(self, data):
@@ -79,8 +79,7 @@ class UserLoginSerializer(serializers.ModelSerializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('email', 'name', 'contact', 'is_shopkeeper', 'is_customer', 'image', 'password')
-        extra_kwargs = {'password': {'write_only': True}}
+        fields = ('id', 'email', 'name', 'contact', 'is_customer', 'image')
         
 class UserChangePasswordSerializer(serializers.ModelSerializer):
 

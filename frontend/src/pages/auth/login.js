@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
+import { TokenContext } from '../../context/tokenContext';
 
 const Login=()=>{
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-
+  const { token, setToken } = useContext(TokenContext);
   const navigate = useNavigate();
 
 	const handleLogin = async (e) => {
@@ -16,60 +17,76 @@ const Login=()=>{
 			"email": email,
 			"password": password
 		}
+    let access_token = "";
     // const dt = JSON.stringify(data);
-		await axios.post("http://127.0.0.1:8000/api/auth/login/", data).then((response) => {
+		await axios.post("/api/auth/login/", data).then((response) => {
 			console.log(response.data)
 			const { token } = response.data;			// token has refresh and access token components
+      // console.log(response.data.data['is_customer']);
       // console.log(token.access)
       // console.log(token.refresh)
+      access_token = token.access;
 			localStorage.setItem('access_token', token.access);		// sets the token in localstorage
 			localStorage.setItem('refresh_token', token.refresh);		// sets the token in localstorage
-      navigate("/")
-		})
+
+      // set in context
+      setToken({'access_token': token.access, 'refresh_token': token.refresh});
+		}).catch(e => {
+      console.log(`error1 is ${e}`);
+    });
+    console.log(access_token);
+    await axios.get("/api/auth/profile/", {
+      headers: {"Authorization" : `Bearer ${token['access_token']}`}
+    }).then(res => {
+      console.log(res);
+      navigate("/");
+    }).catch(e => {
+      console.log(`error2 is ${e}`);
+    });
 	}
 
-  const isLogin = async () => {
-    const token = localStorage.getItem('access_token');
-    try{
-      const response = await axios.post("http://127.0.0.1:8000/api/auth/token/verify/", {
-        token:token
-      })
-      if(response){
-        console.log("login")
-        return true
-      }
-    }
-    catch(err){
-      console.log("err")
-      return false
-    }    
-  }
+  // const isLogin = async () => {
+  //   const token = localStorage.getItem('access_token');
+  //   try{
+  //     const response = await axios.post("http://127.0.0.1:8000/api/auth/token/verify/", {
+  //       token:token
+  //     })
+  //     if(response){
+  //       console.log("login")
+  //       return true
+  //     }
+  //   }
+  //   catch(err){
+  //     console.log("err")
+  //     return false
+  //   }    
+  // }
   
-  const refreshToken = async () => {
-    const token = localStorage.getItem('refresh_token');
-    try{
-      const response = await axios.post("http://127.0.0.1:8000/api/auth/token/refresh/", {
-        refresh:token
-      })
-      localStorage.setItem('access_token', response.data.access);
-      console("refresh")
-      return true;
-    }
-    catch(err){
-      console.log("errorfresh")
-      return false;
-    }
-  }
+  // const refreshToken = async () => {
+  //   const token = localStorage.getItem('refresh_token');
+  //   try{
+  //     const response = await axios.post("http://127.0.0.1:8000/api/auth/token/refresh/", {
+  //       refresh:token
+  //     })
+  //     localStorage.setItem('access_token', response.data.access);
+  //     console("refresh")
+  //     return true;
+  //   }
+  //   catch(err){
+  //     console.log("errorfresh")
+  //     return false;
+  //   }
+  // }
 
-  useEffect(()=>{
-      async function getValue(){
-        const p = await isLogin()
-        console.log(p)
-      }
-      getValue()
+  // useEffect(()=>{
+  //     async function getValue(){
+  //       const p = await isLogin()
+  //       console.log(p)
+  //     }
+  //     getValue()
 
-      refreshToken();
-  })
+  //     refreshToken();
+  // })
   
 
 	return(

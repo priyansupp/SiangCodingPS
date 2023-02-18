@@ -1,16 +1,16 @@
 import React from "react";
 import { createContext, useState } from "react";
 
-export const IsCustomerContext = createContext();
+export const UserContext = createContext();
 
-export const IsCustomerContextProvider = (children) => {
+export const UserContextProvider = ({children}) => {
 
-    const [IsCustomer, setIsCustomer] = useState(0);
+    const [User, setUser] = useState({});
 
     return (
-        <IsCustomerContext.Provider value={{IsCustomer, setIsCustomer}}>
+        <UserContext.Provider value={{User, setUser}}>
             { children }
-        </IsCustomerContext.Provider>
+        </UserContext.Provider>
     )
 
 }

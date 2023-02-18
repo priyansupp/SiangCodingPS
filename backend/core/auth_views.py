@@ -45,6 +45,7 @@ class UserLoginView(APIView):
             authenticated_user = authenticate_user(email=serializer.data['email'], password=serializer.data['password'])
             if authenticated_user is not None:
                 token = generate_token(authenticated_user)
+                
                 return Response(data = {'token': token, 'success': True}, status=status.HTTP_200_OK)
         return Response(data = {'success': False, 'error': 'Invalid credentials'}, status=status.HTTP_400_BAD_REQUEST)
         
@@ -66,12 +67,11 @@ class UserProfileView(APIView):
     API endpoint for getting profile of a user and updating it
     """
     permission_classes = [IsAuthenticated]
-
     def get(self, request):
         print(request.user)
         print("came")
         serializer = UserProfileSerializer(request.user)
-        return Response(data={'data': serializer.data, 'success': True}, status=status.HTTP_200_OK)
+        return Response(serializer.data, status=status.HTTP_200_OK)
         
     
     def post(self, request):

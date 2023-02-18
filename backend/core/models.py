@@ -97,7 +97,6 @@ class User(AbstractBaseUser):
         auto_now=True
     )
     contact = models.IntegerField(default=0)
-    is_shopkeeper = models.BooleanField(default=False)
     is_customer = models.BooleanField(default=True)
     image = models.ImageField(upload_to="images", default="images/default.png")
     created_at = models.DateTimeField(auto_now_add=True)
