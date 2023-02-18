@@ -1,83 +1,93 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
+import { TokenContext } from '../../context/tokenContext';
 
 const Login = () => {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+  const { token, setToken } = useContext(TokenContext);
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    try {
-      const res = await axios.post("http://127.0.0.1:8000/api/auth/login/", {
-        email, password
-      })
-      // setting the tokens in local storage
-      localStorage.setItem('access_token', res.data.access);
-      const time = new Date();
-      localStorage.setItem('access_token_time', time.getTime());
-      localStorage.setItem('refresh_token', res.data.refresh);
-      setLoading(false);
-      navigate('/');
-    }
-    catch (err) {
-      console.log(err)
-      setError(err.response.data.detail)
-    }
-  }
+	const handleLogin = async (e) => {
+		e.preventDefault();
+		const data = {
+			"email": email,
+			"password": password
+		}
+    let access_token = "";
+    // const dt = JSON.stringify(data);
+		await axios.post("/api/auth/login/", data).then((response) => {
+			console.log(response.data)
+			const { token } = response.data;			// token has refresh and access token components
+      // console.log(response.data.data['is_customer']);
+      // console.log(token.access)
+      // console.log(token.refresh)
+      access_token = token.access;
+			localStorage.setItem('access_token', token.access);		// sets the token in localstorage
+			localStorage.setItem('refresh_token', token.refresh);		// sets the token in localstorage
 
-  useEffect(() => {
-    const time = new Date();
-    const access_token_time = localStorage.getItem('access_token_time');
-    const access_token = localStorage.getItem('access_token');
-    const refresh_token = localStorage.getItem('refresh_token');
-    if (access_token_time && access_token && refresh_token) {
-      // access token is valid for 5 minutes
-      if (time.getTime() - access_token_time < 300 * 1000) {
-        navigate('/');
-      }
-      else {
-        // refresh token is valid for 1 days
-        if (time.getTime() - access_token_time < 24 * 60 * 60 * 1000) {
-          axios.post("http://127.0.0.1/:8000/api/auth/token/refresh/", {
-            refresh: refresh_token
-          })
-            .then(res => {
-              localStorage.setItem('access_token', res.data.access);
-              localStorage.setItem('access_token_time', time.getTime());
-              navigate('/');
-            })
-            .catch(err => {
-              console.log(err)
-              localStorage.removeItem('access_token');
-              localStorage.removeItem('access_token_time');
-              localStorage.removeItem('refresh_token');
-              const errors = err.response.data.errors;
-              if (errors?.length > 0) {
-                setError(errors[0].detail);
-              }
-            })
-        }
-        else{
-          localStorage.removeItem('access_token');
-          localStorage.removeItem('access_token_time');
-          localStorage.removeItem('refresh_token');
-        }
-      }
-    }
-    else {
-      localStorage.removeItem('access_token');
-      localStorage.removeItem('access_token_time');
-      localStorage.removeItem('refresh_token');
-    }
-  })
+      // set in context
+      setToken({'access_token': token.access, 'refresh_token': token.refresh});
+		}).catch(e => {
+      console.log(`error1 is ${e}`);
+    });
+    console.log(access_token);
+    await axios.get("/api/auth/profile/", {
+      headers: {"Authorization" : `Bearer ${token['access_token']}`}
+    }).then(res => {
+      console.log(res);
+      navigate("/");
+    }).catch(e => {
+      console.log(`error2 is ${e}`);
+    });
+	}
+
+  // const isLogin = async () => {
+  //   const token = localStorage.getItem('access_token');
+  //   try{
+  //     const response = await axios.post("http://127.0.0.1:8000/api/auth/token/verify/", {
+  //       token:token
+  //     })
+  //     if(response){
+  //       console.log("login")
+  //       return true
+  //     }
+  //   }
+  //   catch(err){
+  //     console.log("err")
+  //     return false
+  //   }    
+  // }
+  
+  // const refreshToken = async () => {
+  //   const token = localStorage.getItem('refresh_token');
+  //   try{
+  //     const response = await axios.post("http://127.0.0.1:8000/api/auth/token/refresh/", {
+  //       refresh:token
+  //     })
+  //     localStorage.setItem('access_token', response.data.access);
+  //     console("refresh")
+  //     return true;
+  //   }
+  //   catch(err){
+  //     console.log("errorfresh")
+  //     return false;
+  //   }
+  // }
+
+  // useEffect(()=>{
+  //     async function getValue(){
+  //       const p = await isLogin()
+  //       console.log(p)
+  //     }
+  //     getValue()
+
+  //     refreshToken();
+  // })
+  
 
   if(loading){
     return(

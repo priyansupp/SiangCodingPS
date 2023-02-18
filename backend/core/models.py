@@ -96,8 +96,7 @@ class User(AbstractBaseUser):
         verbose_name='Last Login',
         auto_now=True
     )
-    contact = models.IntegerField(default=0, unique=True)
-    is_shopkeeper = models.BooleanField(default=False)
+    contact = models.IntegerField(default=0)
     is_customer = models.BooleanField(default=True)
     image = models.ImageField(upload_to="images", default="images/default.png")
     created_at = models.DateTimeField(auto_now_add=True)

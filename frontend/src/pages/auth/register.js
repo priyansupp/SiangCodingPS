@@ -1,10 +1,9 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './register.css'
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
-import { BiMessageSquareError } from 'react-icons/bi';
+import './register.css';
+import { TokenContext } from '../../context/tokenContext';
 
 function Register() {
   const navigate = useNavigate();
@@ -13,60 +12,45 @@ function Register() {
 	const[contact, setcontact] = useState("");
 	const[password, setpassword] = useState("");
 	const[cnfpassword, setcnfpassword] = useState("");
-	const[is_shopkeeper, setis_shopkeeper] = useState(false);
+	const[is_customer, setis_customer] = useState(false);
+	const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState(false);
+  const { setToken } = useContext(TokenContext);
 
-
-  const resetError = ()=>{
-    setTimeout(() => {
-      setError("");
-    }, 3000);
-  }
-  const handleRegister = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    if(password !== cnfpassword){
-      setError("Password and Confirm Password must be same")
-      resetError();
-      setLoading(false);
-      return;
-    }
-    // Regex for phone number
-    const phoneRegex = /^[6-9]\d{9}$/;
-    if(!phoneRegex.test(contact)){
-      setError("Invalid Phone Number");
-      resetError();
-      setLoading(false);
-      return;
-    }
-
-    try{
-      const res = await axios.post("http://127.0.0.1:8000/api/auth/register/", {
-        email, name, contact, password, cnfpassword, is_shopkeeper
-      })
-      // setting the tokens in local storage
-      localStorage.setItem('access_token', res.data.access);
-      const time = new Date();
-      localStorage.setItem('access_token_time', time.getTime());
-      localStorage.setItem('refresh_token', res.data.refresh);
-      setLoading(false);
-      navigate('/');
-    }
-    catch(err){
-      const errors = err.response.data.errors;
-      console.log(errors)
-      if(errors?.length > 0){
-        if(errors[0].detail.includes("UNIQUE constraint failed:")){
-          setError("Email already exists");
-          resetError();
+    const registerUser = async (e)=>{
+      e.preventDefault();
+      if(password===cnfpassword){
+        const res = await axios.post("http://127.0.0.1:8000/api/auth/register/", {
+            email:email,
+            password:password,
+            name:name,
+            contact: contact,
+            is_customer: is_customer
+        });
+        if(res.error) {
+          console.log(typeof(res.error.data));
         }
-        else{
-          setError("Something went wrong");
-          resetError();
+        if(res.data) {
+          const refresh_token = res.data.data['refresh'];
+          const access_token = res.data.data['access'];
+          // console.log(res.data.data['refresh']);
+          // console.log(typeof(res.data));
+
+          localStorage.setItem('access_token', access_token);
+          localStorage.setItem('refresh_token', refresh_token);
+
+          // create context that can be used overall in the app.
+          setToken({'access_token': access_token, 'refresh_token': refresh_token});
+
+          navigate('http://127.0.0.1:3000/');
+
+          
         }
       }
-      setLoading(false);
+      else {
+        console.log("wrong password")
+      }
     }
   }
   
@@ -91,6 +75,25 @@ function Register() {
     )
   }
 
+    const getItems = async () => {
+        setLoading(true);
+        try{
+            const response = await axios.get("http://127.0.0.1:8000/api/customer/");
+            
+            // console.log(response.data)
+            // data = {success: True, data:{ actual items}}
+            setItems(response.data.data);
+            setLoading(false);
+        }
+        catch(error){
+            console.log('Error: ', error);
+            setError(true);
+            setLoading(false);
+        }
+    }
+	useEffect(() => {
+	  getItems();
+	}, []);
   return ( 
     <div className="register_new_r">
       <div className="card_register_new_r">
@@ -111,11 +114,11 @@ function Register() {
           <form className='register_form_new_r' onSubmit={handleRegister}>
             <div className='identity_register'>
               <div>
-                <input type="radio" name='pos' value='customer' required/> 
+                <input type="radio" name='pos' value='customer' onClick={()=>setis_customer(true)} required/> 
                 <label>Customer</label>
               </div>
               <div>
-                <input type="radio" name='pos' value='shopkeeper'  onClick={()=>setis_shopkeeper(true)} required/> 
+                <input type="radio" name='pos' value='shopkeeper' required/> 
                 <label>Shopkeeper</label>
               </div>
             </div>
