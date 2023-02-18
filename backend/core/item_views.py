@@ -13,7 +13,7 @@ class ItemsView(APIView):
     
     def get(self, request):
         items = Item.objects.all()
-        serializer = CustomerSerializer(items, context={'request': request}, many=True)
+        serializer = ItemsSerializer(items, context={'request': request}, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
             
 
@@ -25,7 +25,7 @@ class ItemCategoryView(APIView):
     
     def get(self, request, category):
         items = Item.objects.filter(category=category)
-        serializer = ItemSerializer(data=items, context={'request': request}, many=True)
+        serializer = ItemsCategorySerializer(data=items, context={'request': request}, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
     
 class ItemDetailView(APIView):
