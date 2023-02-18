@@ -18,9 +18,10 @@ class Item(models.Model):
     ]
     category = models.CharField(choices=CategoryChoices, default='Ed', max_length=2) 
     name = models.CharField(default="Item name", max_length=100)
-    shopkeeper = models.ManyToManyField('Shopkeeper', related_name='items')
-    quantity = models.IntegerField()
-    image = models.ImageField(upload_to="images")
+    user = models.ForeignKey('User', default=1, on_delete=models.CASCADE, related_name='items')
+    quantity = models.IntegerField(default=1)
+    desc = models.CharField(max_length=1000, default="Good item")
+    image = models.ImageField(upload_to="images", default='/images/home_title_bg.jpg')
     price = models.IntegerField(default=0)
 
     def __str__(self) -> str:

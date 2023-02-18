@@ -5,10 +5,10 @@ from rest_framework import status
 from .serializers import *
 
 @api_view(["GET", "POST"])
-def itemList(request, shopkeeper_id):
+def itemList(request, user_id):
     if request.method == "GET":
         try:
-            items = Item.objects.filter(shopkeeper_id=shopkeeper_id)
+            items = Item.objects.filter(user=user_id)
         except Item.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
@@ -20,7 +20,7 @@ def itemList(request, shopkeeper_id):
         if serializer.is_valid():
             serializer.save()
             return Response(status=status.HTTP_201_CREATED)
-        return Response(statu=status.HTTP_400_BAD_REQUEST)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
 
