@@ -37,7 +37,7 @@ function Navbar(){
                 </Link>
             </div>
             <div className='search_home'>
-                <Link to="/items">
+                <Link to="/services/:cat_name">
                 <input type='text' className='search_item' placeholder='Search items or services' onChange={e=>setSearch(e.currentTarget.value)}></input>
                 </Link>
             </div>
