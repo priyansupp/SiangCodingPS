@@ -143,3 +143,4 @@ class UserPasswordResetConfirmSerializer(serializers.ModelSerializer):
         user.save()
         print("New password: ", user.password)
         return data
+

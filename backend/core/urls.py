@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path,include
 from . import customer_views
 from . import shopkeeper_views
 from .auth_views import *
@@ -7,9 +7,17 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
     TokenVerifyView,
 )
+from rest_framework import routers
+from .views import ItemViewSet
+
+items_router = routers.DefaultRouter()
+items_router.register(r'items', ItemViewSet)
+
+urlpatterns = items_router.urls
 
 urlpatterns = [
     # customer views
+    path('', include(urlpatterns)),
     path('customer/', customer_views.customerList, name='customers'),                       # for getting list of all customer or for posting a customer
     
     path('customer/itemdetail/<int:item_id>', customer_views.itemDetail, name='search_item'),   # for fetching a particular item
@@ -66,5 +74,5 @@ urlpatterns = [
     path('auth/password/reset/confirm/<str:uid>/<str:token>/', UserPasswordResetConfirmView.as_view(), name='reset_password_confirm'),
     
     # Logout
-    path('auth/logout/', UserLogoutView.as_view(), name='logout'),      
+    path('auth/logout/', UserLogoutView.as_view(), name='logout'),     
 ]

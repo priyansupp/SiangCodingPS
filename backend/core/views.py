@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .serializers import CustomerSerializer, ShopkeeperSerializer
-from .models import Customer, Shopkeeper
+from .serializers import CustomerSerializer, ShopkeeperSerializer, ItemSerializer
+from .models import Customer, Shopkeeper, Item
 
 # Create your views here.
 class CustomerView(viewsets.ModelViewSet):
@@ -34,6 +34,17 @@ class ShopkeeperView(viewsets.ModelViewSet):
         
     def perform_destroy(self, instance):        # this is the method that is called when you do a DELETE request to the API endpoint for this view set (i.e. http://localhost:8000/shopkeeper/)
         instance.delete()
+
+class ItemViewSet(viewsets.ModelViewSet):
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
+    def get_queryset(self):
+        qs = Item.objects.all()
+        name = self.request.query_params.get('name')
+        if name is not None:
+            qs = qs.filter(name__icontains=name)
+        return qs
+
 
     
 

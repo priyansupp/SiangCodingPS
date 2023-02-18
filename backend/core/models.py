@@ -20,7 +20,7 @@ class Item(models.Model):
     name = models.CharField(default="Item name", max_length=100)
     shopkeeper = models.ManyToManyField('Shopkeeper')
     quantity = models.IntegerField()
-    image = models.ImageField(upload_to="images")
+    image = models.ImageField(upload_to="media/images")
     price = models.IntegerField(default=0)
 
     def __str__(self) -> str:

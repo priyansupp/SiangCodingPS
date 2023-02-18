@@ -3,6 +3,7 @@ import logo from '../../assets/navbar/lenden_logo.png'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
+
 function Navbar(){
     const[pop, setpop] = useState(0);
     const[Search, setSearch] = useState(''); 
@@ -23,7 +24,7 @@ function Navbar(){
             </div>
             <div className='search_home'>
                 
-                <input type='text' className='search_item' placeholder='Search items or services' onChange={e=>setSearch(e.currentTarget.value)}></input>
+                <input type='text' className='search_item' placeholder='Search items or services' onChange={e=>setSearch(e.target.value)}></input>
                 
             </div>
             <div className='login'>
