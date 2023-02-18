@@ -142,3 +142,27 @@ class UserPasswordResetConfirmSerializer(serializers.ModelSerializer):
         user.save()
         print("New password: ", user.password)
         return data
+    
+class ItemsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = '__all__'
+        depth = 2   # to get all the fields of item
+        
+class ServicesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Service
+        fields = '__all__'
+        depth = 2   # to get all the fields of service
+        
+class ItemsCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = '__all__'
+        depth = 2   # to get all the fields of item category
+        
+class ServicesCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Service
+        fields = '__all__'
+        depth = 2   # to get all the fields of service category

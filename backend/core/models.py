@@ -18,7 +18,7 @@ class Item(models.Model):
     ]
     category = models.CharField(choices=CategoryChoices, default='Ed', max_length=2) 
     name = models.CharField(default="Item name", max_length=100)
-    shopkeeper = models.ManyToManyField('Shopkeeper')
+    shopkeeper = models.ManyToManyField('Shopkeeper', related_name='items')
     quantity = models.IntegerField()
     image = models.ImageField(upload_to="images")
     price = models.IntegerField(default=0)
@@ -46,21 +46,21 @@ class Service(models.Model):
 
 class UserManager(BaseUserManager):
     use_in_migrations = True    
-    def create_user(self, email, name, password=None, **extra_fields):
+    def create_user(self,email, name, password=None, **extra_fields):
         # handle exceptions 
         if not email:
             raise ValueError("Email is required")
         if not name:
             raise ValueError("Name is required")
+        if not password:
+            raise ValueError("Password is required")
         hashed_password = make_password(password)
-        print("hashed_password: ", hashed_password)
         user = self.model(
             email=self.normalize_email(email),
             name=name,
             password=hashed_password,
             **extra_fields
         )
-        print("user: ", user)
         user.save(using=self._db)
         return user
     
@@ -106,7 +106,7 @@ class User(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['name']
+    REQUIRED_FIELDS = ['name', 'password']
     
     objects = UserManager()
     

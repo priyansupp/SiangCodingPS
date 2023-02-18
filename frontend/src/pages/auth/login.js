@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
 import { TokenContext } from '../../context/tokenContext';
 
-const Login=()=>{
+const Login = () => {
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -89,16 +89,39 @@ const Login=()=>{
   // })
   
 
-	return(
-		<div className="login_new">
+  if(loading){
+    return(
+      <div className='loading_container'>
+        <div className="loading">
+          <AiOutlineLoading3Quarters className='icon'/>
+        </div>
+      </div>
+    )
+  }
+
+  if(error){
+    return (
+      <div className='error_container'>
+        <div className="error">
+          <BiMessageSquareError className='icon'/>
+          <span>{error}</span>
+        </div>
+      </div>
+    )
+  }
+
+
+  return (
+    <div className="login_new">
+      {error && <div className="error">{error}</div>}
       <div className="card_login_new">
         <div className="left_login_new">
           <h1 className='head_login_new'>Hello World.</h1>
-            <p className='para_login_new'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-              alias totam numquam ipsa exercitationem dignissimos, error nam,
-              consequatur.
-            </p>
+          <p className='para_login_new'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
+            alias totam numquam ipsa exercitationem dignissimos, error nam,
+            consequatur.
+          </p>
           <span className='mess_login_new'>Don't you have an account?</span>
           <Link to="/register">
             <button className='register_but_login_new'>Register</button>
@@ -107,15 +130,15 @@ const Login=()=>{
         <div className="right_login_new">
           <h1 className='head_login_new'>Login</h1>
           <form className='login_form_new'>
-            <input type="email" placeholder="Email" className='email_login_new' onChange={e=>setEmail(e.target.value)} required/>
-            <input type="password" placeholder="Password" className='password_login_new' onChange={e=>setPassword(e.target.value)} required/>
+            <input type="email" placeholder="Email" className='email_login_new' onChange={e => setEmail(e.target.value)} required />
+            <input type="password" placeholder="Password" className='password_login_new' onChange={e => setPassword(e.target.value)} required />
             <button type='submit' className='log_button_login_new' onClick={handleLogin} >Login</button>
           </form>
         </div>
       </div>
     </div>
 
-	)
+  )
 }
 
 export default Login;

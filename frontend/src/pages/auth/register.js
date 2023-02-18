@@ -5,7 +5,8 @@ import axios from 'axios';
 import './register.css';
 import { TokenContext } from '../../context/tokenContext';
 
- function Register() { 
+function Register() {
+  const navigate = useNavigate();
 	const[email, setemail] = useState("");
 	const[name, setname] = useState("");
 	const[contact, setcontact] = useState("");
@@ -15,7 +16,6 @@ import { TokenContext } from '../../context/tokenContext';
 	const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const navigate = useNavigate();
   const { setToken } = useContext(TokenContext);
 
     const registerUser = async (e)=>{
@@ -52,6 +52,28 @@ import { TokenContext } from '../../context/tokenContext';
         console.log("wrong password")
       }
     }
+  }
+  
+  if(loading){
+    return(
+      <div className='loading_container'>
+        <div className="loading">
+          <AiOutlineLoading3Quarters className='icon'/>
+        </div>
+      </div>
+    )
+  }
+
+  if(error){
+    return (
+      <div className='error_container'>
+        <div className="error">
+          <BiMessageSquareError className='icon'/>
+          <span>{error}</span>
+        </div>
+      </div>
+    )
+  }
 
     const getItems = async () => {
         setLoading(true);
@@ -89,7 +111,7 @@ import { TokenContext } from '../../context/tokenContext';
         </div>
         <div className="right_register_new_r">
           <h1 className='head_register_new_r'>Register</h1>
-          <form className='register_form_new_r'>
+          <form className='register_form_new_r' onSubmit={handleRegister}>
             <div className='identity_register'>
               <div>
                 <input type="radio" name='pos' value='customer' onClick={()=>setis_customer(true)} required/> 
@@ -105,7 +127,7 @@ import { TokenContext } from '../../context/tokenContext';
             <input type="email" placeholder="Email" className='email_register_new_r' onChange={e=>setemail(e.target.value)} required/>
             <input type="password" placeholder="Password" className='password_register_new_r' onChange={e=>setpassword(e.target.value)} required/>
             <input type="password" placeholder="Confirm Password" className='cnfpassword_register_new_r' onChange={e=>setcnfpassword(e.target.value)} required/>
-            <button className='register_button_new_r' onClick={registerUser}>Register</button>
+            <button type="submit" className='register_button_new_r'>Register</button>
           </form>
         </div>
       </div>

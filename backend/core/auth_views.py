@@ -32,8 +32,8 @@ class UserRegistrationView(APIView):
         if serializer.is_valid():
             serializer.save()
             token = generate_token(serializer.instance)
-            return Response(data={'data': token, 'success': True}, status=status.HTTP_201_CREATED)
-        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(data=token, status=status.HTTP_201_CREATED)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
     
 class UserLoginView(APIView):
     """
@@ -58,9 +58,10 @@ class UserLogoutView(APIView):
             refresh_token = request.data['refresh']
             token = RefreshToken(refresh_token)
             token.blacklist()   # blacklisting the token
-            return Response(data={'success': True}, status=status.HTTP_205_RESET_CONTENT)
+            return Response(data={}, status=status.HTTP_205_RESET_CONTENT)
         except Exception as e:
-            return Response(data={'success': False, 'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+
     
 class UserProfileView(APIView):
     """
@@ -68,8 +69,6 @@ class UserProfileView(APIView):
     """
     permission_classes = [IsAuthenticated]
     def get(self, request):
-        print(request.user)
-        print("came")
         serializer = UserProfileSerializer(request.user)
         return Response(serializer.data, status=status.HTTP_200_OK)
         
@@ -78,8 +77,8 @@ class UserProfileView(APIView):
         serializer = UserProfileSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(data={'data': serializer.data, 'success': True}, status=status.HTTP_201_CREATED)
-        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(data=serializer.data, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
         
 class UserPasswordChangeView(APIView):
     """
@@ -93,8 +92,8 @@ class UserPasswordChangeView(APIView):
             print("serializer: ", serializer.data)
             print("request.user: ", request.user)
             print("request.data", request.data)
-            return Response(data={'success': True}, status=status.HTTP_200_OK)
-        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(data={}, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
     
 
 class UserPasswordResetView(APIView):
@@ -104,8 +103,8 @@ class UserPasswordResetView(APIView):
     def post(self, request):
         serializer = UserPasswordResetSerializer(data=request.data)
         if serializer.is_valid():
-            return Response(data={'success': True}, status=status.HTTP_200_OK)
-        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(data={}, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
 
 class UserPasswordResetConfirmView(APIView):
     """
@@ -114,7 +113,7 @@ class UserPasswordResetConfirmView(APIView):
     def post(self, request, uid, token):
         serializer = UserPasswordResetConfirmSerializer(data=request.data, context={'uid': uid, 'token': token})
         if serializer.is_valid():
-            return Response(data={'success': True}, status=status.HTTP_200_OK)
-        return Response(data={'error': serializer.errors, 'success': False}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(data={}, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
 
     
