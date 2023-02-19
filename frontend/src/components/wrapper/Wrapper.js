@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { GrAdd, GrSubtract } from "react-icons/gr";
 import Startrating from "../starrating/Starrating";
 import { IoMdCall } from "react-icons/io";
-import Footer from "../footer/Footer";
-import Navbar from "../navbar/Navbar";
 import product_data from "../../database/products.json";
 import shop_data from "../../database/shop.json";
 
@@ -40,7 +38,6 @@ function Wrapper() {
   );
   return (
     <section className="background">
-      <Navbar />
       <div className="details" key={product_data.products[0]._id}>
         <div className="big-img">
           <img src={product_data.products[0].src} alt="" />
@@ -94,7 +91,7 @@ function Wrapper() {
       </div>
       <div>
         <div className="shop-detail" key={shop_data.shopId}>
-          <div>
+          <div className="shop-only">
             <div className="big-img">
               <img src={shop_data.shop[1].shopImg} alt="" />
             </div>
@@ -105,22 +102,27 @@ function Wrapper() {
           </div>
           <div className="owner-info">
             <div className="owner-imp-det">
-              <div className="owner-img">
-                <img src={shop_data.shop[1].owner.img} alt=""></img>
-              </div>
-              <div className="owner-contact">
-                <div className="owner-name">{shop_data.shop[1].owner.name}</div>
+              <div className="owner-only">
+                <div className="owner-img">
+                  <img src={shop_data.shop[1].owner.img} alt=""></img>
+                </div>
+                <div className="owner-contact">
+                  <div className="owner-name">
+                    {shop_data.shop[1].owner.name}
+                  </div>
 
-                <div>
-                  <span>
-                    <IoMdCall />{" "}
-                  </span>
-                  <span>{shop_data.shop[1].owner.phoneNo}</span>
-                </div>
-                <div>
-                  <span>{shop_data.shop[1].owner.emailAddrees}</span>
+                  <div>
+                    <span>
+                      <IoMdCall />{" "}
+                    </span>
+                    <span>{shop_data.shop[1].owner.phoneNo}</span>
+                  </div>
+                  <div>
+                    <span>{shop_data.shop[1].owner.emailAddrees}</span>
+                  </div>
                 </div>
               </div>
+
               <div className="shop-description-1">
                 {" "}
                 {shop_data.shop[1].description}
@@ -137,7 +139,6 @@ function Wrapper() {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

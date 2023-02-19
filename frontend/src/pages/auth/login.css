@@ -1,10 +1,14 @@
 .login_new {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(193, 190, 255);
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background: #fff6c2;
+    padding: 11vh 22vw;
+}
+p {
+    padding: 0;
 }
 .loading{
     font-size: 10vh;
@@ -73,12 +77,13 @@
 }
 
 .card_login_new {
-    width: 50%;
+    
     display: flex;
-    background-color: white;
+    background-color:  #fff6c2;
     border-radius: 10px;
     min-height: 30vh;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .left_login_new {
@@ -93,8 +98,8 @@
 }
 
 .head_login_new {
-    font-size: 10vh;
-    line-height: 10vh;
+    font-size: 6vw;
+    line-height: 6vw;
 }
 
 .mess_login_new {
@@ -119,6 +124,7 @@
     flex-direction: column;
     gap: 5vw;
     justify-content: center;
+    background-color: white;
 }
 
 .head_login_new {
@@ -150,4 +156,33 @@
 
 .log_button_login_new:hover, .register_but_login_new:hover {
     background: #fff6c2;
+}
+@media screen and (max-width:903px) {
+    .login_new {
+        padding: 6vh 21vw;
+    }
+    .left_login_new {
+        max-width:32vw;
+        
+    }
+    .right_login_new {
+        max-width: 32vw;
+    }
+}
+@media screen and (max-width:828px) {
+    .login_new {
+        padding: 6vh 16vw;
+        
+    }
+    
+}
+@media screen and (max-width: 594px ) {
+    .left_login_new{
+        max-width: 69vw;
+    }
+    .right_login_new{
+        max-width: 69vw;
+        gap:0
+    }
+    
 }

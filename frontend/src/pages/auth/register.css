@@ -1,10 +1,18 @@
+<<<<<<< HEAD
+.register_new_r{
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+=======
 .register_new_r, .loading_container, .error_container {
     min-height: 100vh;
     width: 100%;
     display: flex;
+>>>>>>> 6d1963a366c9b7935edeefb182a05cfda159dbb2
     justify-content: center;
     align-items: center;
     background: #fff6c2;
+    padding: 5vw 15vw;
 }
 
 .loading{
@@ -76,13 +84,21 @@
 
 
 .card_register_new_r{
+<<<<<<< HEAD
+    
+=======
     width: 60%;
+>>>>>>> 6d1963a366c9b7935edeefb182a05cfda159dbb2
     display: flex;
-    background-color: white;
+    background-color: #fff6c2;
     border-radius: 10px;
     min-height: 30vh;
     overflow: hidden;
+<<<<<<< HEAD
+    flex-wrap: wrap;
+=======
     box-shadow : 0 10px 20px 0 rgba(0, 0, 0, 0.321);
+>>>>>>> 6d1963a366c9b7935edeefb182a05cfda159dbb2
 }
 
 .left_register_new_r{
@@ -97,8 +113,13 @@
 }
 
 .head_register_new_r{
+<<<<<<< HEAD
+    font-size: 6vw;
+    line-height: 6vw;
+=======
     font-size: 7vh;
     line-height: 10vh;
+>>>>>>> 6d1963a366c9b7935edeefb182a05cfda159dbb2
 }
 
 .mess_register_new_r{
@@ -124,6 +145,7 @@
     flex-direction: column;
     gap: 5vw;
     justify-content: center;
+    background-color: white;
 }
 
 .head_register_new_r{
@@ -148,7 +170,6 @@
 
 .register_button_new_r{
     margin-top: 3vh;
-    width: 50%;
     padding: 10px;
     border: none;
     background-color: #fecb3e;
@@ -164,6 +185,40 @@
 .login_but_register_new_r:hover {
     background: #fff6c2;
 }
+<<<<<<< HEAD
+@media screen and (max-width:903px) {
+    .register_new_r {
+        padding: 10vw 12vw;
+    }
+    .left_register_new_r {
+        max-width:32vw;
+        
+    }
+    .right_register_new_r {
+        max-width: 40vw;
+    }
+}
+@media screen and (max-width:828px) {
+    .register_new_r {
+        padding: 10vw 12vw;
+        
+    }
+    
+}
+
+@media screen and (max-width: 668px ) {
+    .left_register_new_r{
+        max-width: 69vw;
+    }
+    .right_register_new_r{
+        max-width: 69vw;
+        gap:0
+    }
+    .mess_register_new_r{
+        margin-top: 1vh;
+    }
+    
+=======
 .register_new_r input{
     transition:all 0.3s ease;
     margin: 5px 0;
@@ -185,4 +240,5 @@
 .register_new_r button:hover{
     background:rgb(39, 37, 35) !important;
     color: white;
+>>>>>>> 6d1963a366c9b7935edeefb182a05cfda159dbb2
 }

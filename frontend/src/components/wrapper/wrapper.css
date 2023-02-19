@@ -3,18 +3,30 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 2vh;
-  padding: 4.5vh 0;
+  
+  padding: 4.5vh .1vh;
   margin: 5vh 5vh;
+  background-color: white;
+  border-radius: 3vh;
+}
+.background {
+  min-height: 190vh;
+  background-color:  #fff6c2;
+  padding-top: 1vh;
 }
 
 .big-img {
   max-width: 500px;
   min-width: 290px;
   overflow: hidden;
+  
 
 }
-
+.shop-only {
+  background-color: #eed387; 
+  padding: 1vh 1vw;
+  border-radius: 2vh;
+}
 .big-img img {
   width: 100%;
   height: 100%;
@@ -27,7 +39,6 @@
 
 .title {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 0;
 }
 
@@ -139,10 +150,12 @@
   flex-wrap: wrap;
   padding: 1vw 0;
   margin: 5vh 3vh;
+  background-color: white;
+  border-radius: 3vh;
 }
 
 .shop-description-1 {
-  margin-top: 1.2vh;
+  margin-top: 7vh;
   font-size: 3vh;
   margin-bottom: 1vw;
 }
@@ -152,6 +165,12 @@
   align-content: space-around;
   align-self: center;
   margin-left: 15vw;
+
+}
+.owner-only {
+  padding-top: 2vh;
+  box-shadow: 0 4px 4px black;
+  border-radius: 2vh;
 }
 
 .owner-img {
@@ -190,6 +209,7 @@
   align-content: start;
   max-width: 28.77vw;
   font-size: 3vh;
+ 
 }
 
 .buy-now {
@@ -201,6 +221,7 @@
 .discount {
   color: #37ea40;
   margin-bottom: 1vw;
+  font-size: 3vh;
 }
 
 .shop-title {
@@ -219,12 +240,15 @@
 @media  screen  and (max-width:1000px  ) {
   .box {
     max-width: 140vw;
+    padding: 2vh 5vh;
 
+  }
+  .background{
+    min-height: 252vh;
   }
   .big-img {
     max-width: 230vw;
-    max-height: 75vh;
-  }
+    max-height: 75vh;  }
   .big-img img {
     max-width: 230vw;
   }
@@ -232,6 +256,9 @@
     max-width: 65vw;
     margin-top:4vh ;
     
+  }
+  .owner-only {
+    margin: 4vh 20vw ;
   }
   .owner-info {
     max-width: 150vw;
@@ -241,10 +268,22 @@
     padding-top:3vw;
     max-width: 25vw;
   }
+  .shop-detail{
+    padding: 2vh 5vh;
+  }
+}
+@media  screen and (max-width:796px) {
+  .owner-only {
+    margin: 4vh 14vw;
+  }
+  
 }
 @media screen and (max-width: 646){
   .box{
     max-width: 180vw;
+  }
+  .owner-only{
+    margin: 4vh 10vw;
   }
   
 }
@@ -256,7 +295,9 @@
   .box{
     max-width: 190vw;
   }
-  
+  .owner-only{
+    margin: 4vh 1vw;
+  }
   .owner-img {
     padding-top: 5vh;
     max-width: 45vw;
@@ -267,6 +308,17 @@
 @media screen and (max-width:412px){
   .owner-img img {
     max-width: 15vh;
+  }
+  .big-img img{
+    max-width: 79vw;
+    margin-left: 4vw;
+  }
+  
+  
+}
+@media screen and (max-width:363px) {
+  .background{
+    min-height: 262vh;
   }
   
 }
